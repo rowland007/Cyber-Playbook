@@ -9,7 +9,7 @@ repo_name: 'Randy Rowland'
 repo_url: 'https://github.com/rowland007'
 
 # Copyright
-copyright: '&#127279; 2019 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright: 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
@@ -33,16 +33,7 @@ nav:
 
 # Configuration
 theme:
-    name: 'material'
-    palette:
-        primary: 'blue'
-        accent: 'amber'
-    logo:
-        icon: 'people_alt'
-    language: 'en'
-    font:
-        text: 'Roboto'
-        code: 'Roboto Mono'
+    name: 'readthedocs'
 
 # Customization
 extra:
