@@ -1,0 +1,66 @@
+# Project information
+site_name: 'Cyber Playbook'
+site_description: 'Information on how to contribute to my projects'
+site_author: 'Randy Rowland'
+site_url: 'https://rowland007.github.io/Cyber-Playbook/'
+
+# Repository
+repo_name: 'Randy Rowland'
+repo_url: 'https://github.com/rowland007'
+
+# Copyright
+copyright: '&#127279; 2019 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+
+# Navigation Menu
+nav:
+    - Overview: 'index.md'
+    - Component Security:
+        'Overview': 'component/index.md'
+    - Connection Security:
+        'Overview': 'connection/index.md'
+    - Data  Security:
+        'Overview': 'data/index.md'
+    - Human Security:
+        'Overview': 'human/index.md'
+    - Organizational Security:
+        'Overview': 'organizational/index.md'
+    - Societal Security:
+        'Overview': 'societal/index.md'
+    - Software Security:
+        'Overview': 'software/index.md'
+    - System Security:
+        'Overview': 'system/index.md'
+
+# Configuration
+theme:
+    name: 'material'
+    palette:
+        primary: 'blue'
+        accent: 'amber'
+    logo:
+        icon: 'people_alt'
+    language: 'en'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+
+# Customization
+extra:
+    social:
+        - type: 'github'
+          link: 'https://github.com/rowland007'
+        - type: 'twitter'
+          link: 'https://twitter.com/randarxj7'
+        - type: 'linkedin'
+          link: 'https://www.linkedin.com/in/randall-rowland-332a5039'
+        - type: 'reddit-alien'
+          link: 'https://www.reddit.com/user/rowland007'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
