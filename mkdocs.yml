@@ -30,6 +30,7 @@ nav:
         'Overview': 'software/index.md'
     - System Security:
         'Overview': 'system/index.md'
+    - Glossary: 'glossary.md'
 
 # Configuration
 theme:
@@ -41,7 +42,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: logo
+    logo: material/library
 
 # Customization
 extra:
