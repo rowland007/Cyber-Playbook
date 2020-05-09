@@ -1,5 +1,7 @@
 # Playbook Information
 
+![playbook](static/images/cybersecurity-playbook-hero.png)
+
 ## Crosscutting Concepts
 
 Several crosscutting concepts are connected across knowledge areas and fundamental to a well-structured security mind-set. One way to use this template is to create and assign tags you can use to track these crosscutting concepts. You may choose to add additional tags to build additional functionality in your playbook. The recommended crosscutting tags are:
