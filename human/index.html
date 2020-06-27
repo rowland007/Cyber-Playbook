@@ -363,9 +363,42 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
       Overview
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access-control-matrix" class="md-nav__link">
+    Role-Based Access Control Matrix
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -572,6 +605,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access-control-matrix" class="md-nav__link">
+    Role-Based Access Control Matrix
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -593,6 +643,92 @@
                 <h1 id="overview">Overview</h1>
 <p><img alt="security-img" src="../static/images/icons_human_security.png" /></p>
 <p>The <em>human security</em> knowledge area focuses on protecting individuals’ data and privacy in the context of organizations (i.e., as employees) and their personal lives, in addition to the study of human behavior as it relates to cybersecurity.</p>
+<h2 id="role-based-access-control-matrix">Role-Based Access Control Matrix</h2>
+<p>Role-Based Access Control (RBAC) matrices, as a security architecture concept, area way of representing access control strategies visually. They help the practitioner ensure that the access control strategy aligns with the specific access control objectives. Matrices also help show when access controls may conflict with job roles and responsibilities.</p>
+<p>When designing an RBAC matrix there are few questions to think about and objectives to achieve.</p>
+<ul>
+<li>Ensure individuals have access to necessary information for their job role</li>
+<li>Maintain the Fundamental Security Design Principle of least privilege</li>
+<li>Who should not have permission?</li>
+</ul>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Users</th>
+<th>Job Role</th>
+<th>Job Duties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alice</td>
+<td>Human Resources</td>
+<td>Access and modify personnel records</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>IT Help Desk</td>
+<td>Reset Passwords<br>Unlock accounts</td>
+</tr>
+<tr>
+<td>Craig</td>
+<td>CEO</td>
+<td>Makes business plans, policy, and strategy</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Auditor</td>
+<td>Review files, logs, and security practices</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>User</th>
+<th align="center">Customer Information</th>
+<th align="center">Employee Information</th>
+<th align="center">Backups</th>
+<th align="center">User Accounts</th>
+<th align="center">Intranet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alice</td>
+<td align="center">None</td>
+<td align="center">View Modify Delete</td>
+<td align="center">None</td>
+<td align="center">None</td>
+<td align="center">View</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td align="center">None</td>
+<td align="center">None</td>
+<td align="center">Create</td>
+<td align="center">View Modify</td>
+<td align="center">View</td>
+</tr>
+<tr>
+<td>Craig</td>
+<td align="center">View</td>
+<td align="center">None</td>
+<td align="center">None</td>
+<td align="center">None</td>
+<td align="center">Modify View</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td align="center">None</td>
+<td align="center">None</td>
+<td align="center">View</td>
+<td align="center">View</td>
+<td align="center">View</td>
+</tr>
+</tbody>
+</table>
                 
               
               
