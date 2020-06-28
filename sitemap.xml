@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/component/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/connection/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/data/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/human/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/organizational/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/societal/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/software/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/system/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://rowland007.github.io/Cyber-Playbook/glossary/</loc>
-     <lastmod>2020-06-27</lastmod>
+     <lastmod>2020-06-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://rowland007.github.io/Cyber-Playbook/resources/</loc>
+     <lastmod>2020-06-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
