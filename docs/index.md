@@ -9,6 +9,9 @@ Several crosscutting concepts are connected across knowledge areas and fundament
 - Confidentiality: Rules that limit access to system data and information to authorized persons
 - Integrity: Assurance that data and information are accurate and trustworthy
 - Availability: Ensuring that data, information, and system are accessible
+
+![cia-triad](static/images/cia-triad.jpg)
+
 - Risk: Potential for gain or loss
 - Adversarial Thinking: A thinking process that considers the potential actions of the opposing force working against the desired result
 - Systems Thinking: A thinking process that considers the interplay between social and technical constraints to enable assured operational and logistical processes
