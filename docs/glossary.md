@@ -73,12 +73,17 @@
 ## I
 
 - **Insider Problem** - The threat that an insider will use their authorized access, wittingly or unwittingly, to do harm to the security of the United States. This threat can include damage to the United States through espionage, terrorism, unauthorized disclosure, or through the loss or degradation of departmental resources or capabilities (CNSS, 2003).
+- **IP Security (IPsec)** - A security protocol from the IETF that provides authentication and encryption over the internet. Unlike SSL, which provides services at layer 4 and secures two applications, this works at layer 3 and secures everything in the network. Also unlike SSL, which is typically built into the web browser, this requires a client installation. It can access both web and non-web applications, whereas SSL requires workarounds for non-web access such as file sharing and backup (PC Magazine, 2018).
+- **IPv4 Addressing (Internet Protocol Version 4)** - The previous version of the IP protocol, which was introduced in 1981 and continues to be used alongside the subsequent Version 6 (PC Magazine, 2018).
+- **IPv6 Addressing (Internet Protocol Version 6)** - The latest generation of the IP protocol. The specification was completed in 1997 by the Internet Engineering Task Force (IETF) and first deployed in 2004 when the Internet Corporation for Assigned Names and Numbers (ICANN) added IPv6 records to its DNS root servers for Japan and Korea. IPv6 is backward compatible with IPv4 and was designed to fix its shortcomings, such as data security and maximum number of user addresses (PC Magazine, 2018).
 
 ## J
 
 ## K
 
 ## L
+
+- **Layer 3 Security Issues** - In networking, the communications protocol that contains the logical address of a client or server station. It is called the "network layer" and contains the address (IP, IPX, etc.) inspected by a router that forwards it through the network. It contains a type field so that traffic can be prioritized and forwarded based on message type as well as network destination. Since this provides more filtering capabilities, it also adds more overhead than layer 2 processing (PC Magazine, 2018).
 
 ## M
 
@@ -90,20 +95,78 @@
 
 ## N
 
+- **Netstat (Network Statistics)** - A command-line utility that reports the status of TCP/IP and Ethernet connections. It comes with all major operating systems, but the Linux/Unix versions provide the most command options. GUI-based versions for Windows, such as NetStat Live and X-NetStat, are also available.
+- **Network Application**
+    - **Hypertext Transfer Protocol (HTTP)** - The communications protocol used to connect to web servers on the internet or on a local network (intranet). Its primary function is to establish a connection with the server and send HTML pages back to the user's browser. It is also used to download files from the server either to the browser or to any other requesting application that uses HTTP (PC Magazine, 2018).
+    - **Secure Shell (SSH)** - A security protocol for logging into a remote server. It provides an encrypted session for transferring files and executing server programs. Also serving as a secure client/server connection for applications such as database access and email, it supports a variety of authentication methods.
+    It was developed in the mid-1990s by Helsinki University researcher Tatu Ylönen as a secure alternative to non-secure telnet, rlogin, and rsh programs for Unix servers. SSH2, a more advanced version introduced in 1998, was standardized by the IETF and is not compatible with SSH1 (PC Magazine, 2018).
+    - **Simple Mail Transfer Protocol (SMTP)** - The standard email protocol on the internet and part of the TCP/IP protocol suite, as defined by IETF RFC 2821. It defines the message format and the message transfer agent (MTA), which stores and forwards the mail. It was originally designed for only plain text (ASCII text), but MIME and other encoding methods enable executable programs and multimedia files to be attached to and transported with the email message (PC Magazine, 2018).
+    - **Voice Over IP (VoIP)** - A digital telephone service that uses the internet for transport, as well as private IP networks. IP stands for "internet protocol." In order for calls to originate and terminate from regular telephones, connections to the public telephone network (PSTN) are also provided. Telephone companies, cable companies, and dedicated providers offer this type of calling for a fixed monthly fee or low per-minute charge. Customers must have existing internet access (PC Magazine, 2018).
+- **Network Architectures**
+    - **Demilitarized Zone (DMZ)** - A middle ground between an organization's trusted internal network and an untrusted, external network such as the internet. Also called a "perimeter network," it is a subnetwork (subnet) that may sit between firewalls or off one leg of a firewall. Organizations typically place their web, mail, and authentication servers in it. It is a military term that refers to the area between two enemies (PC Magazine, 2018).
+    - **Local Area Network (LAN)** - A communications network that is typically confined to a building or premises. The "clients" are user workstations running the Windows, Mac, or Linux operating systems, while the "servers" hold programs and data shared by the clients. Servers come in a wide range of sizes, from PC-based servers to mainframes (PC Magazine, 2018).
+    - **Network Address Translation (NAT)** - The technology that maintains the privacy of the addresses of the computers in a home or business network when accessing the internet. It converts the private addresses that are assigned to the internal computers to one or more public addresses that are visible on the internet. It is an IETF standard that is implemented in a router or firewall as well as in any user's machine that is configured to share its internet connection. 
+    It assigns a number to the packet headers of the messages going out to the internet and keeps track of them via an internal table that it creates. When responses come back from the internet, it uses the table to perform the reverse conversion to the private IP address of the requesting client machine (PC Magazine, 2018).
+    - **Personal Area Network (PAN)** - Transmitting data wireless over a short distance. Bluetooth and Wi-Fi Direct are examples of this (PC Magazine, 2018).
+    - **Protected Enclaves** - Subdivision of the internal network so that it is not one large zone with no internal protections. This architectural approach to information security defense in depth can be accomplished in a number of ways, including network admissions control, firewalls, VLANs, and VPN (Northcutt, n.d.).
+    - **Subnetwork (Subnet)** - A logical division of a local area network, which is created to improve performance and provide security. To enhance performance, it limits the number of nodes that compete for available bandwidth. Instead of one network handling all the traffic, the network is divided into groups of clients and servers that interact with each other most of the time. For security, the divisions can be based on servers that have restricted applications. Routers are bridges used to traverse network segments. In an IP network, the subnet is identified by a subnet mask (PC Magazine, 2018).
+    - **Supernetting** - Combining several IP network addresses into one IP address. It reduces the number of entries in a routing table and is done in CIDR addressing as well as in internal networks. 
+    In the following example, a group of networks with contiguous numbers starting with 172.16.8.0 and ending with 172.16.16.0 are supernetted into the subnet mask of 255.255.224.0. The subnet mask is derived by comparing the binary of the first and last addresses. The last bit location on the right that is the same in both addresses marks the end of the mask. The CIDR notation for this is /19, because there are 19 1 bits in the subnet mask. For example, the IP address 172.16.8.1 would be 172.16.8.1/19 (PC Magazine, 2018).
+    - **VLAN** - A logical subgroup within a local area network that is created via software rather than by manually moving cables in the wiring closet. It combines user stations and network devices into a single unit regardless of the physical LAN segment they are attached to and allows traffic to flow more efficiently within populations of mutual interest. 
+    These are implemented in port-switching hubs and LAN switches and generally offer proprietary solutions. They reduce the time it takes to implement moves, adds, and changes. 
+    VLANs function at layer 2. Since their purpose is to isolate traffic within the VLAN, in order to bridge from one VLAN to another, a router is required. The router works at the higher layer 3 network protocol, which requires that network layer segments are identified and coordinated with the VLANs. This is a complicated job, and VLANs tend to break down as networks expand and more routers are encountered. The industry is working toward "virtual routing" solutions, which allow the network manager to view the entire network as a single routed entity (PC Magazine, 2018).
+    - **Wide Area Network (WAN)** - A long-distance communications network that covers a wide geographic area, such as a state or country. The telephone companies and cellular carriers deploy these to service large regional areas or the entire nation. Large enterprises have their own private WANs to link remote offices, or they use the internet for connectivity. Of course, the internet is the world's largest WAN (PC Magazine, 2018).
 - **Network Attack Surface**
     - This presents exposure related to ports, protocols, channels, devices (from routers and firewalls to laptops and smartphones), services, network applications (SaaS) and even firmware interfaces;
     - Depending on your infrastructure, you may need to include cloud servers, data, systems and processes in this (Brocklehurst, 2014).
+- **Network Mapper (Nmap)** - A free, open-source security scanner for auditing networks that runs on most platforms and is written by Fyodor (a person). When aimed at a particular host, it can determine which ports are open, which operating system and version is running, what services are offered, and what firewalls are used (PC Magazine, 2018).
+- **Network Media**
+    - **Optical** - Communications between computers, telephones, and other electronic devices using light. This type of network is far more reliable and has far greater potential transmission capacity than networking in the electrical domain (PC Magazine, 2018).
+    - **Wired** - Connected via cable (PC Magazine, 2018)
+    - **Wireless** - Transmission through the air. Although all forms of radio transmission over the air (AM, FM, TV, cordless phones, cell phones, etc.) are naturally wireless, there is a tendency for the term to refer only to Wi-Fi or to cellular data services (PC Magazine, 2018).
+- **Network Naming**
+    - **Border Gateway Protocol (BGP)** - The routing protocol that is used to span autonomous systems on the internet. It is a robust, sophisticated, and scalable protocol that was developed by the Internet Engineering Task Force (IETF). BGP4 supports the CIDR addressing scheme, which increased the number of available IP addresses on the internet. A path vector protocol, it was designed to supersede EGP, the original exterior gateway protocol (PC Magazine, 2018).
+    - **Classless Interdomain Routing (CIDR)** - An expansion of the IP addressing system that allows for a more efficient and appropriate allocation of addresses. The original class-based method used fixed fields for network IDs, which was wasteful. For example, Class A and B networks can address 16 million and 65 thousand hosts respectively, and most organizations given those addresses never had intentions of putting that many computers on the internet (PC Magazine, 2018).
+    - **Domain Name System (DNS)** - The internet's system for converting alphabetic names into numeric IP addresses. For example, when a web address (URL) is typed into a browser, these servers return the IP address of the web server associated with that name. In this made-up example, it converts the URL “www.company.com” into the IP address 204.0.8.51. Without this, you would have to type the series of four numbers and dots into your browser to retrieve the website, which you actually can do (PC Magazine, 2018).
+    - **Dynamic Host Configuration Protocol (DHCP)** - The automatic assigning of IP addresses to client machines logging into an IP network. The same address, although technically temporary, may remain with a machine indefinitely unless a conflict arises with other devices on the network. The software, which resides in the router or a server, eliminates the need to manually assign permanent "static" IP addresses to devices. In a home network, it is typically in the wireless router (PC Magazine, 2018).
+    - **Dynamic IP** - A temporary numeric identification assigned to a node in a TCP/IP network. When computers and devices in the network are turned on for the first time, they are assigned an IP address by a DHCP server (PC Magazine, 2018).
+    - **Firewall** - The primary method for keeping a computer secure from intruders. It allows or blocks traffic into and out of a private network or the user's computer. These are widely used to give users secure access to the internet as well as to separate a company's public web server from its internal network. They are also used to keep internal network segments secure; for example, the accounting network might be vulnerable to snooping from within the enterprise (PC Magazine, 2018).
+    - **Gateway** - A device that converts one protocol or format to another. A network gateway converts packets from one protocol to another. An application gateway converts commands and/or data from one format to another. An email gateway converts messages from one mail format to another (PC Magazine, 2018).
+    - **Hosts** - A source of information or signals. The term can refer to a computer, smartphone, tablet, or any electronic device. In a network, clients (users' machines) and servers are hosts because they are both sources of information in contrast to network devices, such as routers and switches, which only direct traffic (PC Magazine, 2018).
+    - **NetBIOS** - The original networking protocol for DOS and Windows PCs. These packets did not contain a network address and were not easily routable between networks. As a result, the interface to NetBIOS and the transport part of NetBIOS were later separated so that NetBIOS applications could use routable protocols such as TCP/IP and SPX/IPX (PC Magazine, 2018).
+    - **NetFlow** - A network protocol developed by Cisco for the collection and monitoring of network traffic flow data generated by NetFlow-enabled routers and switches (Rouse, 2014)
+    - **Open Systems Interconnection Model (OSI Model)** - This International Organization of Standardization model serves as a standard template for describing a network protocol stack (PC Magazine, 2018).
+    - **Port Address Translation (PAT) Protocol** - The most common way network address translation is implemented. Also called "NAT overloading," "network address port translation" (NAPT) and "NAT/PAT." It assigns a different TCP port number to each client session with a server on the internet. When responses come back from that server, the source port number becomes the destination port number and determines which user to route the packets to. It also validates that the incoming packets were indeed requested (PC Magazine, 2018).
+    - **Port Forwarding** - Also called "port mapping," this is directing traffic from the outside world to the appropriate server inside a local TCP/IP network. Internet services are identified by a standard port number; for example, web traffic uses port number 80. If the local network hosts a web server that is accessible on the public internet, the port forwarding panel in the router would be configured to direct web/HTTP packets (port 80 traffic) to the IP address of the web server in the local network (LAN) (PC Magazine, 2018).
+    - **Routing** - Forwarding data to its destination (PC Magazine, 2018)
+    - **Static IP** - A permanent numeric identification assigned by the network administrator to a node in a TCP/IP network. These addresses are used for shared resources such as web servers, PBXs, and webcams (PC Magazine, 2018).
+    - **Switching** - A mechanical or electronic device that directs the flow of electrical or optical signals from one side to the other. Those with more than two ports, such as a LAN switch or PBX, are able to route traffic (PC Magazine, 2018).
+    - **Virtual Private Network (VPN)** - A private network configured within a public network such as the internet or a carrier's network. Years ago, this obsoleted private lines between company branches. Using data encryption to maintain privacy, they also allow mobile users access to the company LAN. In the past, common carriers used their vast networks to "tunnel" traffic between customer locations to give the appearance of a private network while sharing backbone trunks, no different than the way the internet works. Prior to the internet's IP protocol, these were built over X.25, Switched 56, frame relay, and ATM technologies (PC Magazine, 2018).
+- **Network Protocols**
+    - **Internet Control Message Protocol (ICMP)** - A TCP/IP protocol used to send error and control messages. For example, a router uses this to notify the sender that its destination node is not available. A ping utility sends ICMP echo requests to verify the existence of an IP address (PC Magazine, 2018).
+    - **Internet Protocol (IP)** - The communications technology used worldwide in local networks, wide area networks, and the internet. It is the network layer in the TCP/IP protocol suite, which is used to route packets from one network to another (PC Magazine, 2018).
+    - **Transmission Control Protocol (TCP)** - The reliable transport protocol within the TCP/IP protocol suite. It ensures that all data arrive accurately and 100% intact at the other end. It is "connection oriented" and requires a handshake before the session can begin (PC Magazine, 2018).
+    - **User Datagram Protocol (UDP)** - A TCP/IP protocol that is widely used for streaming of audio and video, voice over IP (VoIP), and videoconferencing. It is considered an unreliable delivery protocol because it does not check for errors. When transmitting voice and video, there is no time to retransmit erroneous or dropped packets. In contrast, when financial and other data are transmitted, TCP is used, which does check for errors (PC Magazine, 2018).
+- **Network Services**
+    - **Network Time Protocol (NTP)** - A TCP/IP protocol used to synchronize the real-time clocks in computers, network devices, and other electronic equipment that is time-sensitive. It is also used to maintain the correct time in NTP-based wall and desk clocks (PC Magazine, 2018).
+- **Network Switching (Ethernet)**
+    - **Address Resolution Protocol (ARP)** - A TCP/IP protocol used to obtain a node's physical address. A client station broadcasts this request onto the network with the IP address of the target node it wishes to communicate with, and the node with that address responds by sending back its physical address so that packets can be transmitted. This returns the layer 2 address for a layer 3 address (PC Magazine, 2018).
+    - **Layer 2 Security Issues** - In networking, the communications protocol that contains the physical address of a client or server station. It is called the "data link layer" or "MAC layer" and contains the address inspected by a bridge or switch. Layer 2 processing is faster than layer 3 processing because less analysis of the packet is required (PC Magazine, 2018).
+    - **Reverse ARP (RARP)** - A TCP/IP protocol used by a diskless workstation to obtain its IP address. Upon startup, the client station sends out this request in an Ethernet frame to the RARP server, which returns the layer 3 address for a layer 2 address (performing the opposite function of an ARP) (PC Magazine, 2018).
 
 ## O
 
 ## P
 
+- **Packet Internet Groper (Ping)** - An internet utility used to determine whether a particular IP address is reachable online by sending out a packet and waiting for a response. It is used to test and debug a network as well as see if a user or server is online (PC Magazine, 2018).
 - **PCI DSS** - A document library that includes framework of specifications, tools, measurements and support resources to help organizations ensure the safe handling of cardholder information (PCISSC, 2018).
 - **Phishing Attacks** - This is a scam to steal valuable information such as credit card and social security numbers, user IDs and passwords. Also known as "brand spoofing," this process involves an official-looking email being sent to potential victims and pretending to be from their bank or retail establishment. Emails can be sent to people on selected lists or any list, expecting some percentage of recipients will actually have an account with the organization (PC Magazine, 2018).
 
 ## Q
 
 ## R
+
+- **Routing Table** - A database in a router that contains the current network topology (PC Magazine, 2018).
 
 ## S
 
@@ -124,6 +187,7 @@
 
 ## T
 
+- **T1 Line** - A 1.544-Mbps point-to-point, dedicated, digital circuit provided by the telephone companies. With the monthly cost typically based on distance, these are widely used for connecting an organization's PBX to the telephone company or a local network (LAN) to an internet provider (ISP). They are also used for internet access in buildings that have no DSL, cable, or fixed wireless coverage (PC Magazine, 2018).
 - **Threat Actor** - An individual or entity that poses a threat to the security of an organization. Also called a "malicious actor" (PC Magazine, 2018).
 - **Threat Information Sources (e.g., CERT)** - Analytical insights into trends, technologies, or tactics of an adversarial nature affecting information systems security (CNSS, 2003).
 - **Trojan Horse** - The term comes from Greek mythology, in which the Greeks battled the Trojans (people of Troy). After years of being unable to break into the fortified city, the Greeks built this, filled it with soldiers and pretended to sail away. After the Trojans brought this into the city, the Greek soldiers crept out at night and opened the gates of Troy to the returning soldiers, and Troy was destroyed (PC Magazine, 2018).
@@ -150,7 +214,7 @@
 
 ## References
 
-Bishop, M. (2003). Computer security: Art and science (1st ed.). Boston, MA: Addison-Wesley Professional.
+Bishop, M. (2003). Computer security: Art and Science (1st ed.). Boston, MA: Addison-Wesley Professional.
 
 Brocklehurst, K., (2014). Understanding what constitutes your attack surface. Retrieved from https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/
 
@@ -168,9 +232,13 @@ Kim, D., & Solomon, M. G. (2013). Fundamentals of information systems security (
 
 NIST. (2013). Security and privacy controls for federal information systems and organizations. Retrieved from http://dx.doi.org/10.6028/NIST.SP.800-53r4
 
+Northcutt, S. (n.d.). Security laboratory: Defense in depth series. SANS Technology Institute. Retrieved from https://www.sans.edu/cyber-research/security-laboratory/article/372
+
 PCISSC. (2018). Document library. Retrieved from https://www.pcisecuritystandards.org/document_library
 
 PC Magazine. (2018). Encyclopedia. Retrieved from https://www.pcmag.com/encyclopedia
+
+Rouse, M. (2014). NetFlow. WhatIs.com. Retrieved from https://whatis.techtarget.com/definition/NetFlow-Cisco
 
 Saini, V. K., Duan, Q., & Paruchuri, V. (2008). Threat modeling using attack trees. Journal of Computing Sciences in Colleges, 23(4), 124-131.
 
