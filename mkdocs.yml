@@ -31,6 +31,7 @@ nav:
     - System Security:
         'Overview': 'system/index.md'
     - Glossary: 'glossary.md'
+    - Appendix 1 - Resources: 'resources.md'
 
 # Configuration
 theme:
