@@ -18,6 +18,8 @@ nav:
         'Overview': 'component/index.md'
     - Connection Security:
         'Overview': 'connection/index.md'
+        'IPv4 Subnets': 'connection/ip4-subnets.md'
+        'IPv6 References': 'connection/ip6-references.md'
     - Data  Security:
         'Overview': 'data/index.md'
     - Human Security:
