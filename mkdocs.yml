@@ -20,6 +20,7 @@ nav:
         'Overview': 'connection/index.md'
         'IPv4 Subnets': 'connection/ip4-subnets.md'
         'IPv6 References': 'connection/ip6-references.md'
+        'Cisco IOS Commands': 'connection/cisco-commands.md'
     - Data  Security:
         'Overview': 'data/index.md'
     - Human Security:
