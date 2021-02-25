@@ -9,7 +9,7 @@ repo_name: 'Randy Rowland'
 repo_url: 'https://github.com/rowland007/'
 
 # Copyright
-copyright: 'Copyright &copy; 2020 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright: 'Copyright &copy; 2021 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
@@ -27,6 +27,7 @@ nav:
         'Overview': 'human/index.md'
     - Organizational Security:
         'Overview': 'organizational/index.md'
+        'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
     - Societal Security:
         'Overview': 'societal/index.md'
     - Software Security:
