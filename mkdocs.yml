@@ -36,7 +36,12 @@ nav:
     - System Security:
         'Overview': 'system/index.md'
         'Protecting CUI': 'system/nist-800-18.md'
-    - Glossary: 'glossary.md'
+    - Glossary: 
+        'Cybersecurity Terms': 'glossary.md'
+        'Basic Cryptography': 'cryptography.md'
+        'Basic Scripting and Programming': 'programming.md'
+        'Policy and Compliance': 'compliance.md'
+        'Privacy': 'privacy.md'
     - Appendix 1 - Resources: 'resources.md'
 
 # Configuration
