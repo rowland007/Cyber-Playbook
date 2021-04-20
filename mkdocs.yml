@@ -35,6 +35,7 @@ nav:
         'OWASP Top 10 Proactive Controls': 'software/owasp-top-ten-pro-cntrls.md'
     - System Security:
         'Overview': 'system/index.md'
+        'CIS Controls': 'system/cis-controls.md'
         'Protecting CUI': 'system/nist-800-18.md'
     - Glossary: 
         'Cybersecurity Terms': 'glossary.md'
