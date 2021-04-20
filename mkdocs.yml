@@ -36,6 +36,7 @@ nav:
     - System Security:
         'Overview': 'system/index.md'
         'CIS Controls': 'system/cis-controls.md'
+        'PowerShell Example Scripts': 'system/ps-sample-scripts.md'
         'Protecting CUI': 'system/nist-800-18.md'
     - Glossary: 
         'Cybersecurity Terms': 'glossary.md'
