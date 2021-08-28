@@ -15,7 +15,7 @@ The taxonomy provides a resource for the categorization of risk. This resource b
 several categories including actions of people and internal and external issues. It also provides a
 framework for how to categorize the risk based on FISMA and other government regulations.
 
-- [PRE-ATT&CK: Adversarial Tactics, Techniques & Common Knowledge for Left-of-Exploit](https://attack.mitre.org/pre-attack/index.php/Main_Page)  
+- [ATT&CK: Adversarial Tactics, Techniques & Common Knowledge Navigator](https://mitre-attack.github.io/attack-navigator/)  
 This resource is used to define and describe the steps of a cyber attack. It lists the strategies and
 methods in a simple, easy-to-follow algorithm. The steps contained in the resources are not an
 exhaustive list, but the majority of incidents will be covered. The major benefit of this resource is it gives
@@ -45,3 +45,26 @@ This is a piece of legislation that provides a basis for the federal government 
 security issues. This is an essential piece of legislation that helps the government deploy needed assets
 to help with cyber incidents. It also gives the government an outline for forcing businesses into reporting
 cyber incidents.
+
+- [Regular Expressions 101-102](https://regex101.com/)
+The website has gone over many iterations, and started as a simple hobby project which has now grown to become one of the largest regex testing services in the world. You can view all the iterations over on the web archive.
+
+- [What2Log](https://what2log.com/)
+What2Log was a project that began when we saw a noticeable gap in computer security notation in regards to logs. There had not been a centralized resource of what and how to understand the logs of the major operating systems that are used everyday. What2Log was made to fill that exact gap.
+
+- [nmap Cheat Sheet](https://www.stationx.net/nmap-cheat-sheet/)
+
+- [tcpdump Cheat Sheet](https://packetlife.net/media/library/12/tcpdump.pdf)
+
+- [Wireshark CLI Cheat Sheet](https://cheatography.com/mbwalker/cheat-sheets/tshark-wireshark-command-line/)
+
+- [Zeek Logs Cheat Sheet](http://gauss.ececs.uc.edu/Courses/c6055/pdf/bro_log_vars.pdf)
+
+- [Explain Shell](https://explainshell.com/)
+This site contains 29761 parsed manpages from sections 1 and 8 found in Ubuntu's manpage repository. A lot of heuristics were used to extract the arguments of each program, and there are errors here and there, especially in manpages that have a non-standard layout. It is written in Python and uses bashlex, a bit of NLTK (to find the interesting parts of the manpage), a little d3.js (for the connecting lines graphic) and Flask. It is served with uwsgi and nginx. 
+
+- [Abuse IP DB](https://www.abuseipdb.com)
+AbuseIPDB is a project dedicated to helping combat the spread of hackers, spammers, and abusive activity on the internet.
+
+- [ThreatCrowd](https://www.threatcrowd.org)
+ThreatCrowd is a system for finding and researching artefacts relating to cyber threats. You can view a short tutorial at [http://threatcrowd.blogspot.co.uk/2015/04/investigating-threats-with-threatcrowd.html](http://threatcrowd.blogspot.co.uk/2015/04/investigating-threats-with-threatcrowd.html).
