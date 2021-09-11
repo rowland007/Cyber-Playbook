@@ -4,12 +4,15 @@
 - **Advanced Persistent Threat (APT)** - An adversary that possesses sophisticated levels of expertise and significant resources which allow it to create opportunities to achieve its objectives by using multiple attack vectors (e.g., cyber, physical, and deception) (NIST, 2013).
 - **Adversary Model (resources, capabilities, intent, motivation, risk aversion, access)** - The model that describes the type of adversary, the objective, the motivation, and the payload ramifications. The model described is extensible and the tactics are clear and concise (Invincea, 2015).
 - **Adversarial Thinking** - The ability to think like a hacker. Identifying characteristics including where, when, and how hackers might attack, and their tactics for evading detection (Hamman, Hopkinson, Markham, Chaplik, & Metzler, 2017).
+- **Agile Software Development** - An umbrella term for a variety of best practices in creating applications and information systems. These methods have proven to be more effective in dealing with changing requirements during the development phase, which always seem to occur (PC Magazine, 2019).
 - **Anomaly Detection** - An approach to intrusion detection that establishes a baseline model of behavior for users and components in a computer system or network. Deviations from the baseline cause alerts that direct the attention of human operators to the anomalies (PC Magazine, 2018).
 - **Artificial Intelligence** - Devices and applications that exhibit human intelligence and behavior, including robots, self-driving cars, medical diagnosis, and voice- and natural-language recognition. AI implies the capability to learn and adapt through experience and the ability to come up with solutions to problems without using rigid, predefined algorithms, which is the approach of non-AI software (PC Magazine, 2018).
 - **Asset** - Any software, hardware, data, administrative, physical, communications, or personnel resource within an IS (CNSS, 2003)
+- **Asynchronous Model** - A model in which the components act independently or in parallel (Robertson & Robertson, 2013).
 - **Attack Timing** - The measured and planned time that the cyber incident will be carried out. This could lead to a sequences of events that over a period of time are meant to weaken the defenses of the system by using planned timing sequences to carry out the attacks (Brocklehurst, 2014).
 - **Attack Trees** - These provide a formal, methodical way of describing the security of systems, based on varying attacks. The structure is used represent attacks against a system, with the goal as the root node and different ways of achieving that goal as leaf (Saini, V., Duan & Paruchuri, 2008).
 - **Attack Vectors** - The approach used to assault a computer system or network. A fancy way of saying "method or type of attack," the term may refer to a variety of vulnerabilities. For example, an operating system or Web browser may have a flaw that is exploited by a website. Human shortcomings are also used to engineer these. For example, a novice user may open an email attachment that contains a virus, and most everyone can be persuaded at least once in their life to reveal a password for some seemingly relevant reason (PC Magazine, 2018).
+- **Audience** - The assembled spectators or listeners at a public event, such as a play, movie, concert, or meeting (PC Magazine, 2019).
 
 ## B
 
@@ -49,10 +52,17 @@
     - **Streaming Data** - Data that is transmitted and processed in a continuous flow, such as digital audio and video (PC Magazine, 2019).
     - **Symmetric Cryptography** - An encryption method that uses the same secret key to encrypt and decrypt messages. The problem with this method is transmitting the secret key to a legitimate person who needs it (PC Magazine, 2019).
     - **Twofish** - A 128-bit block cipher by Counterpane Labs, published in 1998. It was one of the five Advanced Encryption Standard (AES) finalists, and was not selected as AES (Schneier, 2019).
+- **Benchmarking** - A performance test of hardware and/or software. There are various programs that very accurately test the raw power of a single machine, the interaction in a single client/server system (one server/multiple clients), and the transactions per second in a transaction processing system (PC Magazine, 2019).
 - **Bots**
     - A search engine program that indexes the Web;
     - A program on the Internet that performs a repetitive function such as posting a message on blogs, newsgroups and social networks, or searching for information. These reside in the background waiting to respond to certain conditions. The term is used for myriad "intelligent agents" that continuously or periodically perform some function. It is estimated that as much as 60% of Web traffic comes from these, not humans. (PC Magazine, 2018)
+- **Boundary Data Flow** - A data flow that enters or leaves the system context. The term boundary is used because it crosses the perimeter of the system (Robertson & Robertson, 2013).
+- **Brainstorming** - Group discussion to produce ideas or solve problems (PC Magazine, 2019).
 - **Brute Force (Password Guessing)** - The systematic, exhaustive testing of all possible methods that can be used to break a security system. For example, in cryptanalysis, trying all possible keys in the keyspace to decrypt a ciphertext (PC Magazine, 2018).
+- **Business Process Automation (BPA)** - The automation of a vital part of a business need (PC Magazine, 2019).
+- **Business Process Improvement (BPI)** - The effort to improve the structure or flow of a business (PC Magazine, 2019).
+- **Business Process Reengineering (BPR)** - The effort to redesign the way a business structures its work flow (PC Magazine, 2019).
+- **Business Requirement** - The characteristics of a proposed system from the viewpoint of the system's end user (PC Magazine, 2019).
 
 ## C
 
@@ -63,11 +73,20 @@
     - **Determine how often a loss is likely to occur every year (ARO)** - This is the annualized rate of occurrence, also called the risk likelihood. Some are greater than one. For example, a snowstorm in Buffalo or Berlin will happen many times per year. Others are likely to happen far less often. For example, a warehouse fire might happen once every 20 years. It is often difficult to estimate how often an incident will happen. Sometimes internal or external factors can affect that assessment. Historical data do not always predict the future. An incident such as one stemming from an internal threat is far more likely during times of employee unrest or contract negotiations than at other times.
     - **Determine annualized loss expectancy (ALE)** - This value is the SLE (the loss when an incident happens) multiplied by the ARO. It helps an organization identify the overall impact of a risk. For infrequent events, this value will be much less than the SLE. For example, if you expect an event to occur only once every 10 years, the value will be 0.10, or 10 percent. If the SLE is $1,000, this is only $100 ($1,000 × 0.10). On the other hand, if the ARO is 20, indicating that it is likely to occur 20 times every year, the value is $20,000 ($1,000 × 20). (Equation: ALE = SLE * ARO) (Kim & Solomon, 2013)
 - **Capability** - In information security, an indicator (token, semaphore, etc.) that authorizes an access mode to an object such as a file or a device for a specific user or process (PC Magazine, 2018)
+- **Capture Filtering** - Enables you to capture only traffic that you want to be captured, eliminating an unwanted stream of packets (PC Magazine, 2019).
+- **Cardinality** - The number of entities of each type participating in a relationship (Robertson & Robertson, 2013).
+- **Cascading** - A defense in depth circumstance. The concept of allowing one network control to feed into the next network control to provide a defense in depth scenario.
 - **CIA Triad** - A widely used formulation of the INFOSEC mission of the U.S. military. Also known as the "Classic Triad," the three concepts fail to include important problems intuitively seen as breaches of security, forgeries or counterfeits; mislabeling of data; and problems of data usability (PC Magazine, 2018).
+- **Compliance** - Conforming to a specification, standard, or law that has been clearly defined (Cambridge Dictionary, 2019).
+- **Composition and Security** - The devices and hardware that make up the system. This also refers to the software and the controls put in place to defend the infrastructure.
+- **Computer-Aided Software Engineering (CASE)** - Software that is used in any and all phases of developing an information system, including analysis, design, and programming. For example, data dictionaries and diagramming tools aid in the analysis and design phases, while application generators speed up the programming phase (PC Magazine, 2019).
+- **Context Diagram** - The highest-level diagram of a leveled set of data flow diagrams. It shows the system being studied as a single bubble connected to the outside world by its boundary data flows (Robertson & Robertson, 2013).
+- **Cost–Benefit Analysis** - The study that projects the costs and benefits of a new information system. Costs include people and machine resources for development, as well as running the system. Tangible benefits are derived by estimating the cost savings of both human and machine resources to run the new system versus the old one. Intangible benefits, such as improved customer service and employee relations, may ultimately provide the largest payback, but are harder to quantify (PC Magazine, 2019).
 - **Correlation Techniques** - The analysis of intrusion detection based on previous incidents that may be similar to the current incident. Can be used to identify possible ways to start to create a fix for the vulnerability.
 - **Covert Channels** - An unintended or unauthorized intra-system channel that enables two cooperating entities to transfer information in a way that violates the system's security policy but does not exceed the entities' access authorizations (CNSS, 2003)
 - **Cross Log Comparison and Analysis** - The comparison of two different log files to try and determine outliers and anomalies. Usually done with some type of software analysis tool (PC Magazine, 2018).
 - **Cross-Site Scripting (XSS)** - Causing a user's Web browser to execute a malicious script. There are several ways this is done. One approach is to hide code in a "click here" hyperlink attached to a URL that points to a non-existent Web page. When the page is not found, the script is returned with the bogus URL, and the user's browser executes it (PC Magazine, 2018).
+- **CRUD Check** - A way of verifying that every data element within the context is being created, retrieved, updated, or deleted by at least one process; a way of checking that every data element needed by every process within the context of study has been defined (Robertson & Robertson, 2013).
 - **Cyber Threats Motivations and Techniques (EXAMPLES: fraud, sabotage, vandalism, theft)**
     - **Fraud** - a deliberate action taken to benefit oneself or a collaborator at the expense of the organization;
     - **Sabotage** - a deliberate action taken to cause a failure in an organizational asset or process, generally carried out against targeted key assets by someone possessing or with access to inside knowledge;
@@ -80,25 +99,49 @@
 - **Data-at-rest** - Inactive data stored in any form (for example, on hard drives or in offsite cloud backup). Data at rest is in a stable state, not currently being transmitted across a network or actively being read or being used by any application (Saltzer & Schroeder, 1975).
 - **Data-in-motion** - Data that is currently traveling across a network or has been accessed by computer’s RAM ready to be read, updated, or processed (Saltzer & Schroeder, 1975).
 - **Data-in-use** - Data that is actively being generated, updated, viewed or erased. It also includes data being viewed by users accessing it through various endpoints. (Saltzer & Schroeder, 1975).
+- **Data Dictionary** - The collection of definitions of every piece of data used within a context of study; the part of the analysis model that provides definitions of the data flows, data elements, stores, entities, and relationships (Robertson & Robertson, 2013).
+- **Data Flow**
+    1. In computers, the path of data from source document to data entry to processing to final reports. Data changes format and sequence (within a file) as it moves from program to program.
+    2. In communications, the path taken by a message from origination to destination that includes all nodes through which the data travels (PC Magazine, 2019).
 - **Data Logging** - The continuous recording of data. The term may refer to the automatic collection of data from sensors in the field, or in a factory or scientific environment. It may also refer to gathering traffic statistics in a network or events in the computer (PC Magazine, 2018).
+- **Data Model** - A formal way of representing the data that is used and created by a business system (PC Magazine, 2019).
+- **Data Store** - A collection of information that is stored in some way (PC Magazine, 2019).
+- **Decision Trees** - A graphical representation of all alternatives in a decision-making process (PC Magazine, 2019).
 - **Deep Packet Inspection** - Analyzing network traffic to discover the type of application that sent the data. In order to prioritize traffic or filter out unwanted data, deep packet inspection can differentiate data such as video, audio, chat, voice over IP (VoIP), email, and web. As it inspects the packets all the way up to layer seven, deep packet inspection can be used to analyze anything and everything within the packet that is not encrypted. For example, it can determine not only that the packets contain the contents of a webpage, but also which website the page is from (PC Magazine, 2018).
 - **Defense in Depth** - Using multiple systems to resist attackers. For example, if an external firewall is breached, an internal intrusion detection system can sound an alarm. If systems are breached and data can be stolen, keeping all vital records encrypted on disk and encrypted during transmission prevents attackers from using the data, even if they get it (PC Magazine, 2018).
+- **Deliverable** - The measurable result or output of a process (PC Magazine, 2019).
 - **Demilitarized Zone (DMZ)** - A middle ground between an organization’s trusted internal network and an untrusted, external network such as the internet. Also called a perimeter network, the DMZ is a subnetwork (subnet) that may sit between firewalls or off one leg of a firewall. Organizations typically place their web, mail, and authentication servers in it. It is a military term that refers to the area between two enemies (PC Magazine, 2018).
 - **Denial-of-Service Attacks** - An assault on a network that floods it with so many requests that regular traffic is either slowed or completely interrupted. Unlike a virus or worm, which can cause severe damage to databases, this interrupts network service for some period (PC Magazine, 2018).
+- **Dependencies** - Part of a system or component of a system that relies on another component or control to be able to do its job properly.
 - **Device Reconfiguration** - The changing of hardware on the fly to protect against a compromised device. Restoring the device to the system defaults or changing the protection scheme to secure the device from an attack in real time.
+- **Display Filtering** - Enables you to capture and view only traffic that you want to be captured, hiding an unwanted packet (PC Magazine, 2019).
 - **Distributed Intrusion Detection** - The implementation of network protection across multiple computers or devices. The formation allows for systems to not fall prey if a single machine is compromised. Normally a system has measure to regain control of a compromised system.
 
 ## E
 
-- **Exposure** - The degree to which information can be accessed using authorized or unauthorized methods (PC Magazine, 2018).
+- **Emergent Properties** - New classifications of hardware and software as they are used in the industry. The evolution of hardware to bring new controls into the environment.
+- **Enterprise Architectures** - An umbrella term for the management systems, information systems, and computer systems within an organization.
+- **Entity** - A rational collection of data elements that describes something from the real world of importance to the business. Must have a unique and definable role in the business and must have at least one attribute to describe it (Robertson & Robertson, 2013).
+- **Entity Relationship Diagram (ERD)** - A picture that shows the information that is created, stored, and used by a business system. The entity is the basic building block for a data model. It is a person, place, event, or thing about which data is collected (PC Magazine, 2019).
+- **Essential Viewpoint** - An abstract view of the system, showing only the requirements specific to the subject matter within the context of study, and excluding anything that exists because of how the system is designed and implemented (Robertson & Robertson, 2013).
 - **Establishing Profiles** - Creating patterns and signatures of attack vectors for the purpose of identifying threats.
+- **Event** - An action initiated by the user or the computer. For example, a user event would be any mouse movement or keystroke. An internal event detected by software could have myriad causes, from unexpected data in the input to a security camera sensing motion (PC Magazine, 2019).
+- **Event-Driven** - Responding to input from the user (mouse movement, keystrokes, menu choices, etc.) or from messages from other applications. This is in contrast to a batch operation that continuously processes the next item from a group (PC Magazine, 2019).
+- **Event List** - A practical tool for inventorying all the events to which the system responds. It contains the event name, along with its associated input and output, for every event that is the concern of a context of study (Robertson & Robertson, 2013).
+- **Exposure** - The degree to which information can be accessed using authorized or unauthorized methods (PC Magazine, 2018).
+- **External Trigger** - An event that happens outside of the system that begins a process within the system.
 
 ## F
 
+- **Feasibility Study** - The analysis of a problem to determine if it can be solved effectively. The operational (will it work?), economical (costs and benefits), and technical (can it be built?) aspects are part of the study. Results of the study determine whether the solution should be implemented (PC Magazine, 2019).
+- **Feature Creep** - The continual adding of new functions to an information system project while it is in the process of being programmed (PC Magazine, 2019).
 - **Files Systems** - The software that people use to copy, move, rename, and delete files is known as a file manager, not a file system. The software and method for storing and retrieving files on a disk, SSD, or USB drive. The file system takes commands from the operating system to read and write the disk clusters (groups of sectors). It manages the folder/directory structure and provides an index to the files. It also defines the syntax used to access them (i.e., how the “path” to the file is coded). File systems dictate how files are named, the maximum size of a file, and the volume of storage (PC Magazine, 2018).
 - **Filtering** - To select data, filters use patterns (masks) against which all data are compared. Only matching data are “passed through,” hence the concept of a filter. For example, email clients and servers can look for messages with text patterns that are recognized as spam and then delete them. An email client can be set up to filter messages and store them in separate mailboxes as a way of organizing the mail, or it can be set to alert the user when a certain type of message arrives (PC Magazine, 2018).
 - **Filtering Algorithms** - A process that allows traffic through based on some set of rules. The rules are enforced to keep unauthorized information from passing through the network defense.
 - **Firewall** - The primary method for keeping a computer secure from intruders. A firewall allows or blocks traffic into and out of a private network or the user’s computer. Firewalls are widely used to give users secure access to the internet and to separate a company’s public web server from its internal network. They are also used to keep internal network segments secure; for example, the accounting network might be vulnerable to snooping from within the enterprise (PC Magazine, 2018).
+- **Foreign Key** - One or more attributes that are included in one entity for the purpose of identifying another (Robertson & Robertson, 2013).
+- **Formal Speech** - A presentation given without visual aids.
+- **Functional Requirement** - The blueprint for the design of a system that performs a specific action (PC Magazine, 2019).
 - **Fundamental Design Principles**
     - **Separation (of Domains)** - The division of power within a system. No one part of a system should have complete control over another part. There should always be a system of checks and balances that leverage the ability for parts of the system to work together (Tjaden, 2015).
     - **Isolation** - Individual processes or tasks running in their own space. This ensures that the processes will have enough resources to run and will not interfere with other processes running (Tjaden, 2015).
@@ -140,8 +183,11 @@ The theory that unless a subject is given explicit access to an object, it shoul
 
 ## G
 
+- **Governance** - The action or manner of governing (Cambridge Dictionary, 2019).
+
 ## H
 
+- **Head-Sized Piece** - The portion of a system that fits comfortably inside an analyst’s head and is thus readily understood; it is a functional primitive and is described by a mini specification (Robertson & Robertson, 2013).
 - **Hierarchical IDSs** - Defense-in-depth methodology that puts layers of intrusion detection in place. Each level elevates the strength of the response to the next level if needed.
 - **Honeynets** - A honeynet is a network containing honeypots. A virtual honeynet is one that resides in a single server, but pretends to be a full network (PC Magazine, 2018).
 - **Honeypot** - A server that is configured to detect an intruder by mirroring a real production system. A honeypot appears as an ordinary server doing work, but all the data and transactions are phony. Located either in or outside the firewall, the honeypot is used to learn about an intruder’s techniques as well as determine vulnerabilities in the real system (PC Magazine, 2018).
@@ -150,20 +196,35 @@ The theory that unless a subject is given explicit access to an object, it shoul
 
 ## I
 
+- **Importance Level** - A classification mechanism that determines the priority of a given trigger within a system.
+- **Informal Benchmarking** -A performance test of hardware and/or software. There are various programs that very accurately test the raw power of a single machine, the interaction in a single client/server system (one server/multiple clients), and the transactions per second in a transaction processing system. However, it is next to impossible to benchmark the performance of an entire enterprise network with a great degree of accuracy (PC Magazine, 2019).
+- **Informal Speech** - A presentation given in a relaxed tone, not in business attire.
+- **Infrastructure**
+    1. The fundamental structure of a system or organization. The basic, fundamental architecture of any system (electronic, mechanical, social, political, etc.) determines how it functions and how flexible it is to meet future requirements.
+    2. May refer to system and development programs in contrast to applications. A computer system's infrastructure would include the operating system, database management system (DBMS), communications protocols, compilers, and other development tools (PC Magazine, 2019).
+- **Input**
+    1. Data that is ready for entry into the computer.
+    2. To enter data into the computer (PC Magazine, 2019).
 - **Insider Problem** - The threat that an insider will use their authorized access, wittingly or unwittingly, to do harm to the security of the United States. This threat can include damage to the United States through espionage, terrorism, unauthorized disclosure, or through the loss or degradation of departmental resources or capabilities (CNSS, 2003).
+- **Interface** - The connection between two components of a system (Robertson & Robertson, 2013).
 - **Intrusion Detection Systems** - Software that detects an attack on a network or computer system. A network IDS (NIDS) is designed to support multiple hosts, whereas a host IDS (HIDS) is set up to detect illegal actions within the host. Most IDS programs typically use signatures of known hacker attempts to signal an alert. Others look for deviations of the normal routine as indications of an attack. Intrusion detection is very tricky. Too much analysis can add excessive overhead and also trigger false alarms. Insufficient analysis can overlook a valid attack (PC Magazine, 2018).
 - **Intrusion Prevention Systems** - Software that prevents an attack on a network or computer system. It is a significant step beyond an intrusion detection system (IDS). Whereas an IDS passively monitors traffic by sniffing packets at a switch port, an IPS resides inline like a firewall, intercepting and forwarding packets. It is thus capable of blocking the attack in real time (PC Magazine, 2018).
 - **IP Security (IPsec)** - A security protocol from the IETF that provides authentication and encryption over the internet. Unlike SSL, which provides services at layer 4 and secures two applications, this works at layer 3 and secures everything in the network. Also unlike SSL, which is typically built into the web browser, this requires a client installation. It can access both web and non-web applications, whereas SSL requires workarounds for non-web access such as file sharing and backup (PC Magazine, 2018).
 - **IPv4 Addressing (Internet Protocol Version 4)** - The previous version of the IP protocol, which was introduced in 1981 and continues to be used alongside the subsequent Version 6 (PC Magazine, 2018).
 - **IPv6 Addressing (Internet Protocol Version 6)** - The latest generation of the IP protocol. The specification was completed in 1997 by the Internet Engineering Task Force (IETF) and first deployed in 2004 when the Internet Corporation for Assigned Names and Numbers (ICANN) added IPv6 records to its DNS root servers for Japan and Korea. IPv6 is backward compatible with IPv4 and was designed to fix its shortcomings, such as data security and maximum number of user addresses (PC Magazine, 2018).
+- **Iteration** - One repetition of a sequence of instructions or events. For example, in a program loop, one iteration is once through the instructions in the loop (PC Magazine, 2019).
+- **Iterative Development** - The process of continuous rework of a project while working toward the final product (PC Magazine, 2019).
 
 ## J
+
+- **Jurisdiction** - The official power to make legal decisions and judgments (Cambridge Dictionary, 2019).
 
 ## K
 
 ## L
 
 - **Layer 3 Security Issues** - In networking, the communications protocol that contains the logical address of a client or server station. It is called the "network layer" and contains the address (IP, IPX, etc.) inspected by a router that forwards it through the network. It contains a type field so that traffic can be prioritized and forwarded based on message type as well as network destination. Since this provides more filtering capabilities, it also adds more overhead than layer 2 processing (PC Magazine, 2018).
+- **Leveling** - A technique for decomposing a system and modeling it at various levels of detail (Robertson & Robertson, 2013).
 - **Linux System Administration**
     - **Audit** - A formal examination by certified auditors of systems, programming, operations, and security to determine compliance with internal policies and procedures or with external standards. An audit is often used to satisfy legal requirements of regulatory agencies and laws (PC Magazine, 2018).
     - **Backup** - A duplicate of data or an entire storage drive on a separate storage medium (PC Magazine, 2018).
@@ -201,10 +262,15 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Malware Attacks** - Software designed to destroy data, steal information or aggravate the user (PC Magazine, 2018)
 - **Memory** - The computer’s temporary workspace, which for decades has been a collection of dynamic RAM (DRAM) chips. A major resource in the computer, memory (RAM) determines the size and number of programs that can be run at the same time, as well as the amount of data that can be processed instantly (PC Magazine, 2018).
 - **Memory Management** - A variety of methods used to store and keep track of data and programs in memory and reclaim the space when no longer needed. Virtual memory is the most common memory management function in every computer (PC Magazine, 2018).
+- **Milestones** - The special criteria that are met by completing a specified amount of work toward the final product (PC Magazine, 2019).
+- **Mini Specification** - An analysis tool, named for its manageable size, for describing the policy to be carried out by a functional primitive; it can usually be described in a page or less (Robertson & Robertson, 2013).
+- **Mis-selling** - The act of selling something that is not suitable for the person who buys it (Cambridge Dictionary, 2019).
 - **Multithreading** - A feature within a CPU that allows two or more instruction streams (threads) to execute concurrently. Each stream is a subprocess that is managed by the CPU and operating system. Today’s CPUs support a large number of threads. For example, IBM’s POWER8 CPU comes with up to 12 cores, and each core handles eight threads for a total of 96 threads. Operating systems are written to use multithreading wherever possible; however, applications can also be written to take advantage of this parallel processing. If the application is very complex, the effort can be formidable even for experienced programmers (PC Magazine, 2018).
 
 ## N
 
+- **Narrow Interface** - A connection in which only a small amount of data connects one process to another (Robertson & Robertson, 2013).
+- **Net Present Value (NPV)** - The value in the present of a sum of money, in contrast to some future value it will have when it has been invested at compound interest (PC Magazine, 2019).
 - **Netstat (Network Statistics)** - A command-line utility that reports the status of TCP/IP and Ethernet connections. It comes with all major operating systems, but the Linux/Unix versions provide the most command options. GUI-based versions for Windows, such as NetStat Live and X-NetStat, are also available.
 - **Network Access Control** - An umbrella term for managing access to a network. Network access control (NAC) authenticates users logging into the network and determines what they can see and do. Network access control may also be capable of examining the health of the user’s computer or mobile device (the endpoints), and it can be implemented with multiple software components or via an integrated package (PC Magazine, 2018).
 - **Network Address Translation (NAT)** - The technology that maintains the privacy of the addresses of the computers in a home or business network when accessing the internet. NAT converts the private addresses that are assigned to the internal computers to one or more public addresses that are visible on the internet. It is an IETF standard that is implemented in a router or firewall as well as in any user’s machine that is configured to share its internet connection. NAT assigns a number to the packet headers of the messages going out to the internet and keeps track of them via an internal table that it creates. When responses come back from the internet, NAT uses the table to perform the reverse conversion to the private IP address of the requesting client machine (PC Magazine, 2018).
@@ -269,6 +335,9 @@ The theory that unless a subject is given explicit access to an object, it shoul
     - **Layer 2 Security Issues** - In networking, the communications protocol that contains the physical address of a client or server station. It is called the "data link layer" or "MAC layer" and contains the address inspected by a bridge or switch. Layer 2 processing is faster than layer 3 processing because less analysis of the packet is required (PC Magazine, 2018).
     - **Reverse ARP (RARP)** - A TCP/IP protocol used by a diskless workstation to obtain its IP address. Upon startup, the client station sends out this request in an Ethernet frame to the RARP server, which returns the layer 3 address for a layer 2 address (performing the opposite function of an ARP) (PC Magazine, 2018).
 - **Neural Network** - An artificial intelligence (AI) modeling technique loosely based on the behavior of neurons in the human brain. Unlike regular applications that are programmed to deliver precise results (e.g., “if this, do that”), neural networks “learn” how to solve a problem and improve over time. The foundation of “machine learning” and “deep learning,” neural networks are used in robotics, diagnosing, forecasting, image processing, and pattern recognition (PC Magazine, 2018).
+- **Noise** - Extraneous, unwanted signals that invade an electrical or optical system. In electronics, noise can come from strong electrical or magnetic signals in nearby lines, from poorly fitting electrical contacts, and from power line spikes. In optics, noise comes from the stray reflections of light that emanate from the various components in the optical system (PC Magazine, 2019).
+- **Nonfunctional Requirements** - The blueprint for the design of a system that performs an action in response to some triggering event. This requirement is in reaction to a specific action from the system (PC Magazine, 2019).
+- **Normalization** - In relational database management, a process that breaks down data into record groups for efficient processing. There are six stages. By the third stage (third normal form), data are identified only by the key field in their record (PC Magazine, 2019).
 
 ## O
 
@@ -294,26 +363,49 @@ The theory that unless a subject is given explicit access to an object, it shoul
     - **Shutting Down Unnecessary/Unneeded Services** - The removal of computer processes that do not lend to the functional requirements needed to execute tasks.
     - **User Management** - Adding names and passwords to electronic directories along with the assignment of rights to data and network resourcesfiles, databases, printers, internet, and so on (PC Magazine, 2018).
     - **Vulnerability Scanning** - Software that analyzes a network to determine its exposure to unwanted intruders (PC Magazine, 2018).
+- **Output**
+    1. Any computer-generated information displayed on screen, printed on paper, or in machine readable form, such as disk and tape.
+    2. To transfer or transmit from the computer to a peripheral device or communications line (PC Magazine, 2019).
 
 ## P
 
 - **Packet Internet Groper (Ping)** - An internet utility used to determine whether a particular IP address is reachable online by sending out a packet and waiting for a response. It is used to test and debug a network as well as see if a user or server is online (PC Magazine, 2018).
+- **Parallel Development** - The simultaneous development of more than one version of an object (PC Magazine, 2019).
 - **PCI DSS** - A document library that includes framework of specifications, tools, measurements and support resources to help organizations ensure the safe handling of cardholder information (PCISSC, 2018).
 - **Phishing Attacks** - This is a scam to steal valuable information such as credit card and social security numbers, user IDs and passwords. Also known as "brand spoofing," this process involves an official-looking email being sent to potential victims and pretending to be from their bank or retail establishment. Emails can be sent to people on selected lists or any list, expecting some percentage of recipients will actually have an account with the organization (PC Magazine, 2018).
 - **Policy Management** - Enforcing the policy (i.e., rules and regulations) of the organization that pertain to information and computing. Also called “policy-based management,” policy management mostly deals with database access and network resource issues, such as which users have access to what data and how network traffic is prioritized (PC Magazine, 2018).
 - **Privileged and Non-privileged States** - The rights granted to a single user or group of users who operate a computer. Administrative privileges allow a user the right to make any and all changes in the computer, including setting up accounts for other users. User-level privileges are more restricted. The rights granted to software running in the computer, which determines which hardware and software resources can be accessed and changed (PC Magazine, 2018).
 - **Process** - To manipulate data in the computer. The computer is said to be processing no matter what action it is taking upon the data, whether the data is actually being updated in a database or just being displayed on-screen. In order to evaluate a computer system’s performance, the time it takes to process data internally is often analyzed separately from the time it takes to get it in and out of the computer. The I/O (input/output) is usually more time consuming than the processing (PC Magazine, 2018).
+- **Process Model** - A formal way of representing how a business system operates (PC Magazine, 2019).
+- **Project Plan** - An essential document for keeping the project on track. Normally includes scope, timeline, and goals (PC Magazine, 2019).
+- **Prototype** - Creating a demo of a new system. Prototyping is essential for clarifying information requirements. The design of a system (functional specs) must be finalized before the system can be built. While analytically oriented people may have a clear picture of requirements, others may not (PC Magazine, 2019).
 - **Proxy Server** - It is a computer system or router that breaks the connection between sender and receiver. Functioning as a relay between client and server, proxy servers help prevent an attacker from invading a private network and are one of several tools used to build a firewall. The word proxy means “to act on behalf of another,” and a proxy server acts on behalf of the user. All requests from clients to the internet go to the proxy server first. The proxy evaluates the request, and if allowed, reestablishes it on the outbound side to the internet. Likewise, responses from the internet go to the proxy server to be evaluated. The proxy then relays the message to the client. Both client and server think they are communicating with one another, but, in fact, they are dealing only with the proxy (PC Magazine, 2018).
 
 ## Q
 
 ## R
 
+- **Rapid Application Development** - Developing systems incrementally and delivering working pieces every three to four months, rather than waiting until the entire project is programmed before implementing it (PC Magazine, 2019).
+- **Rate Fixing** - The authority of a state to set the rates that a company or a public utility can charge its customers (Cambridge Dictionary, 2019).
 - **Reach Back** - The amount of time that can be assessed to look back at events that influenced behaviors. This methodology is used to determine the history of events that led up to an intrusion.
+- **Regulatory Objectives** - Protecting and promoting the public interest. Supporting the constitutional principle of the rule of law. Improving access to justice. Protecting and promoting the interests of consumers (Cambridge Dictionary, 2019).
+- **Relationship**- The association of two or more entities; through this association, the business policy of the data model is expressed (Robertson & Robertson, 2013).
+- **Requirement** - The information needed to support a business or other activity. Systems analysts turn information requirements (the what and when) into functional specifications (the how) of an information system (PC Magazine, 2019).
+- **Requirements Gathering** - The process of gathering system functionality that must exist within the final product (PC Magazine, 2019).
+- **Risk** - The expectation of loss. Risk is a function of the probability and consequences of harm (PC Magazine, 2019).
+- **Risk Assessment** - A report that shows an organization's vulnerabilities and the estimated cost of recovery in the event of damage. It also summarizes defensive measures and associated costs based on the amount of risk the organization is willing to accept (PC Magazine, 2019).
+- **Risk Management** - The optimal allocation of resources to arrive at a cost-effective investment in defensive measures within an organization (PC Magazine, 2019).
+- **Rogue Trader** - A stockbroker who secretly loses a large amount of their employer's money after making a bad or illegal investment (Cambridge Dictionary, 2019).
+- **Root Cause** - An initiating cause of either a condition or a causal chain that leads to an outcome or effect of interest (PC Magazine, 2019).
+- **Root Cause Analysis** - A method of problem solving used for identifying the root causes of faults or problems (PC Magazine, 2019).
 - **Routing Table** - A database in a router that contains the current network topology (PC Magazine, 2018).
+- **Rule of Data Conservation** - The concept that each system component must receive data that are both necessary and sufficient to produce its output (Robertson & Robertson, 2013).
 
 ## S
 
+- **Scope Creep** - The continual enhancement of the requirements of a project as the system is being constructed (PC Magazine, 2019).
+- **Secure Network Design** - The development of system protection to control access to data in or on a network.
+- **Security Architectures** - An umbrella term for the protection of electronic data and networks. In the IT world, security comprises authorization (who has access), authentication (whether this is the authorized user), encryption (scrambling data for privacy), and malware protection (avoiding destructive infiltration), as well as backup and disaster recovery (assurance against failure) (PC Magazine, 2019).
 - **Session Hijacking** - Seizing unauthorized control of a computer or communications session in order to steal data or compromise the system in some manner (PC Magazine, 2018).
 - **Session Interruption** - Stopping the current process where irregularities have been detected. This is a form of intrusion detection that stops rogue processes from getting out of control.
 - **Signature Detection** - The identification of a threat based on the pattern or content of its creation. Signatures are also identified by previous incidents that involved the process.
@@ -342,37 +434,63 @@ The theory that unless a subject is given explicit access to an object, it shoul
     - **SWOT Analysis** - Strengths, weaknesses, opportunities, threats (SWOT) is a four-quadrant analysis. The business analyst answers the questions in the quadrants by placing relevant data in each quadrant (WhizLabs, 2018).
     - **Testing Methodologies** - Quality assurance methodologies that consist of test plans and other avenues to assure that the code within an application is as error free as possible.
     - **Use Case Modeling** - A technique to pictorially illustrate how the business functions should work in a proposed system through user interactions. This is mainly used in the design phase of software development projects to transform business requirements into functional specifications (WhizLabs, 2018).
+- **Specification-Based Detection** - Identification of a threat based on a set of rules that were violated. This process is very specific and is used in companies that are looking for compliance issues and compliance regulations.
 - **Spoofing** - Faking the sending address of a transmission in order to gain illegal entry into a secure system. Creating fake responses or signals in order to keep a session active and prevent timeouts. For example, mainframes continuously poll their terminals. If the lines to remote terminals are temporarily suspended because there is no traffic, a local device spoofs the host with “I’m still here” responses. The most common forms of spoofing are the following:
     - **ARP**: Links a perpetrator’s MAC address to a legitimate IP address through spoofed ARP messages. It’s typically used in denial-of-service (DoS) and man-in-the-middle assaults.
     - **IP Address**: Disguises an attacker’s origin IP. It’s typically used in DoS assaults.
     - **DNS Server**: Modifies a DNS server in order to redirect a domain name to a different IP address. It’s typically used to spread viruses.
 (PC Magazine, 2018)
 - **SQL Injection Attacks (SQLi)** - An exploit that takes advantage of database query software that does not thoroughly test the query statement for correctness. Along with cross-site scripting, this is used by worms to break into websites and extract data or embed malicious code (PC Magazine, 2018).
+- **Stakeholder** - Any individual who may be affected by a business decision. The term may refer to just about anyone who has some interest in a company or its products; however, it specifically excludes shareholders, who are officially part owners of the company (PC Magazine, 2019).
 - **Statistical Techniques** - The analysis of intrusion detection based on a pattern of numbers or a sequence of steps taken by the attacker.
 - **Stealth Mode** - Taking place in secret. Stealth mode often refers to the policy of startups, when companies are developing unique products, or the policy of established companies when they are creating something new. Everyone is sworn to secrecy, and a low profile is kept until launch time (PC Magazine, 2018).
+- **Strategic Alignment** - The process and the result of linking an organization's structure and resources with its strategy and business environment (PC Magazine, 2019).
+- **Structured Design** - A set of tools, concepts, and strategies involving hierarchical partitioning in a top-down manner, using coupling and cohesion analysis to refine the design (Robertson & Robertson, 2013).
+- **Structured Programming** - The convention, first proposed by the Italians Böhm and Jacopini, that computer programs are written using only selection and repetition to join the statements. This is commonly, and somewhat incorrectly, known as “goto-less” programming (Robertson & Robertson, 2013).
+- **Subtype** - An entity that has its own unique characteristics and also shares the characteristics of its supertype entity (Robertson & Robertson, 2013).
+- **Supertype** - A generalized entity. Its business role and its attributes are common to all subtypes (Robertson & Robertson, 2013).
+- **Systems Analysis and Design** - The examination of a problem and the creation of its solution (PC Magazine, 2019).
+- **Systems Development Life Cycle (SDLC)** - The sequence of events in the development of an information system (application), which requires mutual effort on the part of both the user and technical staff (PC Magazine, 2019).
 
 ## T
 
 - **T1 Line** - A 1.544-Mbps point-to-point, dedicated, digital circuit provided by the telephone companies. With the monthly cost typically based on distance, these are widely used for connecting an organization's PBX to the telephone company or a local network (LAN) to an internet provider (ISP). They are also used for internet access in buildings that have no DSL, cable, or fixed wireless coverage (PC Magazine, 2018).
+- **Temporal Trigger** - An event that is caused by some period of time.
 - **Thread** - In a multithreaded system, a thread is one process that occurs simultaneously with other processes (PC Magazine, 2018).
 - **Threat Actor** - An individual or entity that poses a threat to the security of an organization. Also called a "malicious actor" (PC Magazine, 2018).
 - **Threat Information Sources (e.g., CERT)** - Analytical insights into trends, technologies, or tactics of an adversarial nature affecting information systems security (CNSS, 2003).
+- **Three-Way Handshake** - Signals transmitted back and forth over a communications network in order to establish a valid connection between two stations (PC Magazine, 2019).
+- **Tone** - The attitude of a writer toward a subject or audience.
 - **Trace Recording** - The capture of network traffic from a specific host to a destination. Usually done after an intrusion has been detected.
+- **Transmission Control Protocol** - The reliable transport protocol within the TCP/IP protocol suite (PC Magazine, 2019).
+- **Trigger**
+    1. A mechanism that initiates an action when an event occurs such as reaching a certain time or date or upon receiving some type of input. A trigger generally causes a program routine to be executed.
+    2. In a database management system (DBMS), a trigger is an SQL procedure that is executed when a record is added or deleted. It is used to maintain referential integrity in the database. A trigger may also execute a stored procedure (PC Magazine, 2019).
 - **Trojan Horse** - The term comes from Greek mythology, in which the Greeks battled the Trojans (people of Troy). After years of being unable to break into the fortified city, the Greeks built this, filled it with soldiers and pretended to sail away. After the Trojans brought this into the city, the Greek soldiers crept out at night and opened the gates of Troy to the returning soldiers, and Troy was destroyed (PC Magazine, 2018).
 - **Trojan Virus** - A program that appears legitimate but performs some illicit activity when run. It may be used to locate password information or make the system more vulnerable to future entry or simply destroy the user's stored software and data. This is similar to a virus, except that it does not replicate itself. Often sneaking in attached to a free game or other supposedly worthwhile utility, it remains in the computer doing damage or allowing someone from a remote location to take control (PC Magazine, 2018).
+- **Trusted Computing Base (TCB) Subsets** - Everything that causes a computer system or network to be devoid of malicious software or hardware (PC Magazine, 2019).
+- **Turning Point**
+A time at which a decisive change in a situation occurs, especially one with beneficial results (Cambridge Dictionary, 2019).
 
 ## U
 
+- **Uniform Resource Locator (URI)** - The address that defines the route to a file on an internet server (PC Magazine, 2019).
+- **Use Case** - An action that takes place between two entities, typically between the user and the computer. A use case may also be an event that takes place between two computers (PC Magazine, 2019).
+- **User Datagram Protocol (UDP)** - A TCP/IP protocol that is widely used for streaming audio and video, voice over IP (VoIP), and videoconferencing (PC Magazine, 2019).
+
 ## V
 
+- **Viewpoint** - A particular attitude or way of considering a matter (PC Magazine, 2019).
 - **Virtualization** - A variety of technologies for managing computer resources by providing a software interface, known as an abstraction layer, between the software (operating system and applications) and the hardware. Virtualization turns “physical” RAM and storage into “logical” resources (PC Magazine, 2018).
 - **Virtual Memory** - Simulating more random access memory (RAM) than actually exists, allowing the computer to run larger programs and multiple programs concurrently. A common function in most every OS and hardware platform, virtual memory uses storage (hard drive or solid-state drive) to temporarily hold what was in RAM. Virtual memory allows multiple programs to load in RAM at the same time. Each application addresses RAM starting at zero, but virtual memory takes control of the RAM addressing and lets each application function as if it had unlimited RAM (PC Magazine, 2018).
 - **Virtual Private Network (VPN)** - A private network configured within a public network, such as the internet or a carrier’s network. Years ago, this obsoleted private lines between company branches. VPNs also allow mobile users access to the company LAN by using data encryption to maintain privacy. In the past, common carriers used their vast networks to “tunnel” traffic between customer locations to give the appearance of a private network while sharing backbone trunks, no different than the way the internet works. Prior to the internet’s IP protocol, VPNs were built over X.25, Switched 56, frame relay, and ATM technologies (PC Magazine, 2018).
 - **Virus** - Software used to infect a computer. After the code is written, it is buried within an existing program. Once that program is executed, the code is activated and attaches copies of itself to other programs in the computer and other computers in the network. Infected programs continue to propagate it, which is how it spreads (PC Magazine, 2018).
 - **Visual / Audio Alert** - The use of alarms or warning systems to make individuals aware that the system has been compromised.
+- **Visualization** - Using the computer to convert data into picture form. The most basic visualization is that of turning transaction data and summary information into charts and graphs. Visualization is used in computer-aided design (CAD) to render screen images into three-dimensional models that can be viewed from all angles and can also be animated (PC Magazine, 2019).
 
 ## W
 
+- **Waterfall Development** - An information system development project that proceeds sequentially from the requirements stage to the implementation stage without delivering working pieces in between and without obtaining customer feedback on the way (PC Magazine, 2019).
 - **Web Application Attacks** - These attacks are considered by security experts to be the greatest and often the least understood of all risks related to confidentiality, availability, and integrity. The purpose of a this attack is significantly different from other attacks; in most traditional penetration testing exercises, a network or host is the target of attack. These attacks focus on an application itself and function on layer 7 of the OSI (Desmond, 2004).
 - **Web Application Security**
     - **Access Controls** - The management of admission to system and network resources. It grants authenticated users access to specific resources based on company policies and the permission level assigned to the user or user group. Access control often includes authentication, which proves the identity of the user or client machine attempting to log in (PC Magazine, 2018).
@@ -399,6 +517,8 @@ The theory that unless a subject is given explicit access to an object, it shoul
         - **Native Mobile Apps** - Countless native iOS and Android apps use the web for additional information, such as a weather app that downloads the latest climate data or a stock app that gets the latest market quotes. Using the web's HTTP protocol, myriad mobile apps retrieve data in the background that users may or may not be aware of (PC Magazine, 2018).
     - **XML** - The most widely used semi-structured format for data, introduced by the World Wide Web Consortium (W3C) in 1998. XML files contain only tags and text, similar to HTML (PC Magazine, 2018).
 - **Wireless Attacks** - A malicious action against wireless system information or wireless networks; examples can be denial of service attacks, penetration, and sabotage (Khosrow-Pour, 2005).
+- **Work Breakdown Structure** - A deliverable-oriented breakdown of a project into smaller components (PC Magazine, 2019).
+- **Working Model** - A prototype that demonstrates that each process in the data flow diagram can manufacture its outputs from its inputs, and each entity and relationship in the data model can supply or store the data needed by all the processes (Robertson & Robertson, 2013).
 
 ## X
 
@@ -413,6 +533,8 @@ The theory that unless a subject is given explicit access to an object, it shoul
 Bishop, M. (2003). Computer security: Art and Science (1st ed.). Boston, MA: Addison-Wesley Professional.
 
 Brocklehurst, K., (2014). Understanding what constitutes your attack surface. Retrieved from https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/
+
+*Cambridge dictionary*. (2019). Cambridge University Press. Retrieved from https://dictionary.cambridge.org/us/
 
 Cebula, J. J., Popeck, M. E., & Young, L. R. (2014). A taxonomy of operational cyber security risks version 2. Pittsburgh, PA: Software Engineering Institute.
 
@@ -443,6 +565,8 @@ PCISSC. (2018). Document library. Retrieved from https://www.pcisecuritystandard
 PC Magazine. (2018). Encyclopedia. Retrieved from https://www.pcmag.com/encyclopedia
 
 PC Magazine. (2019). Encyclopedia. Retrieved from https://www.pcmag.com/encyclopedia
+
+Robertson, J., & Robertson, S. (2013). *Complete systems analysis: The workbook, the textbook, the answers*. New York, NY: Dorset House Publishing Co., Inc.
 
 Rouse, M. (2014). NetFlow. WhatIs.com. Retrieved from https://whatis.techtarget.com/definition/NetFlow-Cisco
 
