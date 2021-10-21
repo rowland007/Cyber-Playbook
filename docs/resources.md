@@ -68,3 +68,9 @@ AbuseIPDB is a project dedicated to helping combat the spread of hackers, spamme
 
 - [ThreatCrowd](https://www.threatcrowd.org)
 ThreatCrowd is a system for finding and researching artefacts relating to cyber threats. You can view a short tutorial at [http://threatcrowd.blogspot.co.uk/2015/04/investigating-threats-with-threatcrowd.html](http://threatcrowd.blogspot.co.uk/2015/04/investigating-threats-with-threatcrowd.html).
+
+- [National Initiative for Cybersecurity Education (NICE) Cyber Career Pathways Tool](https://niccs.cisa.gov/workforce-development/cyber-career-pathways)  
+This tool presents a new and interactive way to explore work roles within the Workforce Framework for Cybersecurity (NICE Framework). It depicts the Cyber Workforce according to five distinct, yet complementary, skill communities. It also highlights core attributes among each of the 52 work roles and offers actionable insights for employers, professionals, and those considering a career in Cyber.
+
+- [Cybersecurity & Infrastructure Security Agency Trusted Internet Connections Core Guidance Documents](https://www.cisa.gov/publication/tic-30-core-guidance-documents)  
+Core guidance documents are intended to be used collectively in order to achieve the goals of the program. The documents are additive; each builds on the other like chapters in a book.
