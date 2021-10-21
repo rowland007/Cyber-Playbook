@@ -40,6 +40,7 @@ nav:
         'PowerShell Example Scripts': 'system/ps-sample-scripts.md'
         'Protecting CUI': 'system/nist-800-18.md'
         'OWASP Best Practices: Use of WAF': 'system/owasp-waf.md'
+        '10 Things Auditors Should Know': 'system/10-things-auditors.md'
     - Glossary: 
         'Cybersecurity Terms': 'glossary.md'
         'Basic Cryptography': 'cryptography.md'
