@@ -1,6 +1,8 @@
 ## A
 
 - **Access Controls (Models and Mechanisms)** - The management of admission to system and network resources. It grants authenticated users access to specific resources based on company policies and the permission level assigned to the user or user group. Access control often includes authentication, which proves the identity of the user or client machine attempting to log in (PC Magazine, 2018).
+- **Accountability** - The security goal that generates the requirements for actions of an entity to be traced uniquely to that entity. This supports non-repudiation, deterrence, fault isolation, intrusion detection and prevention, and after-action recovery and legal action (Dukes, 2015).
+- **Administrative Law** - A body that governs the administration and regulation of government agencies, both federal and state (Kenton, 2019c).
 - **Advanced Persistent Threat (APT)** - An adversary that possesses sophisticated levels of expertise and significant resources which allow it to create opportunities to achieve its objectives by using multiple attack vectors (e.g., cyber, physical, and deception) (NIST, 2013).
 - **Adversary Model (resources, capabilities, intent, motivation, risk aversion, access)** - The model that describes the type of adversary, the objective, the motivation, and the payload ramifications. The model described is extensible and the tactics are clear and concise (Invincea, 2015).
 - **Adversarial Thinking** - The ability to think like a hacker. Identifying characteristics including where, when, and how hackers might attack, and their tactics for evading detection (Hamman, Hopkinson, Markham, Chaplik, & Metzler, 2017).
@@ -16,6 +18,7 @@
 - **Attack Trees** - These provide a formal, methodical way of describing the security of systems, based on varying attacks. The structure is used represent attacks against a system, with the goal as the root node and different ways of achieving that goal as leaf (Saini, V., Duan & Paruchuri, 2008).
 - **Attack Vectors** - The approach used to assault a computer system or network. A fancy way of saying "method or type of attack," the term may refer to a variety of vulnerabilities. For example, an operating system or Web browser may have a flaw that is exploited by a website. Human shortcomings are also used to engineer these. For example, a novice user may open an email attachment that contains a virus, and most everyone can be persuaded at least once in their life to reveal a password for some seemingly relevant reason (PC Magazine, 2018).
 - **Audience** - The assembled spectators or listeners at a public event, such as a play, movie, concert, or meeting (PC Magazine, 2019).
+- **Availability** - The act of ensuring timely and reliable access to and use of information (Dukes, 2015).
 
 ## B
 
@@ -86,16 +89,21 @@
 - **Cascading** - A defense in depth circumstance. The concept of allowing one network control to feed into the next network control to provide a defense in depth scenario.
 - **CIA Triad** - A widely used formulation of the INFOSEC mission of the U.S. military. Also known as the "Classic Triad," the three concepts fail to include important problems intuitively seen as breaches of security, forgeries or counterfeits; mislabeling of data; and problems of data usability (PC Magazine, 2018).
 - **Cipher Text** - A scrambled and unintelligible version of plain text.
+- **Civil Law** - Deals with disputes between one entity and another (Erstad, 2018).
 - **Cluster** - A group of contiguous sectors.
 - **Cold Site** - A non-emergency recovery site with the necessary environmental and power systems required for the restoration of computing services.
 - **Collection** - The first phase of the computer and network forensics process, before examination and analysis. Collection involves identifying, labeling, recording, and acquiring data from the possible sources of relevant data, while following guidelines and procedures that preserve the integrity of the data.
+- **Communications Plan** - A policy-driven approach to providing stakeholders with information (Rouse, 2015a).
 - **Compliance** - Conforming to a specification, standard, or law that has been clearly defined (Cambridge Dictionary, 2019).
 - **Composition and Security** - The devices and hardware that make up the system. This also refers to the software and the controls put in place to defend the infrastructure.
 - **Computer-Aided Software Engineering (CASE)** - Software that is used in any and all phases of developing an information system, including analysis, design, and programming. For example, data dictionaries and diagramming tools aid in the analysis and design phases, while application generators speed up the programming phase (PC Magazine, 2019).
+- **Confidentiality** - Preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information (Dukes, 2015).
 - **Context Diagram** - The highest-level diagram of a leveled set of data flow diagrams. It shows the system being studied as a single bubble connected to the outside world by its boundary data flows (Robertson & Robertson, 2013).
+- **Copyright** - A law that gives creators of original material the exclusive right to further use and duplicate that material for a given amount of time, at which point the copyrighted item becomes public domain (Kenton, 2019a).
 - **Cost–Benefit Analysis** - The study that projects the costs and benefits of a new information system. Costs include people and machine resources for development, as well as running the system. Tangible benefits are derived by estimating the cost savings of both human and machine resources to run the new system versus the old one. Intangible benefits, such as improved customer service and employee relations, may ultimately provide the largest payback, but are harder to quantify (PC Magazine, 2019).
 - **Correlation Techniques** - The analysis of intrusion detection based on previous incidents that may be similar to the current incident. Can be used to identify possible ways to start to create a fix for the vulnerability.
 - **Covert Channels** - An unintended or unauthorized intra-system channel that enables two cooperating entities to transfer information in a way that violates the system's security policy but does not exceed the entities' access authorizations (CNSS, 2003)
+- **Criminal Law** - Deals with an individual’s offenses against the state of federal government (Erstad, 2018).
 - **Cross Log Comparison and Analysis** - The comparison of two different log files to try and determine outliers and anomalies. Usually done with some type of software analysis tool (PC Magazine, 2018).
 - **Cross-Site Scripting (XSS)** - Causing a user's Web browser to execute a malicious script. There are several ways this is done. One approach is to hide code in a "click here" hyperlink attached to a URL that points to a non-existent Web page. When the page is not found, the script is returned with the bogus URL, and the user's browser executes it (PC Magazine, 2018).
 - **CRUD Check** - A way of verifying that every data element within the context is being created, retrieved, updated, or deleted by at least one process; a way of checking that every data element needed by every process within the context of study has been defined (Robertson & Robertson, 2013).
@@ -124,6 +132,7 @@
 - **Defense in Depth** - Using multiple systems to resist attackers. For example, if an external firewall is breached, an internal intrusion detection system can sound an alarm. If systems are breached and data can be stolen, keeping all vital records encrypted on disk and encrypted during transmission prevents attackers from using the data, even if they get it (PC Magazine, 2018).
 - **Deliverable** - The measurable result or output of a process (PC Magazine, 2019).
 - **Demilitarized Zone (DMZ)** - A middle ground between an organization’s trusted internal network and an untrusted, external network such as the internet. Also called a perimeter network, the DMZ is a subnetwork (subnet) that may sit between firewalls or off one leg of a firewall. Organizations typically place their web, mail, and authentication servers in it. It is a military term that refers to the area between two enemies (PC Magazine, 2018).
+- **Denial of Service (DoS)** - The prevention of authorized access to resources or the delaying of time-critical operations (Dukes, 2015).
 - **Denial-of-Service Attacks** - An assault on a network that floods it with so many requests that regular traffic is either slowed or completely interrupted. Unlike a virus or worm, which can cause severe damage to databases, this interrupts network service for some period (PC Magazine, 2018).
 - **Dependencies** - Part of a system or component of a system that relies on another component or control to be able to do its job properly.
 - **Device Reconfiguration** - The changing of hardware on the fly to protect against a compromised device. Restoring the device to the system defaults or changing the protection scheme to secure the device from an attack in real time.
@@ -136,6 +145,7 @@
 - **Disk-to-File Copy** - Copying the contents of media to a single logical data file.
 - **Display Filtering** - Enables you to capture and view only traffic that you want to be captured, hiding an unwanted packet (PC Magazine, 2019).
 - **Distributed Intrusion Detection** - The implementation of network protection across multiple computers or devices. The formation allows for systems to not fall prey if a single machine is compromised. Normally a system has measure to regain control of a compromised system.
+- **Dumpster Diving** - A technique where hackers are sifting through trash looking for elements of personal information which can be used for illegal purposes (White, n.d.).
 
 ## E
 
@@ -161,6 +171,9 @@
 - **False Positive** - Incorrectly classifying benign activity as malicious.
 - **Feasibility Study** - The analysis of a problem to determine if it can be solved effectively. The operational (will it work?), economical (costs and benefits), and technical (can it be built?) aspects are part of the study. Results of the study determine whether the solution should be implemented (PC Magazine, 2019).
 - **Feature Creep** - The continual adding of new functions to an information system project while it is in the process of being programmed (PC Magazine, 2019).
+- **Federal Information Processing Standards (FIPS)** - A standard for adoption and use by Federal agencies that has been developed within the Information Technology Laboratory and published by the National Institute of Standards and Technology (Dukes, 2015).
+- **Federal Information Security Management Act (FISMA)** - Title III of the E-Government Act requiring each federal agency to develop, document, and implement an agency-wide program to provide information security for the information and information systems that support the operations and assets of the agency, including those provided or managed by another agency, contractor, or other source (Dukes, 2015).
+- **Federal Information Technology Security Assessment Framework (FITSAF)** - A five level information technology security program effectiveness capability reviewing management, operational, and technical control objectives (Roback, 2000).
 - **File** - A collection of information logically grouped into a single entity and referenced by a unique name, such as a file name.
 - **File Allocation Unit** - A group of contiguous sectors, also known as a cluster.
 - **File Header** - Data within a file that contains identifying information about the file and possibly metadata with information about the file contents.
@@ -174,6 +187,7 @@
 - **Forensically Clean** - Digital media that is completely wiped of all data (including nonessential and residual data), scanned for malware, and verified before use.
 - **Forensic Science** - The application of science to the law.
 - **Formal Speech** - A presentation given without visual aids.
+- **Framework** - A real or conceptual structure intended to serve as support or guide for the building of something that expands the structure into something useful (Rouse, 2015b).
 - **Free Space** - An area on media or within memory that is not allocated.
 - **Functional Requirement** - The blueprint for the design of a system that performs a specific action (PC Magazine, 2019).
 - **Fundamental Design Principles**
@@ -218,10 +232,12 @@ The theory that unless a subject is given explicit access to an object, it shoul
 ## G
 
 - **Governance** - The action or manner of governing (Cambridge Dictionary, 2019).
+- **Guideline** - Generally recommended practices that are based on industry-recognized practices or cultural norms within an organization (Cornelius, 2017).
 
 ## H
 
 - **Head-Sized Piece** - The portion of a system that fits comfortably inside an analyst’s head and is thus readily understood; it is a functional primitive and is described by a mini specification (Robertson & Robertson, 2013).
+- **Health Insurance Portability and Accountability Act (HIPAA)** - A U.S. Law designed to provide privacy standards to protect patients’ medical records and other health information provide to health plans, doctors, hospitals and other health care providers (Shiel, n.d.).
 - **Hierarchical IDSs** - Defense-in-depth methodology that puts layers of intrusion detection in place. Each level elevates the strength of the response to the next level if needed.
 - **Honeynets** - A honeynet is a network containing honeypots. A virtual honeynet is one that resides in a single server, but pretends to be a full network (PC Magazine, 2018).
 - **Honeypot** - A server that is configured to detect an intruder by mirroring a real production system. A honeypot appears as an ordinary server doing work, but all the data and transactions are phony. Located either in or outside the firewall, the honeypot is used to learn about an intruder’s techniques as well as determine vulnerabilities in the real system (PC Magazine, 2018).
@@ -237,6 +253,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Inculpatory Evidence** - Evidence used to prove a defendant is guilty or had criminal intent for perpetuating criminal activity.
 - **Informal Benchmarking** -A performance test of hardware and/or software. There are various programs that very accurately test the raw power of a single machine, the interaction in a single client/server system (one server/multiple clients), and the transactions per second in a transaction processing system. However, it is next to impossible to benchmark the performance of an entire enterprise network with a great degree of accuracy (PC Magazine, 2019).
 - **Informal Speech** - A presentation given in a relaxed tone, not in business attire.
+- **Information Systems Security (infosec)** - The protection of information systems against unauthorized access to or modification of information, whether in storage, processing in transit, and against the denial of service to authorized users (Dukes, 2015).
 - **Infrastructure**
     1. The fundamental structure of a system or organization. The basic, fundamental architecture of any system (electronic, mechanical, social, political, etc.) determines how it functions and how flexible it is to meet future requirements.
     2. May refer to system and development programs in contrast to applications. A computer system's infrastructure would include the operating system, database management system (DBMS), communications protocols, compilers, and other development tools (PC Magazine, 2019).
@@ -244,6 +261,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
     1. Data that is ready for entry into the computer.
     2. To enter data into the computer (PC Magazine, 2019).
 - **Insider Problem** - The threat that an insider will use their authorized access, wittingly or unwittingly, to do harm to the security of the United States. This threat can include damage to the United States through espionage, terrorism, unauthorized disclosure, or through the loss or degradation of departmental resources or capabilities (CNSS, 2003).
+- **Integrity** - Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity (Dukes, 2015).
 - **Interface** - The connection between two components of a system (Robertson & Robertson, 2013).
 - **Intrusion Detection Systems** - Software that detects an attack on a network or computer system. A network IDS (NIDS) is designed to support multiple hosts, whereas a host IDS (HIDS) is set up to detect illegal actions within the host. Most IDS programs typically use signatures of known hacker attempts to signal an alert. Others look for deviations of the normal routine as indications of an attack. Intrusion detection is very tricky. Too much analysis can add excessive overhead and also trigger false alarms. Insufficient analysis can overlook a valid attack (PC Magazine, 2018).
 - **Intrusion Prevention Systems** - Software that prevents an attack on a network or computer system. It is a significant step beyond an intrusion detection system (IDS). Whereas an IDS passively monitors traffic by sniffing packets at a switch port, an IPS resides inline like a firewall, intercepting and forwarding packets. It is thus capable of blocking the attack in real time (PC Magazine, 2018).
@@ -262,6 +280,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
 ## L
 
 - **Layer 3 Security Issues** - In networking, the communications protocol that contains the logical address of a client or server station. It is called the "network layer" and contains the address (IP, IPX, etc.) inspected by a router that forwards it through the network. It contains a type field so that traffic can be prioritized and forwarded based on message type as well as network destination. Since this provides more filtering capabilities, it also adds more overhead than layer 2 processing (PC Magazine, 2018).
+- **Least Privilege** - The principle that a security architecture should be designed so that each entity is granted the minimum system resources and authorizations that the entity needs to perform its function (Dukes, 2015).
 - **Leveling** - A technique for decomposing a system and modeling it at various levels of detail (Robertson & Robertson, 2013).
 - **Linux System Administration**
     - **Audit** - A formal examination by certified auditors of systems, programming, operations, and security to determine compliance with internal policies and procedures or with external standards. An audit is often used to satisfy legal requirements of regulatory agencies and laws (PC Magazine, 2018).
@@ -290,6 +309,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
     - **Virtualization** - A variety of technologies for managing computer resources by providing a software interface, known as an abstraction layer, between the software (operating system and applications) and the hardware. Virtualization turns physical RAM and storage into logical resources (PC Magazine, 2018).
 - **Log Aggregation** - Log management is the process of handling copious volumes of logs that are made up of several processes, such as log collection, log aggregation, storage, rotation, analysis, search, and reporting. Log aggregation, therefore, is a step in the overall management process in which you consolidate different log formats coming from different sources all into one place. This makes it easier for you to analyze, search, and report on your data. (Stringfellow, 2017).
 - **Log File Analysis** - The analysis of information generated by the computer systems. The files can be analyzed for anomalies or other patterns that are set by the alert levels of the organization.
+- **Logic Bomb** - A piece of code intentionally inserted into a software system that will set off a malicious function when specified conditions are met (Dukes, 2015).
 - **Logical Backup** - A copy of the directories and files of a logical volume.
 - **Logical Volume** - A partition or a collection of partitions acting as a single entity that has been formatted with a filesystem.
 
@@ -298,7 +318,9 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **MAC Spoofing**
     - Faking the sending address of a transmission to gain illegal (unauthorized) entry into a secure system;
     - The deliberate inducement of a user or resource to take incorrect action. Note: Impersonating, masquerading, piggybacking, and mimicking are forms of this (CNSS, 2003).
+- **Man-in-the-Middle Attack (MitM)** - A form of active wiretapping attack in which the attacker intercepts and selectively modifies communicated data to masquerade as one or more of the entities involved in a communication association (Dukes, 2015).
 - **Man-in-the-Middle (MITM) Attacks** - An unauthorized interception of network traffic. The packets are viewed or modified by the perpetrator and sent on to the recipient, who is unaware of the intrusion. This can be used to intercept an encrypted message exchange and spoof the recipient into thinking the message is intact from a legitimate sender. In such a case, the attackers replace the public key from the original sender with their own public key in order to decrypt the message that will be sent back from the unsuspecting recipient (PC Magazine, 2018).
+- **Mandatory Vacation** - A requirement for employees to take time off work and for other employees to accomplish responsibilities as a fraud or irregularities detection method (Blaha, 2018).
 - **Malware Attacks** - Software designed to destroy data, steal information or aggravate the user (PC Magazine, 2018)
 - **Memory** - The computer’s temporary workspace, which for decades has been a collection of dynamic RAM (DRAM) chips. A major resource in the computer, memory (RAM) determines the size and number of programs that can be run at the same time, as well as the amount of data that can be processed instantly (PC Magazine, 2018).
 - **Memory Management** - A variety of methods used to store and keep track of data and programs in memory and reclaim the space when no longer needed. Virtual memory is the most common memory management function in every computer (PC Magazine, 2018).
@@ -307,6 +329,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Milestones** - The special criteria that are met by completing a specified amount of work toward the final product (PC Magazine, 2019).
 - **Mini Specification** - An analysis tool, named for its manageable size, for describing the policy to be carried out by a functional primitive; it can usually be described in a page or less (Robertson & Robertson, 2013).
 - **Mis-selling** - The act of selling something that is not suitable for the person who buys it (Cambridge Dictionary, 2019).
+- **Mobile Code** - Software programs or parts of programs obtained from remote information system, transmitted across a network, and executed on a local information system without explicit installation or execution by the recipient (Dukes, 2015).
 - **Multithreading** - A feature within a CPU that allows two or more instruction streams (threads) to execute concurrently. Each stream is a subprocess that is managed by the CPU and operating system. Today’s CPUs support a large number of threads. For example, IBM’s POWER8 CPU comes with up to 12 cores, and each core handles eight threads for a total of 96 threads. Operating systems are written to use multithreading wherever possible; however, applications can also be written to take advantage of this parallel processing. If the application is very complex, the effort can be formidable even for experienced programmers (PC Magazine, 2018).
 
 ## N
@@ -423,15 +446,26 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Parallel Development** - The simultaneous development of more than one version of an object (PC Magazine, 2019).
 - **Partition** - A logical portion of storage technology that functions as though it were physically separate from other logical portions of storage technology.
 - **Password Cracking** - Also known as breaking passwords, refers to the methods and tools used for successfully guessing passwords.
+- **Patent** - The granting of a property right by a sovereign authority to an inventor (Kenton, 2019b).
 - **PCI DSS** - A document library that includes framework of specifications, tools, measurements and support resources to help organizations ensure the safe handling of cardholder information (PCISSC, 2018).
+- **Phishing** - A technique for attempting to acquire sensitive data, such as bank account numbers, through a fraudulent solicitation in email or on a web site, in which the perpetrator masquerades as a legitimate business or reputable person (Dukes, 2015).
 - **Phishing Attacks** - This is a scam to steal valuable information such as credit card and social security numbers, user IDs and passwords. Also known as "brand spoofing," this process involves an official-looking email being sent to potential victims and pretending to be from their bank or retail establishment. Emails can be sent to people on selected lists or any list, expecting some percentage of recipients will actually have an account with the organization (PC Magazine, 2018).
 - **Plain Text** - The original unencrypted message.
+- **Policy** - A high-level statement of management intent that formally establishes requirements to guide decisions and achieve rational outcomes (Cornelius, 2017).
 - **Policy Management** - Enforcing the policy (i.e., rules and regulations) of the organization that pertain to information and computing. Also called “policy-based management,” policy management mostly deals with database access and network resource issues, such as which users have access to what data and how network traffic is prioritized (PC Magazine, 2018).
 - **Privileged and Non-privileged States** - The rights granted to a single user or group of users who operate a computer. Administrative privileges allow a user the right to make any and all changes in the computer, including setting up accounts for other users. User-level privileges are more restricted. The rights granted to software running in the computer, which determines which hardware and software resources can be accessed and changed (PC Magazine, 2018).
+- **Procedure** - A formal method of doing something based on a series of action conducted in a certain order or manner (Cornelius, 2017).
 - **Process** - An executing program.
 - **Process** - To manipulate data in the computer. The computer is said to be processing no matter what action it is taking upon the data, whether the data is actually being updated in a database or just being displayed on-screen. In order to evaluate a computer system’s performance, the time it takes to process data internally is often analyzed separately from the time it takes to get it in and out of the computer. The I/O (input/output) is usually more time consuming than the processing (PC Magazine, 2018).
 - **Process Model** - A formal way of representing how a business system operates (PC Magazine, 2019).
+- **Program Manager** - A person who is responsible for managing different, but related projects (Cohen, 2017).
+- **Project Charter** - The authority to initial the project which contains the preliminary roles and responsibilities of the project (Westland, 2018).
+- **Project Integration Management** - A means of identifying, defining, combining, unifying, and coordinating the many processes and activities within the project management process (Westland, 2018).
+- **Project Management Plan** - Defines how processes in the project can work together for greater efficiency and productivity (Westland, 2018).
+- **Project Manager** - The person responsible for leading a project from its inception to execution (Techopedia, 2019).
 - **Project Plan** - An essential document for keeping the project on track. Normally includes scope, timeline, and goals (PC Magazine, 2019).
+- **Project Sponsor** - A person or organization in charge of driving the project towards directions to bring a successful realization of expected benefits (McConnell, 2012).
+- **Project Triangle** - Three constraints which are part of every project based on time, scope, and cost (Astle, 2015).
 - **Protocol Analyzer** - Software that can reassemble streams from individual packets and decode communications that use various protocols.
 - **Prototype** - Creating a demo of a new system. Prototyping is essential for clarifying information requirements. The design of a system (functional specs) must be finalized before the system can be built. While analytically oriented people may have a clear picture of requirements, others may not (PC Magazine, 2019).
 - **Proxy** - Software that receives a request from a client, then sends a request on the client’s behalf to the desired destination.
@@ -450,10 +484,15 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Reporting** - The final phase of the computer and network forensic process after collection, examination, and analysis. Reporting involves reporting the results of the analysis. This may include describing the actions used; explaining how tools and procedures were selected; determining what other actions need to be performed (e.g., forensic examination of additional data sources, securing identified vulnerabilities, improving existing security controls); and providing recommendations for improvement to policies, guidelines, procedures, tools, and other aspects of the forensic process. The formality of the reporting step varies greatly depending on the context.
 - **Requirement** - The information needed to support a business or other activity. Systems analysts turn information requirements (the what and when) into functional specifications (the how) of an information system (PC Magazine, 2019).
 - **Requirements Gathering** - The process of gathering system functionality that must exist within the final product (PC Magazine, 2019).
+- **Return on Investment (ROI)** - A measure of performance used to evaluate the efficiency of an investment or compart the efficiency of a number of different investments (Chen, 2019).
+- **Risk** - A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of the adverse impacts that would arise if the circumstance or event occurs and the likelihood of the occurrence (Dukes, 2015).
 - **Risk** - The expectation of loss. Risk is a function of the probability and consequences of harm (PC Magazine, 2019).
 - **Risk Assessment** - An analysis of the potential for risk of loss or damage of organizational assets in an extreme event.
 - **Risk Assessment** - A report that shows an organization's vulnerabilities and the estimated cost of recovery in the event of damage. It also summarizes defensive measures and associated costs based on the amount of risk the organization is willing to accept (PC Magazine, 2019).
 - **Risk Management** - The optimal allocation of resources to arrive at a cost-effective investment in defensive measures within an organization (PC Magazine, 2019).
+- **Risk Management** - The process of identifying, estimating, and prioritizing risks to organizational operations, organization assets, individuals, other organizations, and the Nation, resulting from the operation of an information system (Dukes, 2015).
+- **Risk Management Framework (RMF)** - A structured approach used to oversee and manage risk for an enterprise (Dukes, 2015).
+- **Risk Register** - A document or system that is used to capture risk management status (Spacey, 2017).
 - **Rogue Trader** - A stockbroker who secretly loses a large amount of their employer's money after making a bad or illegal investment (Cambridge Dictionary, 2019).
 - **Root Cause** - An initiating cause of either a condition or a causal chain that leads to an outcome or effect of interest (PC Magazine, 2019).
 - **Root Cause Analysis** - A method of problem solving used for identifying the root causes of faults or problems (PC Magazine, 2019).
@@ -467,6 +506,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Secure Network Design** - The development of system protection to control access to data in or on a network.
 - **Security Architectures** - An umbrella term for the protection of electronic data and networks. In the IT world, security comprises authorization (who has access), authentication (whether this is the authorized user), encryption (scrambling data for privacy), and malware protection (avoiding destructive infiltration), as well as backup and disaster recovery (assurance against failure) (PC Magazine, 2019).
 - **Security Event Management Software** - Software that imports security event information from multiple data sources, normalizes the data, and correlates events among the data sources.
+- **Separation of Duty (SOD)** - A security principle that divides critical functions among different staff members in an attempt to ensure that no one individual has enough information or access privilege to perpetrate damaging fraud (CSRC, n.d.).
 - **Session Hijacking** - Seizing unauthorized control of a computer or communications session in order to steal data or compromise the system in some manner (PC Magazine, 2018).
 - **Session Interruption** - Stopping the current process where irregularities have been detected. This is a form of intrusion detection that stops rogue processes from getting out of control.
 - **Signature Detection** - The identification of a threat based on the pattern or content of its creation. Signatures are also identified by previous incidents that involved the process.
@@ -481,6 +521,7 @@ The theory that unless a subject is given explicit access to an object, it shoul
         - **DNS server**: Modifies a DNS server in order to redirect a domain name to a different IP address. It's typically used to spread viruses;
         - **ARP**: Links a perpetrator’s MAC address to a legitimate IP address through spoofed ARP messages. It's typically used in denial of service (DoS) and man-in-the-middle assaults;
         - **IP address**: Disguises an attacker’s origin IP. It's typically used in DoS assaults. (PC Magazine, 2018)
+- **Social Engineering** - An attempt to trick someone into revealing information (e.g., a password) that can be used to attack systems or networks (Dukes, 2015).
 - **Social Engineering** - Using deception to obtain confidential information from someone by phone or in person. For example, these attackers may persuade someone to reveal an ID or password for a supposedly benign purpose. ("My computer is down; can I use yours in the meantime?") They can even walk in off the street and pretend to be from IT doing a routine inspection (PC Magazine, 2018).
 - **Software Attack Surface**
     - This is comprised of the software environment and its interfaces. These are the applications and tools available to authorized (and unauthorized) users;
@@ -497,13 +538,16 @@ The theory that unless a subject is given explicit access to an object, it shoul
     - **Testing Methodologies** - Quality assurance methodologies that consist of test plans and other avenues to assure that the code within an application is as error free as possible.
     - **Use Case Modeling** - A technique to pictorially illustrate how the business functions should work in a proposed system through user interactions. This is mainly used in the design phase of software development projects to transform business requirements into functional specifications (WhizLabs, 2018).
 - **Specification-Based Detection** - Identification of a threat based on a set of rules that were violated. This process is very specific and is used in companies that are looking for compliance issues and compliance regulations.
+- **Spoofing** - Faking the sending address of a transmission to gain illegal entry into a secure system (Dukes, 2015).
 - **Spoofing** - Faking the sending address of a transmission in order to gain illegal entry into a secure system. Creating fake responses or signals in order to keep a session active and prevent timeouts. For example, mainframes continuously poll their terminals. If the lines to remote terminals are temporarily suspended because there is no traffic, a local device spoofs the host with “I’m still here” responses. The most common forms of spoofing are the following:
     - **ARP**: Links a perpetrator’s MAC address to a legitimate IP address through spoofed ARP messages. It’s typically used in denial-of-service (DoS) and man-in-the-middle assaults.
     - **IP Address**: Disguises an attacker’s origin IP. It’s typically used in DoS assaults.
     - **DNS Server**: Modifies a DNS server in order to redirect a domain name to a different IP address. It’s typically used to spread viruses.
 (PC Magazine, 2018)
 - **SQL Injection Attacks (SQLi)** - An exploit that takes advantage of database query software that does not thoroughly test the query statement for correctness. Along with cross-site scripting, this is used by worms to break into websites and extract data or embed malicious code (PC Magazine, 2018).
+- **Stakeholder** - A person or a group who has an interest—vested or otherwise—in an enterprise and whose support is required to be successful (Rouse, 2017).
 - **Stakeholder** - Any individual who may be affected by a business decision. The term may refer to just about anyone who has some interest in a company or its products; however, it specifically excludes shareholders, who are officially part owners of the company (PC Magazine, 2019).
+- **Standards** - Are formally-established requirements in regard to processes, actions, and configuration (Cornelius, 2017).
 - **Statistical Techniques** - The analysis of intrusion detection based on a pattern of numbers or a sequence of steps taken by the attacker.
 - **Stealth Mode** - Taking place in secret. Stealth mode often refers to the policy of startups, when companies are developing unique products, or the policy of established companies when they are creating something new. Everyone is sworn to secrecy, and a low profile is kept until launch time (PC Magazine, 2018).
 - **Steganography** - Embedding data within other data to conceal it.
@@ -514,18 +558,22 @@ The theory that unless a subject is given explicit access to an object, it shoul
 - **Subdirectory** - A directory contained within another directory.
 - **Subtype** - An entity that has its own unique characteristics and also shares the characteristics of its supertype entity (Robertson & Robertson, 2013).
 - **Supertype** - A generalized entity. Its business role and its attributes are common to all subtypes (Robertson & Robertson, 2013).
+- **Supply Chain Risk Management (SCRM)** - A systematic process for managing supply chain risk by identifying susceptibilities, vulnerabilities, and threats throughout the supply chain and developing mitigation strategies to combat those threats whether presented by the supplier (Dukes, 2015).
 - **Symmetric Encryption** - A method of encryption that uses the same key for encrypting and decrypting data.
 - **Systems Analysis and Design** - The examination of a problem and the creation of its solution (PC Magazine, 2019).
 - **Systems Development Life Cycle (SDLC)** - The sequence of events in the development of an information system (application), which requires mutual effort on the part of both the user and technical staff (PC Magazine, 2019).
+- **System Development Life Cycle (SDLC)** - The scope of activities associated with a system, encompassing the system’s initiation, development, and acquisition, implementation, operation and maintenance, and ultimately its disposal that instigates another system initiation (Dukes, 2015).
 
 ## T
 
 - **T1 Line** - A 1.544-Mbps point-to-point, dedicated, digital circuit provided by the telephone companies. With the monthly cost typically based on distance, these are widely used for connecting an organization's PBX to the telephone company or a local network (LAN) to an internet provider (ISP). They are also used for internet access in buildings that have no DSL, cable, or fixed wireless coverage (PC Magazine, 2018).
 - **Temporal Trigger** - An event that is caused by some period of time.
 - **Thread** - In a multithreaded system, a thread is one process that occurs simultaneously with other processes (PC Magazine, 2018).
+- **Threat** - Any circumstance or event with the potential to adversely impact organizational operations, organizational assets, individuals, or other organizations through an information system via unauthorized access, destruction, disclosure, modification of information, and/or denial of service (Dukes, 2015).
 - **Threat Actor** - An individual or entity that poses a threat to the security of an organization. Also called a "malicious actor" (PC Magazine, 2018).
 - **Threat Information Sources (e.g., CERT)** - Analytical insights into trends, technologies, or tactics of an adversarial nature affecting information systems security (CNSS, 2003).
 - **Three-Way Handshake** - Signals transmitted back and forth over a communications network in order to establish a valid connection between two stations (PC Magazine, 2019).
+- **Time Bomb** - Resident computer program that triggers an unauthorized act at a predefined time (Dukes, 2015).
 - **Tone** - The attitude of a writer toward a subject or audience.
 - **Trace Recording** - The capture of network traffic from a specific host to a destination. Usually done after an intrusion has been detected.
 - **Transmission Control Protocol** - The reliable transport protocol within the TCP/IP protocol suite (PC Magazine, 2019).
@@ -533,8 +581,10 @@ The theory that unless a subject is given explicit access to an object, it shoul
     1. A mechanism that initiates an action when an event occurs such as reaching a certain time or date or upon receiving some type of input. A trigger generally causes a program routine to be executed.
     2. In a database management system (DBMS), a trigger is an SQL procedure that is executed when a record is added or deleted. It is used to maintain referential integrity in the database. A trigger may also execute a stored procedure (PC Magazine, 2019).
 - **Trojan Horse** - The term comes from Greek mythology, in which the Greeks battled the Trojans (people of Troy). After years of being unable to break into the fortified city, the Greeks built this, filled it with soldiers and pretended to sail away. After the Trojans brought this into the city, the Greek soldiers crept out at night and opened the gates of Troy to the returning soldiers, and Troy was destroyed (PC Magazine, 2018).
+- **Trojan Horse** - A computer program that appears to have a useful function, but also has a hidden and potentially malicious function that evades security mechanisms (Dukes, 2015).
 - **Trojan Virus** - A program that appears legitimate but performs some illicit activity when run. It may be used to locate password information or make the system more vulnerable to future entry or simply destroy the user's stored software and data. This is similar to a virus, except that it does not replicate itself. Often sneaking in attached to a free game or other supposedly worthwhile utility, it remains in the computer doing damage or allowing someone from a remote location to take control (PC Magazine, 2018).
 - **Trusted Computing Base (TCB) Subsets** - Everything that causes a computer system or network to be devoid of malicious software or hardware (PC Magazine, 2019).
+- **Tuckman-Jensen Model** - A five-step team development process consisting of forming, storming, norming, performing, and adjourning (Mulder, 2013).
 - **Turning Point**
 A time at which a decisive change in a situation occurs, especially one with beneficial results (Cambridge Dictionary, 2019).
 
@@ -554,6 +604,7 @@ A time at which a decisive change in a situation occurs, especially one with ben
 - **Visual / Audio Alert** - The use of alarms or warning systems to make individuals aware that the system has been compromised.
 - **Visualization** - Using the computer to convert data into picture form. The most basic visualization is that of turning transaction data and summary information into charts and graphs. Visualization is used in computer-aided design (CAD) to render screen images into three-dimensional models that can be viewed from all angles and can also be animated (PC Magazine, 2019).
 - **Volatile Data** - Data on a live system that is lost after a computer is powered down.
+- **Vulnerability** - A weakness in an information system, system security procedures, internal controls, or implementation that could be exploited by a threat source (Dukes, 2015).
 
 ## W
 
@@ -601,7 +652,11 @@ A time at which a decisive change in a situation occurs, especially one with ben
 
 ## References
 
+Astle, M. (2018, August 18). *The Project Management Triangle: How to Manage Constraints and Ship on Time*. Retrieved from https://clearbridgemobile.com/the-project-management-triangle-how-to-manage-constraints-and-ship-on-time/
+
 Bishop, M. (2003). Computer security: Art and Science (1st ed.). Boston, MA: Addison-Wesley Professional.
+
+Blaha, J. (2018, May 25). *Mandatory Vacations*. Retrieved from http://www.osa.state.mn.us/default.aspx?page=20090724.060
 
 Brocklehurst, K., (2014). Understanding what constitutes your attack surface. Retrieved from https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/
 
@@ -613,11 +668,23 @@ Cebula, J. J., Popeck, M. E., & Young, L. R. (2014). A taxonomy of operational c
 
 CGISecurity. (2018). What is blind SQL injection? Retrieved from https://www.cgisecurity.com/questions/blindsql.shtml
 
+Chen, J. (2019, October 13). *Return on Investment (ROI)*. Retrieved from https://www.investopedia.com/terms/r/returnoninvestment.asp
+
 CNSS. (2003). National information assurance (IA) glossary. Retrieved from https://www.ecs.csus.edu/csc/iac/cnssi_4009.pdf
+
+Cohen, E. (2017, October 24). *Program Management: Definition, Roles, Responsibilities & Resources*. Retrieved from https://www.workamajig.com/blog/program-management-guide
 
 Computer Security Resource Center. (2019). National Institute of Standards and Technology. Retrieved from https://csrc.nist.gov/csrc/media/publications/fips/140/1/archive/1994-01-11/documents/fips1401.pdf
 
+Cornelius, B. (2017, November 27). Understanding Policies, Control Objectives, Standards, Guidelines & Procedures. *Tripwire*. Retrieved from https://www.tripwire.com/state-of-security/regulatory-compliance/understanding-policies-control-objectives-standards-guidelines-procedures/
+
+CSRC. (n.d.). *Separation of Duty*. Retrieved from https://csrc.nist.gov/glossary/term/Separation-of-Duty
+
 Desmond, P. (2004). All-out blitz against web app attacks. Retrieved from http://www.networkworld.com/techinsider/2004/0517techinsidermain.html
+
+Dukes, C. (2015, April 6). *Committee on National Security Systems (CNSS) Glossary*. Retrieved from https://www.cnss.gov/CNSS/openDoc.cfm?9HTh9TDtTymEEVYw+FdaWQ==
+
+Erstad, W. (2018, October 29). *Civil Law vs. Criminal Law: Breaking Down the Differences*. Retrieved from https://www.rasmussen.edu/degrees/justice-studies/blog/civil-law-versus-criminal-law/
 
 Hamman, S. T., Hopkinson, K. M., Markham, R. L., Chaplik, A. M., & Metzler, G. E. (2017). Teaching game theory to improve adversarial thinking in cybersecurity students. IEEE Transactions on Education, 60(3), 205-211.
 
@@ -625,11 +692,21 @@ Invincea. (2015). Know your adversary: An adversary model for mastering cyber-de
 
 Kent, K., Chevalier, S., Grance, T., & Dang, H. (2006, August). *Guide to integrating forensic techniques into incident response*. Retrieved from https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-86.pdf
 
+Kenton, W. (2019a, May 9). *Copyright*. Retrieved from https://www.investopedia.com/terms/c/copyright.asp
+
+Kenton, W. (2019b, June 23). *Patent*. Retrieved from https://www.investopedia.com/terms/p/patent.asp
+
+Kenton, W. (2019c, October 24). *Administrative Law*. Retrieved from https://www.investopedia.com/terms/a/administrative-law.asp
+
 Khosrow-Pour, M. (Ed.). (2015). Encyclopedia of information science and technology (3rd ed.). Hershey, PA: IGI Global.
 
 Kim, D., & Solomon, M. G. (2013). Fundamentals of information systems security (2nd ed.). Burlington, MA: Jones & Bartlett Publishers.
 
 Kowalczyk, C. (2019). Crypto-IT. Retrieved from http://www.crypto-it.net/eng/attacks/
+
+McConnell, E. (2012, February 22). *Project Sponsor – The Role and Responsibilities*. Retrieved from http://mymanagementguide.com/project-sponsor-indentifying-project-sponsor-role-and-responsibilities/
+
+Mulder, P. (2013). *Tuckman stages of group development*. Retrieved from https://www.toolshero.com/management/tuckman-stages-of-group-development/
 
 Muniz, J., & Lakhani, A. (2018). *Investigating the cyber breach: The digital forensics guide for the network engineer*. Indianapolis, IN: Cisco Press.
 
@@ -649,6 +726,14 @@ Robertson, J., & Robertson, S. (2013). *Complete systems analysis: The workbook,
 
 Rerup, N., & Aslaner, M. (2018). *Hands-on cybersecurity for architects*. Birmingham, UK: Packt Publishing.
 
+Roback, E. (2000, November 28). Federal Information Technology Security Assessment Framework. *NIST*. Retrieved from https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=918351
+
+Rouse, M. (2015a, May). Communications Plan. *TechTarget*. Retrieved from https://whatis.techtarget.com/definition/communication-plan
+
+Rouse, M. (2015b, February). Framework. *TechTarget*. Retrieved from https://whatis.techtarget.com/definition/framework
+
+Rouse, M. (2017, January). Stakeholder. *TechTarget*. Retrieved from https://searchcio.techtarget.com/definition/stakeholder
+
 Rouse, M. (2014). NetFlow. WhatIs.com. Retrieved from https://whatis.techtarget.com/definition/NetFlow-Cisco
 
 Saini, V. K., Duan, Q., & Paruchuri, V. (2008). Threat modeling using attack trees. Journal of Computing Sciences in Colleges, 23(4), 124-131.
@@ -661,10 +746,20 @@ Schneier, B. (n.d). Schneier on Security. Retrieved from https://www.schneier.co
 
 Sheward, M. (2018). *Hands-on incident response and digital forensics*. Swindon, UK: BCS Learning & Development Ltd.
 
+Shiel, W. C. (n.d.). *Medical Definition of HIPAA*. Retrieved from https://www.medicinenet.com/script/main/art.asp?articlekey=31785
+
 Snedaker, S., & Rima, C. (2014).* Business continuity and disaster recovery planning for IT professionals* (2nd ed.). Waltham, MA: Syngress/Elsevier.
+
+Spacey, J. (2017, April 20). *11 Elements of a Risk Register*. Retrieved from https://simplicable.com/new/risk-register
 
 Stringfellow, Angela. (2017, September). Log aggregation 101: Methods, tools, tutorials and more. Retrieved from https://stackify.com/log-aggregation-101/
 
+Techopedia. (2019). *Project Manager*. Retrieved from https://www.techopedia.com/definition/677/project-manager-pm
+
 Tjaden, B. C. (2015). Appendix 1  Cybersecurity first principles. Retrieved from https://users.cs.jmu.edu/tjadenbc/Bootcamp/0-GenCyber-First-Principles.pdf
+
+Westland, J. (2018, July 12). *Project Integration Management – A Quick Guide*. Retrieved from https://www.projectmanager.com/blog/project-integration-management-a-quick-guide
+
+White, J. (n.d.). *Dumpster Diving*. Retrieved from https://www.lifelock.com/learn-identity-theft-resources-dumpster-diving.html
 
 WhizLabs. (2018). 10 most popular business analysis techniques. Retrieved from https://www.whizlabs.com/blog/best-business-analysis-techniques/
