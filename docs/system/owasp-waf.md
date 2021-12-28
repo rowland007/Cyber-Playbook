@@ -1,6 +1,7 @@
 # OWASP Best Practices: Use of Web Application Firewalls
 
-Click [HERE](../static/docs/owasp-best-practices-waf.pdf) to download the PDF.
+!!! danger "Link to PDF"
+    [PDF](../static/docs/owasp-best-practices-waf.pdf)
 
 ## Abstract
 
