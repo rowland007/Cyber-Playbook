@@ -2,7 +2,7 @@
 
 ![common-language-for-computer-security-incidents-img](../static/images/common-language-for-computer-security-incidents.png)
 
-!!! example "Definition of Terms"
+!!! abstract "Definition of Terms"
     === "Attackers"
 
         An individual who attempts one or more attacks in order to achieve an objective – the purpose or end goal of an incident. Based on their objectives, we have divided attackers into the following six categories:
@@ -72,5 +72,5 @@
         - **corruption of information** - unauthorized alteration of data on a computer or network.
         - **denial of service** - intentional degradation or blocking of computer or network resources.
 
-!!! danger "Link to Source"
-[A Common Language for Computer Security Incidents by John D. Howard & Thomas A. Longstaff](https://doi.org/10.2172/751004) hosted on U.S. Department of Engergy's Office of Scientific and Technical Information.
+??? cite "Link to Source"
+    :fontawesome-solid-external-link-alt: [A Common Language for Computer Security Incidents by John D. Howard & Thomas A. Longstaff](https://doi.org/10.2172/751004) hosted on U.S. Department of Engergy's Office of Scientific and Technical Information.

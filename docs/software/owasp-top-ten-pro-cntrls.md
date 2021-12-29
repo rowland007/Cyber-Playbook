@@ -10,44 +10,45 @@ Software developers are the foundation of any application. In order to achieve s
 
 The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important. This document was written by developers for developers to assist those new to secure development.
 
-- [C1: Define Security Requirements](https://owasp.org/www-project-proactive-controls/v3/en/c1-security-requirements)
-- [C2: Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
-- [C3: Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
-- [C4: Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
-- [C5: Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
-- [C6: Implement Digital Identity](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity)
-- [C7: Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
-- [C8: Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
-- [C9: Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
-- [C10: Handle All Errors and Exceptions](https://owasp.org/www-project-proactive-controls/v3/en/c10-errors-exceptions)
+- [x] [C1: Define Security Requirements](https://owasp.org/www-project-proactive-controls/v3/en/c1-security-requirements)
+- [x] [C2: Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
+- [x] [C3: Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
+- [x] [C4: Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
+- [x] [C5: Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
+- [x] [C6: Implement Digital Identity](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity)
+- [x] [C7: Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
+- [x] [C8: Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
+- [x] [C9: Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
+- [x] [C10: Handle All Errors and Exceptions](https://owasp.org/www-project-proactive-controls/v3/en/c10-errors-exceptions)
 
 For more information, see the complete document [here](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.pdf).
 
-## Presentation
-Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
+??? important "Presentation"
+    Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
 
-## Key Contributors
-- Massimiliano Graziani (Italian Translation)
-- Taras Ivashchenko (Russian Translation)
-- Jay Zudilin (Russian Translation)
-- Danny Harris
-- Hiroaki Kuramochi (Japanese Translation)
-- Hiroshi Fujimoto (Japanese Translation)
-- Hidenori Nagai (Japanese Translation)
-- Riotaro OKADA (Japanese Translation)
-- Robert Dracea (Japanese Translation)
-- Koichiro Watanabe (Japanese Translation)
-- Tony Hsu Hsiang Chih (Chinese Translation)
-- Abdessamad Temmar
-- Eyal Estrin (Hebrew Translation)
-- Cyrille Grandval (French Translation)
-- Frédéric Baillon (French Translation)
-- Danny Harris
-- Stephen de Vries
-- Andrew Van Der Stock
-- Gaz Heyes
-- Colin Watson
-- Jason Coleman
-- Cassio Goldschmidt
+??? info "Key Contributors"
+    - Massimiliano Graziani (Italian Translation)
+    - Taras Ivashchenko (Russian Translation)
+    - Jay Zudilin (Russian Translation)
+    - Danny Harris
+    - Hiroaki Kuramochi (Japanese Translation)
+    - Hiroshi Fujimoto (Japanese Translation)
+    - Hidenori Nagai (Japanese Translation)
+    - Riotaro OKADA (Japanese Translation)
+    - Robert Dracea (Japanese Translation)
+    - Koichiro Watanabe (Japanese Translation)
+    - Tony Hsu Hsiang Chih (Chinese Translation)
+    - Abdessamad Temmar
+    - Eyal Estrin (Hebrew Translation)
+    - Cyrille Grandval (French Translation)
+    - Frédéric Baillon (French Translation)
+    - Danny Harris
+    - Stephen de Vries
+    - Andrew Van Der Stock
+    - Gaz Heyes
+    - Colin Watson
+    - Jason Coleman
+    - Cassio Goldschmidt
 
-[source](https://owasp.org/www-project-proactive-controls/)
+??? cite "Link to Site"
+    [:fontawesome-solid-external-link-alt: OWASP Project Proactive Controls](https://owasp.org/www-project-proactive-controls/){ .md-button .md-button--primary }
