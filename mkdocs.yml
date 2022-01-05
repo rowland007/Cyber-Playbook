@@ -28,6 +28,7 @@ nav:
         'Overview': 'human/index.md'
     - Organizational Security:
         'Overview': 'organizational/index.md'
+        'Policy Implementation': 'organizational/policy-implementation.md'
         'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
     - Societal Security:
         'Overview': 'societal/index.md'
@@ -53,8 +54,14 @@ nav:
 theme:
   name: material
   palette:
-    primary: blue
-    accent: amber
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
