@@ -1,5 +1,7 @@
 # What Is a Cyber Playbook
 
+![MkDocs Deployment Status](https://github.com/rowland007/Cyber-Playbook/actions/workflows/ci.yml/badge.svg)
+
 Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics. You will use these again and again in the field to deal with situations as they arise. The idea is that you don’t want to wait until a challenging situation arises to have a plan; you want to already have potential mitigation strategies in your playbook that can help kickstart your process toward finding solutions.
 
 Watch the following [video](https://www.youtube.com/watch?v=UByojBREO6k) to learn more about how you will be building a playbook in your program.
