@@ -6,7 +6,7 @@ CrowdStrike Services is releasing a tracker spreadsheet to assist the Digital Fo
 
 - The CrowdStrike Incident Response Tracker is a convenient spreadsheet that includes sections to document indicators of compromise, affected accounts, compromised systems and a timeline of significant events
 - CrowdStrike incident response teams have leveraged this type of tracker in thousands of investigations
-- [Download the CrowdStrike Incident Response Tracker Template](../static/docs/CrowdStrike-Incident-Response-Tracker-Template.xlsx)
+- [Download the CrowdStrike Incident Response Tracker Template](../static/docs/CrowdStrike-Incident-Response-Tracker-Template.xlsx) :material-microsoft-excel:
 
 During a recent client engagement for a tabletop exercise (TTX), it became apparent that the client did not have a methodology for tracking indicators and building an incident timeline. The CrowdStrike Services team wanted to provide more information to our client on how incidents can and should be tracked, but nothing was available in the public domain that was simple to implement and could be immediately leveraged by responders. To address this gap, we are releasing the CrowdStrike Incident Response Tracker spreadsheet, which is organized into a number of tabs to record various classes of incident-related events in a structured and repeatable manner. 
 
@@ -99,7 +99,7 @@ Finally, it is recommended to use an online collaboration spreadsheet technology
 
 The CrowdStrike IR Tracker itself is not a panacea to cure all ills of the IR process, but rather a tool that, if used correctly, can greatly increase efficiency of collaboration between individuals and teams. Like all tools, it must be used correctly, and one of the key tenets of the CrowdStrike IR teams is our “tracker hygiene.” We know that if the CrowdStrike IR Tracker is not maintained then the results are going to be poor. The tracker gives back, but it can only give back from the effort that is put into it by ALL team members, ALL of the time. Maintaining the tracker for the incident takes work and discipline, but it is our belief that it is very much worth the effort.
 
-CrowdStrike is sharing the [CrowdStrike Incident Response Tracker Template](../static/docs/CrowdStrike-Incident-Response-Tracker-Template.xlsx) to give the DFIR community a starting point for collecting and recording incident artifacts in a consolidated and organized fashion. It is our hope that this resource is a useful baseline for building upon within your own organization, or when an IR tracker is needed on short notice.
+CrowdStrike is sharing the [CrowdStrike Incident Response Tracker Template](../static/docs/CrowdStrike-Incident-Response-Tracker-Template.xlsx) :material-microsoft-excel: to give the DFIR community a starting point for collecting and recording incident artifacts in a consolidated and organized fashion. It is our hope that this resource is a useful baseline for building upon within your own organization, or when an IR tracker is needed on short notice.
 
 
 ??? cite "Link to Source"
