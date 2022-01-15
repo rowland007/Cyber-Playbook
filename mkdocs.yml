@@ -70,8 +70,8 @@ theme:
   icon:
     admonition:
       cite: octicons/link-external-16
-    logo: material/library
-
+  logo: static/images/logo.png
+  favicon: static/images/favicon.png
 # Customization
 extra:
   social:
