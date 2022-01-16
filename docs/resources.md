@@ -12,6 +12,12 @@ The taxonomy provides a resource for the categorization of risk. This resource b
 - [:fontawesome-solid-external-link-alt: ATT&CK: Adversarial Tactics, Techniques & Common Knowledge Navigator](https://mitre-attack.github.io/attack-navigator/) :material-chart-tree:  
 This resource is used to define and describe the steps of a cyber attack. It lists the strategies and methods in a simple, easy-to-follow algorithm. The steps contained in the resources are not an exhaustive list, but the majority of incidents will be covered. The major benefit of this resource is it gives many suggestions on how to respond to cyber attacks and how to be proactive against cyber attacks.
 
+- [:fontawesome-solid-external-link-alt: ATT&CK for Cyber Threat Intelligence Training](https://attack.mitre.org/resources/training/cti/) :octicons-video-24:  
+The training contains five modules that consist of videos and exercises. This training was designed to be completed in approximately 4 hours, and may be completed solo or as a team. We recommend you view the video for each module, and when prompted, pause the video to access the exercise documents and complete the exercises, then proceed with viewing the video to go over the exercise.
+
+- [:fontawesome-solid-external-link-alt: MITRE Crown Jewels Analysis](https://www.mitre.org/publications/systems-engineering-guide/enterprise-engineering/systems-engineering-for-mission-assurance/crown-jewels-analysis) :material-library:  
+In a large and complex enterprise, it is difficult to know how problems in a portion of an IT infrastructure may affect the broader operational mission. CJA provides a methodology to help understand what is most critical—beginning during systems development and continuing through system deployment.
+
 - [:fontawesome-solid-external-link-alt: NIST Guide for Mapping Types of Information and Information Systems to Security Categories](https://csrc.nist.gov/publications/detail/sp/800-60/vol-1-rev-1/final) :material-library:  
 Special publications from NIST assist in the cyber education of the country. Specifically, NIST SP 800-60 provides a structure for incident response and categories of incidents.
 
