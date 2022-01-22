@@ -50,6 +50,7 @@ nav:
         'Policy and Compliance': 'compliance.md'
         'Privacy': 'privacy.md'
     - Appendix 1 - Resources: 'resources.md'
+    - Appendix 2 - Quick Reference Guide: 'quick-reference.md'
 
 # Configuration
 theme:
