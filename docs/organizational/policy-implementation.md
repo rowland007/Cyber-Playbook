@@ -45,4 +45,4 @@ It is important to know that standards, guidelines, and procedures are separate 
 Once a consistent set of baselines has been created, it is possible to design the security architecture of an organization and develop standards. Baselines take into consideration the difference between various operating systems, for example, to ensure that the security is being uniformly implemented throughout the enterprise.
 
 ??? cite "Link to Source"
-    [:fontawesome-solid-external-link-alt: The CISSP&reg; and CAP Prep Guide: Platinum Edition by Ronald L. Krutz & Russell Dean Vines](https://learning.oreilly.com/library/view/the-cissp-r-and/9780470007921/){ .md-button .md-button--primary }
+    [:octicons-link-external-16: The CISSP&reg; and CAP Prep Guide: Platinum Edition by Ronald L. Krutz & Russell Dean Vines](https://learning.oreilly.com/library/view/the-cissp-r-and/9780470007921/){ .md-button .md-button--primary }

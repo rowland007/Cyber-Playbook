@@ -73,4 +73,4 @@
         - **denial of service** - intentional degradation or blocking of computer or network resources.
 
 ??? cite "Link to Source"
-    :fontawesome-solid-external-link-alt: [A Common Language for Computer Security Incidents by John D. Howard & Thomas A. Longstaff](https://doi.org/10.2172/751004) hosted on U.S. Department of Engergy's Office of Scientific and Technical Information.
+    :octicons-link-external-16: [A Common Language for Computer Security Incidents by John D. Howard & Thomas A. Longstaff](https://doi.org/10.2172/751004) hosted on U.S. Department of Engergy's Office of Scientific and Technical Information.

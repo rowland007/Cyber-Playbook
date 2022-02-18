@@ -23,7 +23,7 @@ A law that protects student records in institutions that receive funds from the 
 - **Federal Authorities**  
 Institutions that act on behalf of the federal government to enforce laws and regulations.
 
-- [:fontawesome-solid-external-link-alt: Federal Information Security Modernization Act (FISMA)](https://www.dhs.gov/fisma)  
+- [:octicons-link-external-16: Federal Information Security Modernization Act (FISMA)](https://www.dhs.gov/fisma)  
 This is a piece of legislation that provides a basis for the federal government to oversee information security issues. This is an essential piece of legislation that helps the government deploy needed assets to help with cyber incidents. It also gives the government an outline for forcing businesses into reporting cyber incidents.
 
 - **Federal Laws**  

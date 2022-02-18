@@ -6,4 +6,4 @@
 ![common-language-for-computer-security-incidents-img](../static/images/cis-controls-v7.png)
 
 ??? cite "Link to CIS Workbench"
-    [:fontawesome-solid-external-link-alt: Workbench Login](https://workbench.cisecurity.org/files/2312/download/2608){ .md-button .md-button--primary }
+    [:octicons-link-external-16: Workbench Login](https://workbench.cisecurity.org/files/2312/download/2608){ .md-button .md-button--primary }

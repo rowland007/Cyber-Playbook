@@ -103,4 +103,4 @@ CrowdStrike is sharing the [CrowdStrike Incident Response Tracker Template](../s
 
 
 ??? cite "Link to Source"
-    [:fontawesome-solid-external-link-alt: CrowdStrike Blog by Paul Pratley Mark Goudie](https://www.crowdstrike.com/blog/crowdstrike-releases-digital-forensics-and-incident-response-tracker/){ .md-button .md-button--primary }
+    [:octicons-link-external-16: CrowdStrike Blog by Paul Pratley Mark Goudie](https://www.crowdstrike.com/blog/crowdstrike-releases-digital-forensics-and-incident-response-tracker/){ .md-button .md-button--primary }

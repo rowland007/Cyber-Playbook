@@ -51,4 +51,4 @@ For more information, see the complete document [here](https://github.com/OWASP/
     - Cassio Goldschmidt
 
 ??? cite "Link to Site"
-    [:fontawesome-solid-external-link-alt: OWASP Project Proactive Controls](https://owasp.org/www-project-proactive-controls/){ .md-button .md-button--primary }
+    [:octicons-link-external-16: OWASP Project Proactive Controls](https://owasp.org/www-project-proactive-controls/){ .md-button .md-button--primary }

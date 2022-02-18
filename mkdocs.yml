@@ -30,6 +30,7 @@ nav:
         'Overview': 'organizational/index.md'
         'Policy Implementation': 'organizational/policy-implementation.md'
         'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
+        'Creating a Cybersecurity Strategy': 'organizational/cybersecurity-strategy.md'
         'Incident Response Tracker': 'organizational/incident-response.md'
     - Societal Security:
         'Overview': 'societal/index.md'
