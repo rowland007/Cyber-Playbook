@@ -61,3 +61,6 @@ The Workforce Framework for Cybersecurity (NICE Framework) provides a set of bui
 
 - [:octicons-link-external-16: Cybersecurity & Infrastructure Security Agency Trusted Internet Connections Core Guidance Documents](https://www.cisa.gov/publication/tic-30-core-guidance-documents) :material-library:  
 Core guidance documents are intended to be used collectively in order to achieve the goals of the program. The documents are additive; each builds on the other like chapters in a book.
+
+- [:octicons-link-external-16: Privacy: Statutory Protections](https://ilt.eff.org/Privacy__Statutory_Protections.html) :material-library:  
+EFF's website that includes information about statutory protections.
