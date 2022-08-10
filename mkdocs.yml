@@ -34,6 +34,7 @@ nav:
         'Incident Response Tracker': 'organizational/incident-response.md'
     - Societal Security:
         'Overview': 'societal/index.md'
+        'The Six Dumbest Ideas in Computer Security': 'societal/six-dumb-ideas.md'
     - Software Security:
         'Overview': 'software/index.md'
         'OWASP Top 10 Proactive Controls': 'software/owasp-top-ten-pro-cntrls.md'
