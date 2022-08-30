@@ -64,3 +64,9 @@ Core guidance documents are intended to be used collectively in order to achieve
 
 - [:octicons-link-external-16: Privacy: Statutory Protections](https://ilt.eff.org/Privacy__Statutory_Protections.html) :material-library:  
 EFF's website that includes information about statutory protections.
+
+- [:octicons-link-external-16: ATT&CK Groups](https://attack.mitre.org/groups/) :fontawesome-solid-list:  
+Groups are sets of related intrusion activity that are tracked by a common name in the security community. Analysts track clusters of activities using various analytic methodologies and terms such as threat groups, activity groups, threat actors, intrusion sets, and campaigns. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations' group definitions may partially overlap with groups designated by other organizations and may disagree on specific activity.  
+For the purposes of the Group pages, the MITRE ATT&CK team uses the term Group to refer to any of the above designations for a cluster of adversary activity. The team makes a best effort to track overlaps between names based on publicly reported associations, which are designated as “Associated Groups” on each page (formerly labeled “Aliases”)
+
+- [:octicons-link-external-16: Mandiant Advanced Persistent Threats](https://www.mandiant.com/resources/insights/apt-groups) :fontawesome-solid-list:  
