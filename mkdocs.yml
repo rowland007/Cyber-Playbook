@@ -23,6 +23,7 @@ nav:
         'IPv6 References': 'connection/ip6-references.md'
         'Cisco IOS Commands': 'connection/cisco-commands.md'
         'nzyme | WiFi Defense System': 'connection/nzyme.md'
+        'CrowdSec Collaborative IPS': 'connection/crowdsec.md'
     - Data  Security:
         'Overview': 'data/index.md'
     - Human Security:
