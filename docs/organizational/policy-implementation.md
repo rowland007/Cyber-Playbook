@@ -1,6 +1,8 @@
 # Policies, Standards, Guidelines, and Procedures
 
 ![image](../static/images/policy-model.png)
+??? cite "Image Citation"
+    [:octicons-link-external-16: Model of Public Policy](https://cio-wiki.org/wiki/File:Policy_Model.png)Model of Public Policy</a> by [:octicons-link-external-16: (de Sousa & Capdevila, 2021)](https://www.digital.nsw.gov.au/article/whats-in-a-name-deconstructing-and-defining-policy) & © [State of New South Wales :octicons-link-external-16:](https://www.nsw.gov.au/) is licensed under [:octicons-link-external-16: CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## Policy
 
