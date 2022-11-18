@@ -10,7 +10,7 @@ Let me introduce you to the ***six dumbest ideas in computer security***. What a
 
 For your convenience, I've listed the dumb ideas in descending order from the most-frequently-seen. If you can avoid falling into the the trap of the first three, you're among the few true computer security elite.
 
-## #1 - Default Permit
+## Default Permit
 
 This dumb idea crops up in a lot of different forms; it's incredibly persistent and difficult to eradicate. Why? Because it's so attractive. Systems based on "Default Permit" are the computer security equivalent of empty calories: tasty, yet fattening.
 
@@ -24,7 +24,7 @@ One clear symptom that you've got a case of "Default Permit" is when you find yo
 
 The opposite of "Default Permit" is "Default Deny" and it is a ***really*** good idea. It takes dedication, thought, and understanding to implement a "Default Deny" policy, which is why it is so seldom done. It's not that much harder to do than "Default Permit" but you'll sleep much better at night.
 
-## #2 - Enumerating Badness
+## Enumerating Badness
 
 Back in the early days of computer security, there were only a relatively small number of well-known security holes. That had a lot to do with the widespread adoption of "Default Permit" because, when there were only 15 well-known ways to hack into a network, it was possible to individually examine and think about those 15 attack vectors and block them. So security practitioners got into the habit of "Enumerating Badness" - listing all the bad things that we know about. Once you list all the badness, then you can put things in place to detect it, or block it.
 
@@ -52,7 +52,7 @@ One clear symptom that you have a case of "Enumerating Badness" is that you've g
 
 In a sense, "Enumerating Badness" is a special dumb-case of "Default Permit" - our #1 dumb computer security idea. But it's so prevalent that it's in a class by itself.
 
-## #3 - Penetrate and Patch
+## Penetrate and Patch
 
 There's an old saying, "You cannot make a silk purse out of a sow's ear." It's pretty much true, unless you wind up using so much silk to patch the sow's ear that eventually the sow's ear is completely replaced with silk. Unfortunately, when buggy software is fixed it is almost always fixed through the addition of new code, rather than the removal of old bits of sow's ear.
 
@@ -76,7 +76,7 @@ Let me put it to you in different terms: ***if "Penetrate and Patch" was effecti
 
 One clear symptom that you've got a case of "Penetrate and Patch " is when you find that your system is always vulnerable to the "bug of the week." It means that you've put yourself in a situation where every time the hackers invent a new weapon, it works against you. Doesn't that sound dumb? Your software and systems should be secure by design and should have been *designed with flaw-handling in mind*.
 
-## #4 - Hacking is Cool
+## Hacking is Cool
 
 One of the best ways to get rid of cockroaches in your kitchen is to scatter bread-crumbs under the stove, right? Wrong! That's a dumb idea. One of the best ways to discourage hacking on the Internet is to give the hackers stock options, buy the books they write about their exploits, take classes on "extreme hacking kung fu" and pay them tens of thousands of dollars to do "penetration tests" against your systems, right? Wrong! "Hacking is Cool" is a really dumb idea.
 
@@ -89,7 +89,7 @@ If you're a security practitioner, teaching yourself how to hack is also part of
 
 My prediction is that the "Hacking is Cool" dumb idea will be a dead idea in the next 10 years. I'd like to fantasize that it will be replaced with its opposite idea, "Good Engineering is Cool" but so far there is no sign that's likely to happen.
 
-## #5 - Educating Users
+## Educating Users
 
 "Penetrate and Patch" can be applied to human beings, as well as software, in the form of user education. On the surface of things, the idea of "Educating Users" seems less than dumb: education is always good. On the other hand, like "Penetrate and Patch" ***if it was going to work, it would have worked by now***. There have been numerous interesting studies that indicate that a significant percentage of users will trade their password for a candy bar, and the Anna Kournikova worm showed us that nearly 1/2 of humanity will click on anything purporting to contain nude pictures of semi-famous females. If "Educating Users" is the strategy you plan to embark upon, you should expect to have to "patch" your users every week. That's dumb.
 
@@ -99,7 +99,7 @@ Dealing with things like attachments and phishing is another case of "Default Pe
 
 When I was CEO of a small computer security start-up we didn't have a Windows system administrator. All of the employees who wanted to run Windows had to know how to install it and manage it themselves, or they didn't get hired in the first place. My prediction is that in 10 years users that need education will be out of the high-tech workforce entirely, or will be self-training at home in order to stay competitive in the job market. My guess is that this will extend to knowing not to open weird attachments from strangers.
 
-## #6 - Action is Better Than Inaction
+## Action is Better Than Inaction
 
 IT executives seem to break down into two categories: the "early adopters" and the "pause and thinkers." Over the course of my career, I've noticed that *dramatically* fewer of the "early adopters" build successful, secure, mission-critical systems. This is because they somehow believe that "Action is Better Than Inaction" - i.e.: if there's a new whizzbang, it's better to install it right now than to wait, think about it, watch what happens to the other early adopters, and then deploy the technology once it's fully sorted-out and has had its first generation of experienced users. I know one senior IT executive - one of the "pause and thinkers" whose plan for doing a wireless roll-out for their corporate network was "wait 2 years and hire a guy who did a successful wireless deployment for a company larger than us." Not only will the technology be more sorted-out by then, it'll be much, much cheaper. What an utterly brilliant strategy!
 
