@@ -34,6 +34,10 @@ nav:
         'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
         'Creating a Cybersecurity Strategy': 'organizational/cybersecurity-strategy.md'
         'Incident Response Tracker': 'organizational/incident-response.md'
+        - Yubico Logins:
+          'Overview': 'organizational/yubico/index.md'
+          'YubiKey Smart Card Deployment Guide': 'organizational/yubico/smart-card-deployment.md'
+          'Yubico Login for Windows Configuration Guide': 'organizational/yubico/windows-config-guide.md'
     - Societal Security:
         'Overview': 'societal/index.md'
         'The Six Dumbest Ideas in Computer Security': 'societal/six-dumb-ideas.md'
