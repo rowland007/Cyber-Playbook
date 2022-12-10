@@ -16,7 +16,6 @@ nav:
     - Overview: 'index.md'
     - Component Security:
         'Overview': 'component/index.md'
-        'Data Management Life Cycle': 'component/data-manage-life.md'
     - Connection Security:
         'Overview': 'connection/index.md'
         'IPv4 Subnets': 'connection/ip4-subnets.md'
@@ -26,10 +25,13 @@ nav:
         'CrowdSec Collaborative IPS': 'connection/crowdsec.md'
     - Data  Security:
         'Overview': 'data/index.md'
+        'Data Management Life Cycle': 'data/data-manage-life.md'
+        'Data Classification': 'data/data-classification.md'
     - Human Security:
         'Overview': 'human/index.md'
     - Organizational Security:
         'Overview': 'organizational/index.md'
+        'Risk Matrix': 'organizational/risk.md'
         'Policy Implementation': 'organizational/policy-implementation.md'
         'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
         'Creating a Cybersecurity Strategy': 'organizational/cybersecurity-strategy.md'
@@ -43,6 +45,7 @@ nav:
     - Software Security:
         'Overview': 'software/index.md'
         'OWASP Top 10 Proactive Controls': 'software/owasp-top-ten-pro-cntrls.md'
+        'Supply Chain Levels for Software Artifacts': 'software/slsa.md'
     - System Security:
         'Overview': 'system/index.md'
         'CIS Controls': 'system/cis-controls.md'
@@ -103,6 +106,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - tables
   - pymdownx.snippets
@@ -125,3 +130,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
