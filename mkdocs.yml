@@ -29,6 +29,7 @@ nav:
         'Data Classification': 'data/data-classification.md'
     - Human Security:
         'Overview': 'human/index.md'
+        'Mindful Emotion Awareness': 'human/mindful.md'
     - Organizational Security:
         'Overview': 'organizational/index.md'
         'Risk Matrix': 'organizational/risk.md'
