@@ -6,6 +6,9 @@
 !!! danger
     There are a lot of old VPN technologies out there that are *old* and *insecure*. This section will not cover those technologies.
 
+!!! tip
+    To improve traditional encrypt-then-MAC VPN solutions, one should choose modern AEAD ciphers like `AES-GCM` or `ChaCha20-poly1305`.
+
 ## OpenVPN
 
 !!! danger
@@ -26,6 +29,9 @@
     - 
 
 ## WireGuard
+
+WireGuard’s protocol was developed from scratch, based
+on best cryptographic practices and using the newest ciphers. Contrary to committee-guided protocols like IPsec, WireGuard is strongly opinionated on certain topics and includes radical ideas. It does away with cryptographic agility by locking in on a single AEAD cipher and authentication algorithm with no feature negotiation: `ChaCha20-poly1305`. Backwards compatibility is explicitly missing: handshake and key derivation include a hash of the protocol version number, so two different implementations will derive distinct keys, making them permanently non-compatible. These measures heavily incentivize keeping the software up-to-date and prevent degradation attacks found in SSL.
 
 ??? cite
     - Hulsing, A., Ning, K.-C., Schwabe, P., Weber, F., & Zimmermann, P. R. (2021). Post-quantum WireGuard. *2021 IEEE Symposium on Security and Privacy (SP), Security and Privacy (SP), 2021 IEEE Symposium on, SP*, 304–321. [:octicons-link-external-16: https://doi-org.ezproxy.snhu.edu/10.1109/SP40001.2021.00030](https://doi-org.ezproxy.snhu.edu/10.1109/SP40001.2021.00030 "Account/Login Required") :material-file-pdf-box:
