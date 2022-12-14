@@ -28,6 +28,7 @@ nav:
         'Overview': 'data/index.md'
         'Data Management Life Cycle': 'data/data-manage-life.md'
         'Data Classification': 'data/data-classification.md'
+        'Techniques, Tactics and Procedures': 'data/ttp.md'
     - Human Factors:
         'Overview': 'human/index.md'
         'Access Control Models': 'human/controls.md'
