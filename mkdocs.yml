@@ -14,7 +14,7 @@ copyright: 'Copyright &copy; 2021-2023 Randall Rowland<br>This work is licensed 
 # Navigation Menu
 nav:
     - Overview: 'index.md'
-    - Approaches: 'overview/approaches.md'
+    - Approach: 'overview/approaches.md'
     - Component Security:
         'Overview': 'component/index.md'
     - Connection Security:
