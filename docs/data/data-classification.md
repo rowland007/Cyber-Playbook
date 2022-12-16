@@ -397,3 +397,19 @@
         style I fill:blue,color:#fff
         style J fill:yellow,color:#000
     ```
+
+
+## Creating Header & Footer Labels in Word
+
+- Create the content of the header and footer you want.
+- Select everything in the header.
+- Click the Header button in the Header & Footer Tools ribbon, look at the bottom of the gallery, and click "Add selection to Header gallery".
+- Enter a name (and possibly other items) in the dialog that appears.
+- Select everything in the footer.
+- Click the Footer button and click "Add selection to Footer gallery".
+- Complete the dialog that appears.
+- When exiting Word, answer yes to the prompt about saving the Building Blocks.dotx template.
+
+## PowerPoint Labels
+
+[Click Here](../static/docs/data-classification-labels.pptx) :simple-microsoftpowerpoint: to download the PowerPoint.
