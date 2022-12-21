@@ -5,6 +5,7 @@
 
 !!! danger
     There are a lot of old VPN technologies out there that are *old* and *insecure*. This section will not cover those technologies.
+    ![vpn-image](../static/images/vpn-graph.jpg)
 
 !!! tip
     To improve traditional encrypt-then-MAC VPN solutions, one should choose modern AEAD ciphers like `AES-GCM` or `ChaCha20-poly1305`.
