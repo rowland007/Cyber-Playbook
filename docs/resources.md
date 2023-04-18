@@ -15,6 +15,9 @@ This resource is used to define and describe the steps of a cyber attack. It lis
 - [:octicons-link-external-16: ATT&CK for Cyber Threat Intelligence Training](https://attack.mitre.org/resources/training/cti/) :octicons-video-24:  
 The training contains five modules that consist of videos and exercises. This training was designed to be completed in approximately 4 hours, and may be completed solo or as a team. We recommend you view the video for each module, and when prompted, pause the video to access the exercise documents and complete the exercises, then proceed with viewing the video to go over the exercise.
 
+- [:octicons-link-external-16: MITRE Engage Starter Kit](https://engage.mitre.org/starter-kit/) :material-library: 
+"MITRE Engage is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals." MITRE Engage is considered an Adversary Engagement Approach. This is accomplished by the implementation of Cyber Denial and Cyber Deception. The starter kit is a collection of whitepapers and PDFs explaining various checklists, methodologies, and processes to get you started.  
+
 - [:octicons-link-external-16: MITRE Crown Jewels Analysis](https://www.mitre.org/publications/systems-engineering-guide/enterprise-engineering/systems-engineering-for-mission-assurance/crown-jewels-analysis) :material-library:  
 In a large and complex enterprise, it is difficult to know how problems in a portion of an IT infrastructure may affect the broader operational mission. CJA provides a methodology to help understand what is most critical—beginning during systems development and continuing through system deployment.
 
