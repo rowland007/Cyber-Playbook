@@ -73,3 +73,6 @@ Groups are sets of related intrusion activity that are tracked by a common name 
 For the purposes of the Group pages, the MITRE ATT&CK team uses the term Group to refer to any of the above designations for a cluster of adversary activity. The team makes a best effort to track overlaps between names based on publicly reported associations, which are designated as “Associated Groups” on each page (formerly labeled “Aliases”)
 
 - [:octicons-link-external-16: Mandiant Advanced Persistent Threats](https://www.mandiant.com/resources/insights/apt-groups) :fontawesome-solid-list:  
+
+- [:octicons-link-external-16: OASIS Cyber Threat Intelligence](https://oasis-open.github.io/cti-documentation/) :fontawesome-solid-list:  
+The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society. The OASIS Cyber Threat Intelligence (CTI) TC supports automated information sharing for cybersecurity situational awareness, real-time network defense, and sophisticated threat analysis.  
