@@ -39,6 +39,7 @@ nav:
         'Policy Implementation': 'organizational/policy-implementation.md'
         'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
         'Creating a Cybersecurity Strategy': 'organizational/cybersecurity-strategy.md'
+        'Cyber Threat Intelligence': 'organizational/cti.md'
         'Incident Response Tracker': 'organizational/incident-response.md'
         'Yubico Logins Overview': 'organizational/yubico/index.md'
         'YubiKey Smart Card Deployment Guide': 'organizational/yubico/smart-card-deployment.md'
