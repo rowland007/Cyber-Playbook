@@ -76,3 +76,12 @@ For the purposes of the Group pages, the MITRE ATT&CK team uses the term Group t
 
 - [:octicons-link-external-16: OASIS Cyber Threat Intelligence](https://oasis-open.github.io/cti-documentation/) :fontawesome-solid-list:  
 The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society. The OASIS Cyber Threat Intelligence (CTI) TC supports automated information sharing for cybersecurity situational awareness, real-time network defense, and sophisticated threat analysis.  
+
+- [:octicons-link-external-16: Rock the SOC - A Career Guide](https://www.devo.com/soc-career-guide) :simple-readme:  
+Compiled from the collective wisdom of both Devo executives and infosec community members, this guide will help you land your first role as a SOC analyst, and understand the different career tracks available to you. There are also plenty of tips on how to uplevel your skill set in order to stand out among your peers.  
+
+- [:octicons-link-external-16: SANS SOC Training & Resources](https://www.sans.org/soc/) :simple-bookstack:  
+Equipping Blue Teamers with the right training and resources to safeguard their organizations.  
+
+- [:octicons-link-external-16: SANS Course Previews](https://www.sans.org/course-preview/) :simple-googleclassroom:  
+Free course demos allow you to see course content, watch world-class instructors in action, and evaluate course difficulty.  
