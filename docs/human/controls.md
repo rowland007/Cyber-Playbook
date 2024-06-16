@@ -32,49 +32,49 @@
 
     <div class="grid cards" markdown>
 
-    -   { .lg .middle } __Implicit Deny__
+    -   __Implicit Deny__
 
         ---
 
         A basic principle of access control is *implicit deny* and most authorization mechanisms use it.
 
-    -   { .lg .middle } __Access Control Matrix__
+    -   __Access Control Matrix__
 
         ---
 
         An *access control matrix* is a table that includes subjects, objects, and assigned privileges.
 
-    -   { .lg .middle } __Capability Tables__
+    -   __Capability Tables__
 
         ---
 
         *Capability tables* are another way to identify privileges assigned to subjects.
 
-    -   { .lg .middle } __Content-Dependent Control__
+    -   __Content-Dependent Control__
 
         ---
 
         *Content-dependent access controls* restrict access to data based on the content within an object.
 
-    -   { .lg .middle } __Context-Dependet Control
+    -   __Context-Dependet Control__
 
         ---
 
         *Context-dependent access controls* require specific activity before granting users access.
 
-    -   { .lg .middle } __Need to Know__
+    -   __Need to Know__
 
         ---
 
         This principle ensures that subjects are granted access only to what they *need to know* for their work tasks and job functions.
 
-    -   { .lg .middle } __Least Privilege__
+    -   __Least Privilege__
 
         ---
 
         The *principle of least privilege* ensures that subjects are granted only the privileges they need to perform their work tasks and job functions.
 
-    -   { .lg .middle } __Separation of Duties and Responsibilities__
+    -   __Separation of Duties and Responsibilities__
 
         ---
 
