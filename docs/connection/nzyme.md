@@ -7,9 +7,12 @@ With nzyme, you can monitor all Ethernet and WiFi network traffic for threats, c
 !!! warning inline
     Nzyme v2.0.0 is under development.
 
+ 
+  
 !!! failure inline end
     Nzyme is in alpha, with the WiFi functionality in a very advanced state. The previous releases of nzyme are no longer supported while this re-write is in progress.
 
+## References
 
-[:octicons-link-external-16: Github](https://github.com/nzymedefense/nzyme) :simple-github:
+[:octicons-link-external-16: Github](https://github.com/nzymedefense/nzyme) :simple-github:  
 [:octicons-link-external-16: nzyme.org](https://www.nzyme.org/)
