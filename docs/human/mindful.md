@@ -17,12 +17,6 @@
     &copy; 2012 Therapist Aid LLC  
     Provided by [:octicons-link-external-16: TherapistAid.com](https://therapistaid.com)
 
-!!! info "Please excuse the bad UX"
-
-    Card grids wrap each grid item with a beautiful hover card that levitates on hover. However, they are :octicons-beaker-16: experimental and for :octicons-heart-fill-24:{ .heart } [sponsors only](https://squidfunk.github.io/mkdocs-material/insiders/). Once they release to general public, the section below will look beautiful.
-
-    [:octicons-link-external-24: Reference](https://squidfunk.github.io/mkdocs-material/reference/grids/#using-card-grids)
-
 <div class="grid cards" markdown>
 
 -   __Magnification and Minimization__

@@ -3,12 +3,6 @@
 !!! info
     These TTPs are based on the Department of the Air Force's (DAF) SharePoint guidance. Some of the tips based may be applicable only to DAF or SharePoint. However, the principles may cross into other collaboration and storage solutions such as Nextcloud and Google Workspace.
 
-!!! info "Please excuse the bad UX"
-
-    Card grids wrap each grid item with a beautiful hover card that levitates on hover. However, they are :octicons-beaker-16: experimental and for :octicons-heart-fill-24:{ .heart } [sponsors only](https://squidfunk.github.io/mkdocs-material/insiders/). Once they release to general public, the section below will look beautiful.
-
-    [:octicons-link-external-24: Reference](https://squidfunk.github.io/mkdocs-material/reference/grids/#using-card-grids)
-
 ## Collaboration
 
 <div class="grid cards" markdown>
