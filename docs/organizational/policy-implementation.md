@@ -14,9 +14,9 @@ NIST categorizes computer system security policies into three basic types:
 
 <div class="grid cards" markdown>
 
-    - **Program policy** used to create an organization's computer security program
-    - **Issue-specific policies** used to address specific issues of concern to the organization
-    - **System-specific policies** technical directives taken by management to protect a particular system
+- __Program policy__ used to create an organization's computer security program
+- __Issue-specific policies__ used to address specific issues of concern to the organization
+- __System-specific policies__ technical directives taken by management to protect a particular system
 
 </div>
 
@@ -34,23 +34,23 @@ It is important to know that standards, guidelines, and procedures are separate 
 
 <div class="grid cards" markdown>
 
-    -   **Standards**
+-   __Standards__
 
-        ---
+    ---
 
-        Standards specify the use of specific technologies in a uniform way. This standardization of operating procedures can be a benefit to an organization by specifying the uniform methodologies to be used for the security controls. Standards are usually compulsory and are implemented throughout an organization for uniformity.
+    Standards specify the use of specific technologies in a uniform way. This standardization of operating procedures can be a benefit to an organization by specifying the uniform methodologies to be used for the security controls. Standards are usually compulsory and are implemented throughout an organization for uniformity.
 
-    -   **Guidelines**
+-   __Guidelines__
 
-        ---
+    ---
 
-        Guidelines are similar to standards; they refer to the methodologies of securing systems, but they are only recommended actions and are not compulsory. Guidelines are more flexible than standards and take into consideration the varying nature of the information systems. Guidelines can be used to specify the way standards should be developed, for example, or to guarantee the adherence to general security principles.
+    Guidelines are similar to standards; they refer to the methodologies of securing systems, but they are only recommended actions and are not compulsory. Guidelines are more flexible than standards and take into consideration the varying nature of the information systems. Guidelines can be used to specify the way standards should be developed, for example, or to guarantee the adherence to general security principles.
 
-    -   **Procedures**
+-   __Procedures__
 
-        ---
+    ---
 
-        Procedures embody the detailed steps that are followed to perform a specific task. Procedures are the detailed actions that personnel must follow. They are considered the lowest level in the policy chain. Their purpose is to provide detailed steps for implementing the policies, standards, and guidelines previously created. Practices is also a term that is frequently used in reference to procedures.
+    Procedures embody the detailed steps that are followed to perform a specific task. Procedures are the detailed actions that personnel must follow. They are considered the lowest level in the policy chain. Their purpose is to provide detailed steps for implementing the policies, standards, and guidelines previously created. Practices is also a term that is frequently used in reference to procedures.
 
 </div>
 

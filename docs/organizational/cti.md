@@ -103,8 +103,8 @@
 
 <div class="grid cards" markdown>
 
-    - :material-brain: **Cyber Security Intelligence**: How secure are we?
-    - :material-spider: **Cyber Threat Intelligence**: What threats do we face?
+- :material-brain: **Cyber Security Intelligence**: How secure are we?
+- :material-spider: **Cyber Threat Intelligence**: What threats do we face?
 
 </div>
 
