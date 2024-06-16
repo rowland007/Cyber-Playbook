@@ -17,6 +17,7 @@ nav:
     - Approach: 'overview/approaches.md'
     - Component Security:
         'Overview': 'component/index.md'
+        'Yubikey for GPG': 'component/yubikey.md'
     - Connection Security:
         'Overview': 'connection/index.md'
         'IPv4 Subnets': 'connection/ip4-subnets.md'
