@@ -54,25 +54,39 @@
 
 !!! question "What does each impact level mean?"
 
-    === "Insignificant"
+    <div class="grid cards" markdown>
+
+    -   { .lg .middle } __Insignificant__
+
+        ---
 
         Minor problem easily handled by normal day-to-day processes
 
-    === "Minor"
+    -   { .lg .middle } __Minor__
+
+        ---
 
         Some disruption possible. e.g. damage equal to $500K, DDoS attacks, lost sales, server damage
 
-    === "Moderate"
+    -   { .lg .middle } __Moderate__
+
+        ---
 
         Significant time/resources required. e.g. damage equal to $1 million, low-level phishing, end-user malware, small environmental disaster
 
-    === "Major"
+    -   { .lg .middle } __Major__
+
+        ---
 
         Operations severly damaged. e.g. damage equal to $10 million, ransomware, system intrusions, APTs, severe environmental disaster, loss of privacy data
 
-    === "Catastrophic"
+    -   { .lg .middle } __Catastrophic__
+
+        ---
 
         Business survival is a risk. e.g. damage is equal to $25 million, all sites are down, backups fail, nuclear war
+
+    </div>
 
 ## Perform a Cyber Risk Analysis
 
@@ -98,28 +112,44 @@ Addressing all security risks is an inefficient use of security resources and in
 
 !!! success "Risk Responses"
 
-    === "Mitigation"
+    <div class="grid cards" markdown>
+
+    -   { .lg .middle } __Mitigation__
+
+        ---
 
         Putting security controls in place to attenuate the possible impact and/or likelihood of a specific risk. Prioritizing, evaluating, and implementing the appropriate risk-reducing controls/countermeasures recommended from the risk management process.
 
-    === "Assignment"
+    -   { .lg .middle } __Assignment__
+
+        ---
 
         Paying an external party to accept the financial impact of a given risk.
 
-    === "Acceptance"
+    -   { .lg .middle } __Acceptance__
+
+        ---
 
         Determining that the potential benefits of a business function outweigh the possible risk impact/likelihood and performing that business function with no other action.
 
-    === "Deterrence"
+    -   { .lg .middle } __Deterrence__
+
+        ---
 
         The process of implementing deterrents to would be violators of security and policy. 
 
-    === "Avoidance"
+    -   { .lg .middle } __Avoidance__
+
+        ---
 
         Determining that the impact and/or likelihood of a specific risk is too great to be offset by the potential benefits and not performing a certain business function because of that determination.
 
-    === "Rejection"
+    -   { .lg .middle } __Rejection__
+
+        ---
 
         Denying or ignoring that a risk exists and hoping that it will never be realized. This is not a valid or prudent due-care response to risk.
 
+    </div>
+    
 <center><img src="https://assets-global.website-files.com/5efc3ccdb72aaa7480ec8179/61b681f1bfb080540a5dfaa7_Inherent%20Risk%20vs.%20Residual%20Risk%20(Explained%20in%202%20Minutes).png" style="width: 100%"></center>
