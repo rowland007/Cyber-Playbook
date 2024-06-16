@@ -6,17 +6,27 @@
 
 !!! abstract "Comparing Permissions, Rights, and Privileges"
 
-    === "Permissions"
+    <div class="grid cards" markdown>
+
+    -   :octicons-people-24:{ .lg .middle } __Permissions__
+    
+        ---
 
         In general, permissions refer to the access granted for an object and determine what you can do with it. If you have *read* permission for a file ...
 
-    === "Rights"
+    -   :material-file-document-check:{ .lg .middle } __Rights__
+
+        ---
 
         A right primarily refers to the ability to take an action ...
 
-    === "Privileges"
+    -   :fontawesome-solid-medal:{ .lg .middle } __Privileges__
+
+        ---
 
         *Privileges* are the combination of rights and permissions. For example, an ...
+
+    </div>
 
 !!! abstract "Authorization Mechanisms"
 
