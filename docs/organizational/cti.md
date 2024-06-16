@@ -101,8 +101,12 @@
 
 ## Understanding the Environment
 
-:material-brain: **Cyber Security Intelligence**: How secure are we?  
-:material-spider: **Cyber Threat Intelligence**: What threats do we face?
+<div class="grid cards" markdown>
+
+    - :material-brain: **Cyber Security Intelligence**: How secure are we?
+    - :material-spider: **Cyber Threat Intelligence**: What threats do we face?
+
+</div>
 
 ### Intelligence Feeds & Tools
 
