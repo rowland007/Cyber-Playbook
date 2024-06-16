@@ -12,14 +12,13 @@ A good, well-written policy is more than an exercise created on white paper—it
 
 NIST categorizes computer system security policies into three basic types:
 
-**Program policy**
-:   used to create an organization's computer security program
+<div class="grid cards" markdown>
 
-**Issue-specific policies**
-:   used to address specific issues of concern to the organization
+    - **Program policy** used to create an organization's computer security program
+    - **Issue-specific policies** used to address specific issues of concern to the organization
+    - **System-specific policies** technical directives taken by management to protect a particular system
 
-**System-specific policies**
-:   technical directives taken by management to protect a particular system
+</div>
 
 Program policies and issue-specific policies both address policy from a broad level, usually encompassing the entire organization. Program policy is traditionally more general and strategic; for example, the organization's overall computer security program may be defined in a program policy. An issue-specific policy is a nontechnical policy addressing a single or specific issue of concern to the organization, such as the procedural guidelines for checking disks brought to work or e-mail privacy concerns. Issue-specific policies are similar to program policies in that they are not technically focused.
 
@@ -33,14 +32,27 @@ The next level down from policies consists of the three elements of policy imple
 
 It is important to know that standards, guidelines, and procedures are separate yet linked documents from the general policies (especially the senior-level statement).
 
-**Standards**
-:   Standards specify the use of specific technologies in a uniform way. This standardization of operating procedures can be a benefit to an organization by specifying the uniform methodologies to be used for the security controls. Standards are usually compulsory and are implemented throughout an organization for uniformity.
+<div class="grid cards" markdown>
 
-**Guidelines**
-:   Guidelines are similar to standards; they refer to the methodologies of securing systems, but they are only recommended actions and are not compulsory. Guidelines are more flexible than standards and take into consideration the varying nature of the information systems. Guidelines can be used to specify the way standards should be developed, for example, or to guarantee the adherence to general security principles.
+    -   **Standards**
 
-**Procedures**
-:   Procedures embody the detailed steps that are followed to perform a specific task. Procedures are the detailed actions that personnel must follow. They are considered the lowest level in the policy chain. Their purpose is to provide detailed steps for implementing the policies, standards, and guidelines previously created. Practices is also a term that is frequently used in reference to procedures.
+        ---
+
+        Standards specify the use of specific technologies in a uniform way. This standardization of operating procedures can be a benefit to an organization by specifying the uniform methodologies to be used for the security controls. Standards are usually compulsory and are implemented throughout an organization for uniformity.
+
+    -   **Guidelines**
+
+        ---
+
+        Guidelines are similar to standards; they refer to the methodologies of securing systems, but they are only recommended actions and are not compulsory. Guidelines are more flexible than standards and take into consideration the varying nature of the information systems. Guidelines can be used to specify the way standards should be developed, for example, or to guarantee the adherence to general security principles.
+
+    -   **Procedures**
+
+        ---
+
+        Procedures embody the detailed steps that are followed to perform a specific task. Procedures are the detailed actions that personnel must follow. They are considered the lowest level in the policy chain. Their purpose is to provide detailed steps for implementing the policies, standards, and guidelines previously created. Practices is also a term that is frequently used in reference to procedures.
+
+</div>
 
 ## Baselines
 
