@@ -16,10 +16,14 @@ If your user account is local and **not** managed by Azure Active Directory (AAD
 
 Secure local accounts:
 
+<div class="grid cards" markdown>
+
 - [:octicons-link-external-16: Download Yubico Login for Windows (64 bit)](https://www.yubico.com/products/computer-login-tools/)
 - [:octicons-link-external-16: Download Yubico Login for Windows (32 bit)](https://www.yubico.com/products/computer-login-tools/)
 - [Yubico Login for Windows Configuration Guide](./windows-config-guide.md)
 - [:octicons-link-external-16: Watch the video :octicons-video-24:](https://youtu.be/Dx8ve7IFWow)
+
+</div>
 
 **Note**: Yubico Login for Windows secures Windows 8.1, 10, and 11 if not managed by AAD or AD. Yubico Login for Windows is only compatible with machines built on the x86 architecture. It is not compatible with Windows on Arm (ARM32, ARM64) based machines. ***Before installing the Yubico Login for Windows software, please make a note of your Windows username and password***. If you do not have your UN/PW, you will not be able to log in once Yubico Login for Windows has been installed.
 
