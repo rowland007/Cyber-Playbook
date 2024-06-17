@@ -4,7 +4,12 @@
 
 ![threat-intelligence-cycle](../static/images/threat-intelligence-cycle.png)
 
-=== "Planning & Requirements"
+<div class="grid cards" markdown>
+
+-   __Planning & Requirements__
+
+    ---
+
     The requirements stage is crucial to the threat intelligence lifecycle because it sets the roadmap for a specific threat intelligence operation. During this planning stage, the team will agree on the goals and methodology of their intelligence program based on the needs of the stakeholders involved.
 
     * Goals
@@ -15,7 +20,9 @@
         * What is the attack surface?
         * What specific actions should be taken to strengthen defenses against future attacks?
 
-=== "Collection & Processing"
+-   __Collection & Processing__
+
+    ---
 
     Once the requirements are defined, the team then sets out to collect the information required to satisfy those objectives. Depending on the goals, the team will usually seek out traffic logs, publicly available data sources, relevant forums, social media, and industry or subject matter experts. After the raw data has been collected, it will have to be processed into a format suitable for analysis. Most of the time, this entails organizing data points into spreadsheets, decrypting files, translating information from foreign sources, and evaluating the data for relevance and reliability.
 
@@ -25,7 +32,9 @@
     * Choose sources of intelligence
     * Processing & nromalizing
 
-=== "Analysis"
+-   __Analysis__
+
+    ---
 
     Once the dataset has been processed, the team must then conduct a thorough analysis to find answers to the questions posed in the requirements phase. During the analysis phase, the team also works to decipher the dataset into action items and valuable recommendations for the stakeholders.
 
@@ -39,7 +48,9 @@
         B --> C[Unique Incident];
     ```
 
-=== "Dissemination"
+-   __Dissemination__
+
+    ---
 
     The dissemination phase requires the threat intelligence team to translate their analysis into a digestible format and present the results to the stakeholders. How the analysis is presented depends on the audience. In most cases the recommendations should be presented concisely, without confusing technical jargon, either in a one-page report or a short slide deck.
 
@@ -52,7 +63,7 @@
         * Operational Intelligence
         * Tactical Intelligence
 
-=== "Feedback"
+-   __Feedback__
 
     The final stage of the threat intelligence lifecycle involves getting feedback on the provided report to determine whether adjustments need to be made for future threat intelligence operations. Stakeholders may have changes to their priorities, the cadence at which they wish to receive intelligence reports, or how data should be disseminated or presented.
 
@@ -61,9 +72,15 @@
     * New threats? Need for change?
     * Update processes
 
+</div>
+
 ## Intelligence Areas
 
-=== "Strategic"
+<div class="grid cards" markdown>
+
+-   __Strategic__
+
+    ---
 
     Focused on understanding high-level trends and adversarial motives, and then leveraging that understanding to engage in strategic security and business decision-making.  
       
@@ -75,7 +92,9 @@
     * Executive Board
     * Strategic Intel
 
-=== "Operational"
+-   __Operational__
+
+    ---
 
     Focused on understanding adversarial capabilities, infrastructure, & TTPs, and then leveraging that understanding to conduct more targeted and prioritized cybersecurity operations.  
       
@@ -87,7 +106,9 @@
     * Incident Response
     * Insider Threat
 
-=== "Tactical"
+-   __Tactical__
+
+    ---
 
     Focused on performing malware analysis & enrichment, as well as ingesting atomic, static, and behavioral threat indicators into defensive sybersecurity systems.  
       
@@ -98,6 +119,8 @@
     * Firewall
     * Endpoints
     * IDS/IPS
+
+</div>
 
 ## Understanding the Environment
 
@@ -110,15 +133,15 @@
 
 ### Intelligence Feeds & Tools
 
-[CISA Cybersecurity Alerts & Advisories](https://www.cisa.gov/news-events/cybersecurity-advisories)  
-[MISP OSINT Feeds](https://misp-project.org/feeds/)  
-[Virustotal](https://www.virustotal.com/gui/home/upload)  
-[IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com/)  
-[Google Toolbox - Dig](https://toolbox.googleapps.com/apps/dig/)  
-[Cisco Talos Intelligence](https://talosintelligence.com/)  
-[theHarvester](https://github.com/laramies/theHarvester)  
-[censys](https://search.censys.io/search?resource=hosts)  
-[Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
+- [X] [CISA Cybersecurity Alerts & Advisories](https://www.cisa.gov/news-events/cybersecurity-advisories)  
+- [X] [MISP OSINT Feeds](https://misp-project.org/feeds/)  
+- [X] [Virustotal](https://www.virustotal.com/gui/home/upload)  
+- [X] [IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com/)  
+- [X] [Google Toolbox - Dig](https://toolbox.googleapps.com/apps/dig/)  
+- [X] [Cisco Talos Intelligence](https://talosintelligence.com/)  
+- [X] [theHarvester](https://github.com/laramies/theHarvester)  
+- [X] [censys](https://search.censys.io/search?resource=hosts)  
+- [X] [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 
 ### Admiralty Scale
 
