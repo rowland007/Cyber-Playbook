@@ -29,7 +29,7 @@ The opposite of "Default Permit" is "Default Deny" and it is a ***really*** good
 Back in the early days of computer security, there were only a relatively small number of well-known security holes. That had a lot to do with the widespread adoption of "Default Permit" because, when there were only 15 well-known ways to hack into a network, it was possible to individually examine and think about those 15 attack vectors and block them. So security practitioners got into the habit of "Enumerating Badness" - listing all the bad things that we know about. Once you list all the badness, then you can put things in place to detect it, or block it.
 
 <figure>
-    <img src="https://ranum.com/security/computer_security/editorials/dumb/apps.gif" style="width: 100%;">
+    <img src="../static/images/apps.gif" style="width: 100%;">
     <figcaption>Figure 1: The "Badness Gap"</figcaption>
 </figure>
 
