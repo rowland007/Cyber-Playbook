@@ -1,0 +1,2021 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics.">
+      
+      
+        <meta name="author" content="Randy Rowland">
+      
+      
+        <link rel="canonical" href="https://rowland007.github.io/Cyber-Playbook/societal/six-dumb-ideas/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../software/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>The Six Dumbest Ideas in Computer Security - Cyber Playbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--cite:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-six-dumbest-ideas-in-computer-security" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cyber Playbook" class="md-header__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cyber Playbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Six Dumbest Ideas in Computer Security
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cyber Playbook" class="md-nav__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    Cyber Playbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/approaches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Component Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Component Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/yubikey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubikey for GPG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Connection Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip4-subnets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv4 Subnets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip6-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/nzyme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nzyme | WiFi Defense System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/crowdsec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CrowdSec Collaborative IPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data  Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data  Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data-manage-life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management Life Cycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data-classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/ttp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Techniques, Tactics and Procedures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Factors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Human Factors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/mindful/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mindful Emotion Awareness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Organizational Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Organizational Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/policy-implementation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/common-language-for-computer-security-incidents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Common Language for Computer Security Incidents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/cybersecurity-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Cybersecurity Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/cti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyber Threat Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/incident-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incident Response Tracker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Logins Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/smart-card-deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YubiKey Smart Card Deployment Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/windows-config-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Login for Windows Configuration Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Societal Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Societal Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The Six Dumbest Ideas in Computer Security
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    The Six Dumbest Ideas in Computer Security
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-permit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Permit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerating-badness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enumerating Badness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#penetrate-and-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Penetrate and Patch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hacking-is-cool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hacking is Cool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#educating-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educating Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-is-better-than-inaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action is Better Than Inaction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-minor-dumbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Minor Dumbs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Minor Dumbs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goodbye-and-good-luck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goodbye and Good Luck
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Software Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/owasp-top-ten-pro-cntrls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Top 10 Proactive Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/slsa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply Chain Levels for Software Artifacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            System Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/cis-controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIS Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/ps-sample-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PowerShell Example Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/nist-800-18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protecting CUI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/owasp-waf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Best Practices: Use of WAF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/10-things-auditors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Things Auditors Should Know
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cybersecurity Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Cryptography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Scripting and Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1 - Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2 - Quick Reference Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-permit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Permit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerating-badness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enumerating Badness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#penetrate-and-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Penetrate and Patch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hacking-is-cool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hacking is Cool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#educating-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educating Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-is-better-than-inaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action is Better Than Inaction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-minor-dumbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Minor Dumbs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Minor Dumbs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goodbye-and-good-luck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goodbye and Good Luck
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="the-six-dumbest-ideas-in-computer-security">The Six Dumbest Ideas in Computer Security</h1>
+<details class="cite">
+<summary>Citation</summary>
+<p><a href="https://ranum.com/security/computer_security/editorials/dumb/index.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> The Six Dumbest Ideas in Computer Security</a> by <a href="https://ranum.com/old-site/index.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Marcus J. Ranum</a> &copy;2005</p>
+</details>
+<p>There's lots of innovation going on in security - we're inundated with a steady stream of new stuff and it all sounds like it works just great. Every couple of months I'm invited to a new computer security conference, or I'm asked to write a foreword for a new computer security book. And, thanks to the fact that it's a topic of public concern and a "safe issue" for politicians, we can expect a flood of computer security-related legislation from lawmakers. So: computer security is definitely still a "hot topic." But why are we spending all this time and money and still having problems?</p>
+<p>Let me introduce you to the <strong><em>six dumbest ideas in computer security</em></strong>. What are they? They're the <strong><em>anti</em></strong>-good ideas. They're the braindamage that makes your $100,000 ASIC-based turbo-stateful packet-mulching firewall transparent to hackers. Where do <strong><em>anti</em></strong>-good ideas come from? They come from misguided attempts to do the impossible - which is another way of saying "trying to ignore reality." Frequently those misguided attempts are sincere efforts by well-meaning people or companies who just don't fully understand the situation, but other times it's just a bunch of savvy entrepreneurs with a well-marketed piece of junk they're selling to make a fast buck. In either case, these dumb ideas are the fundamental reason(s) why all that money you spend on information security is going to be wasted, unless you somehow manage to avoid them.</p>
+<p>For your convenience, I've listed the dumb ideas in descending order from the most-frequently-seen. If you can avoid falling into the the trap of the first three, you're among the few true computer security elite.</p>
+<h2 id="default-permit">Default Permit</h2>
+<p>This dumb idea crops up in a lot of different forms; it's incredibly persistent and difficult to eradicate. Why? Because it's so attractive. Systems based on "Default Permit" are the computer security equivalent of empty calories: tasty, yet fattening.</p>
+<p>The most recognizable form in which the "Default Permit" dumb idea manifests itself is in firewall rules. Back in the very early days of computer security, network managers would set up an internet connection and decide to secure it by turning off incoming telnet, incoming rlogin, and incoming FTP. Everything else was allowed through, hence the name "Default Permit." This put the security practitioner in an endless arms-race with the hackers. Suppose a new vulnerability is found in a service that is not blocked - now the administrators need to decide whether to deny it or not, hopefully, before they got hacked. A lot of organizations adopted "Default Permit" in the early 1990's and convinced themselves it was OK because "hackers will never bother to come after us." The 1990's, with the advent of worms, should have killed off "Default Permit" forever but it didn't. In fact, most networks today are still built around the notion of an open core with no segmentation. That's "Default Permit."</p>
+<p>Another place where "Default Permit" crops up is in how we typically approach code execution on our systems. The default is to permit anything on your machine to execute if you click on it, unless its execution is denied by something like an antivirus program or a spyware blocker. If you think about that for a few seconds, you'll realize what a dumb idea that is. On my computer here I run about 15 different applications on a regular basis. There are probably another 20 or 30 installed that I use every couple of months or so. I still don't understand why operating systems are so dumb that they let any old virus or piece of spyware execute without even asking me. That's "Default Permit."</p>
+<p>A few years ago I worked on analyzing a website's security posture as part of an E-banking security project. The website had a load-balancer in front of it, that was capable of re-vectoring traffic by URL, and my client wanted to use the load-balancer to deflect worms and hackers by re-vectoring attacks to a black hole address. Re-vectoring attacks would have meant adopting a policy of "Default Permit" (i.e.: if it's not a known attack, let it through) but instead I talked them into adopting the opposite approach. The load-balancer was configured to re-vector any traffic <strong><em>not</em></strong> matching a complete list of correctly-structured URLs to a server that serves up image data and 404 pages, which is running a special locked-down configuration. Not surprisingly, that site has withstood the test of time quite well.</p>
+<p>One clear symptom that you've got a case of "Default Permit" is when you find yourself in an arms race with the hackers. It means that you've put yourself in a situation where what you don't know <strong><em>can</em></strong> hurt you, and you'll be doomed to playing keep ahead/catch-up.</p>
+<p>The opposite of "Default Permit" is "Default Deny" and it is a <strong><em>really</em></strong> good idea. It takes dedication, thought, and understanding to implement a "Default Deny" policy, which is why it is so seldom done. It's not that much harder to do than "Default Permit" but you'll sleep much better at night.</p>
+<h2 id="enumerating-badness">Enumerating Badness</h2>
+<p>Back in the early days of computer security, there were only a relatively small number of well-known security holes. That had a lot to do with the widespread adoption of "Default Permit" because, when there were only 15 well-known ways to hack into a network, it was possible to individually examine and think about those 15 attack vectors and block them. So security practitioners got into the habit of "Enumerating Badness" - listing all the bad things that we know about. Once you list all the badness, then you can put things in place to detect it, or block it.</p>
+<figure>
+    <img src="../static/images/apps.gif" style="width: 100%;">
+    <figcaption>Figure 1: The "Badness Gap"</figcaption>
+</figure>
+
+<p>Why is "Enumerating Badness" a dumb idea? It's a dumb idea because sometime around 1992 the amount of Badness in the Internet began to vastly outweigh the amount of Goodness. For every harmless, legitimate, application, there are dozens or hundreds of pieces of malware, worm tests, exploits, or viral code. Examine a typical antivirus package and you'll see it knows about 75,000+ viruses that might infect your machine. Compare that to the legitimate 30 or so apps that I've installed on my machine, and you can see it's rather dumb to try to track 75,000 pieces of Badness when even a simpleton could track 30 pieces of Goodness. In fact, if I were to simply track the 30 pieces of Goodness on my machine, and allow nothing else to run, I would have simultaneously solved the following problems:</p>
+<ul>
+<li>Spyware</li>
+<li>Viruses</li>
+<li>Remote Control Trojans</li>
+<li>Exploits that involve executing pre-installed code that you don't use regularly</li>
+</ul>
+<p>Thanks to all the marketing hype around disclosing and announcing vulnerabilities, there are (according to some industry analysts) between 200 and 700 new pieces of Badness hitting the Internet every month. Not only is "Enumerating Badness" a dumb idea, it's gotten dumber during the few minutes of your time you've bequeathed me by reading this article.</p>
+<p>Now, your typical IT executive, when I discuss this concept with him or her, will stand up and say something like, "That sounds great, but our enterprise network is <em>really</em> complicated. Knowing about all the different apps that we rely on would be impossible! What you're saying sounds reasonable until you think about it and realize how absurd it is!" To which I respond, "How can you call yourself a 'Chief Technology Officer' if you have no idea what your technology is doing?" A CTO isn't going to know detail about every application on the network, but if you haven't got a vague idea what's going on it's impossible to do capacity planning, disaster planning, security planning, or virtually any of the things in a CTO's charter.</p>
+<p>In 1994 I wrote a firewall product that needed some system log analysis routines that would alert the administrator in case some kind of unexpected condition was detected. The first version used "Enumerating Badness" (I've been dumb, too) but the second version used what I termed "<a href="https://ranum.com/security/computer_security/papers/ai/index.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Artificial Ignorance</a>" - a process whereby you <em>throw away the log entries you know aren't interesting</em>. If there's anything left after you've thrown away the stuff you know isn't interesting, then the leftovers must be interesting. This approach worked amazingly well, and detected a number of very interesting operational conditions and errors that it simply never would have occurred to me to look for.</p>
+<p>"Enumerating Badness" is the idea behind a huge number of security products and systems, from anti-virus to intrusion detection, intrusion prevention, application security, and "deep packet inspection" firewalls. What these programs and devices do is outsource your process of knowing what's good. Instead of you taking the time to list the 30 or so legitimate things you need to do, it's easier to pay $29.95/year to someone else who will try to maintain an exhaustive list of all the evil in the world. Except, unfortunately, your badness expert will get $29.95/year for the antivirus list, another $29.95/year for the spyware list, and you'll buy a $19.95 "personal firewall" that has application control for network applications. By the time you're done paying other people to enumerate all the malware your system could come in contact with, you'll more than double the cost of your "inexpensive" desktop operating system.</p>
+<p>One clear symptom that you have a case of "Enumerating Badness" is that you've got a system or software that needs signature updates on a regular basis, or a system that lets past a new worm that it hasn't seen before. The cure for "Enumerating Badness" is, of course, "Enumerating Goodness." Amazingly, there is virtually no support in operating systems for such software-level controls. I've tried using Windows XP Pro's Program Execution Control but it's oriented toward "Enumerating Badness" and is, itself a dumb implementation of a dumb idea.</p>
+<p>In a sense, "Enumerating Badness" is a special dumb-case of "Default Permit" - our #1 dumb computer security idea. But it's so prevalent that it's in a class by itself.</p>
+<h2 id="penetrate-and-patch">Penetrate and Patch</h2>
+<p>There's an old saying, "You cannot make a silk purse out of a sow's ear." It's pretty much true, unless you wind up using so much silk to patch the sow's ear that eventually the sow's ear is completely replaced with silk. Unfortunately, when buggy software is fixed it is almost always fixed through the addition of new code, rather than the removal of old bits of sow's ear.</p>
+<p>"Penetrate and Patch" is a dumb idea best expressed in the BASIC programming language:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nl">10</span><span class="w"> </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">LOOK_FOR_HOLES</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nl">20</span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="vg">HOLE_FOUND</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">FALSE</span><span class="w"> </span><span class="kr">THEN</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">50</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nl">30</span><span class="w"> </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">FIX_HOLE</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nl">40</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">10</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nl">50</span><span class="w"> </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">CONGRATULATE_SELF</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nl">60</span><span class="w"> </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">GET_HACKED_EVENTUALLY_ANYWAY</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nl">70</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">10</span><span class="w"> </span>
+</code></pre></div>
+<p>In other words, you attack your firewall/software/website/whatever from the outside, identify a flaw in it, fix the flaw, and then go back to looking. One of my programmer buddies refers to this process as "turd polishing" because, as he says, it doesn't make your code any less smelly in the long run but management might enjoy its improved, shiny, appearance in the short term. In other words, the problem with "Penetrate and Patch" is not that it makes your code/implementation/system better by design, rather it merely makes it toughened by trial and error. Richard Feynman's "<a href="https://ranum.com/security/computer_security/editorials/dumb/feynman.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Personal Observations on the Reliability of the Space Shuttle</a>" used to be required reading for the software engineers that I hired. It contains some profound thoughts on expectation of reliability and how it is achieved in complex systems. In a nutshell its meaning to programmers is: "Unless your system was supposed to be hackable then it shouldn't be hackable."</p>
+<p>"Penetrate and Patch" crops up all over the place, and is the primary dumb idea behind the current fad (which has been going on for about 10 years) of vulnerability disclosure and patch updates. The premise of the "vulnerability researchers" is that they are helping the community by finding holes in software and getting them fixed before the hackers find them and exploit them. The premise of the vendors is that they are doing the right thing by pushing out patches to fix the bugs before the hackers and worm-writers can act upon them. Both parties, in this scenario, are being dumb because if the vendors were writing code that had been designed to be secure and reliable then vulnerability discovery would be a tedious and unrewarding game, indeed!</p>
+<p>Let me put it to you in different terms: <strong><em>if "Penetrate and Patch" was effective, we would have run out of security bugs in Internet Explorer by now</em></strong>. What has it been? 2 or 3 a month for 10 years? If you look at major internet applications you'll find that there are a number that consistently have problems with security vulnerabilities. There are also a handful, like PostFix, Qmail, etc, that were engineered to be compartmented against themselves, with modularized permissions and processing, and - not surprisingly - they have histories of amazingly few bugs. The same logic applies to "penetration testing." There are networks that I know of which have been "penetration tested" any number of times and are continually getting hacked to pieces. That's because their design (or their security practices) are so fundamentally flawed that no amount of turd polish is going to keep the hackers out. It just keeps managers and auditors off of the network administrator's backs. I know other networks that it is, literally, pointless to "penetration test" because they were designed from the ground up to be permeable only in certain directions and only to certain traffic destined to carefully configured servers running carefully secured software. Running a "penetration test" for Apache bugs is completely pointless against a server that is running a custom piece of C code that is running in a locked-down portion of an embedded system. So, "Penetrate and Patch" is pointless either because you know you're going to find an endless litany of bugs, or because you know you're not going to find anything comprehensible. Pointless is dumb.</p>
+<p>One clear symptom that you've got a case of "Penetrate and Patch " is when you find that your system is always vulnerable to the "bug of the week." It means that you've put yourself in a situation where every time the hackers invent a new weapon, it works against you. Doesn't that sound dumb? Your software and systems should be secure by design and should have been <em>designed with flaw-handling in mind</em>.</p>
+<h2 id="hacking-is-cool">Hacking is Cool</h2>
+<p>One of the best ways to get rid of cockroaches in your kitchen is to scatter bread-crumbs under the stove, right? Wrong! That's a dumb idea. One of the best ways to discourage hacking on the Internet is to give the hackers stock options, buy the books they write about their exploits, take classes on "extreme hacking kung fu" and pay them tens of thousands of dollars to do "penetration tests" against your systems, right? Wrong! "Hacking is Cool" is a really dumb idea.</p>
+<p>Around the time I was learning to walk, Donn Parker was researching the behavioral aspects of hacking and computer security. He says it better than I ever could:</p>
+<blockquote>
+<p>"<em>Remote computing freed criminals from the historic requirement of proximity to their crimes. Anonymity and freedom from personal victim confrontation increased the emotional ease of crime, i.e., the victim was only an inanimate computer, not a real person or enterprise. Timid people could become criminals. The proliferation of identical systems and means of use and the automation of business made possible and improved the economics of automating crimes and constructing powerful criminal tools and scripts with great leverage.</em>"</p>
+</blockquote>
+<p>Hidden in Parker's observation is the awareness that <strong><em>hacking is a social problem</em></strong>. It's not a technology problem, at all. "<em>Timid people could become criminals</em>." The Internet has given a whole new form of elbow-room to the badly socialized borderline personality. The #4th dumbest thing information security practitioners can do is implicitly encourage hackers by lionizing them. The media plays directly into this, by portraying hackers, variously, as "whiz kids" and "brilliant technologists" - of course if you're a reporter for CNN, anyone who can install Linux probably does qualify as a "brilliant technologist" to you. I find it interesting to compare societal reactions to hackers as "whiz kids" versus spammers as "sleazy con artists." I'm actually heartened to see that the spammers, phishers, and other scammers are adopting the hackers and the techniques of the hackers - this will do more to reverse society's view of hacking than any other thing we could do.</p>
+<p>If you're a security practitioner, teaching yourself how to hack is also part of the "Hacking is Cool" dumb idea. Think about it for a couple of minutes: teaching yourself a bunch of exploits and how to use them means you're investing your time in learning a bunch of tools and techniques that are going to go stale as soon as everyone has patched that particular hole. It means you've made part of your professional skill-set dependent on "Penetrate and Patch" and you're going to have to be part of the arms-race if you want that skill-set to remain relevant and up-to-date. Wouldn't it be more sensible to learn how to design security systems that are hack-proof than to learn how to identify security systems that are dumb?</p>
+<p>My prediction is that the "Hacking is Cool" dumb idea will be a dead idea in the next 10 years. I'd like to fantasize that it will be replaced with its opposite idea, "Good Engineering is Cool" but so far there is no sign that's likely to happen.</p>
+<h2 id="educating-users">Educating Users</h2>
+<p>"Penetrate and Patch" can be applied to human beings, as well as software, in the form of user education. On the surface of things, the idea of "Educating Users" seems less than dumb: education is always good. On the other hand, like "Penetrate and Patch" <strong><em>if it was going to work, it would have worked by now</em></strong>. There have been numerous interesting studies that indicate that a significant percentage of users will trade their password for a candy bar, and the Anna Kournikova worm showed us that nearly 1/2 of humanity will click on anything purporting to contain nude pictures of semi-famous females. If "Educating Users" is the strategy you plan to embark upon, you should expect to have to "patch" your users every week. That's dumb.</p>
+<p>The real question to ask is not "can we educate our users to be better at security?" it is "why do we need to educate our users at all?" In a sense, this is another special case of "Default Permit" - why are users getting executable attachments at all? Why are users expecting to get E-mails from banks where they don't have accounts? Most of the problems that are addressable through user education are self-correcting over time. As a younger generation of workers moves into the workforce, they will come pre-installed with a healthy skepticism about phishing and social engineering.</p>
+<p>Dealing with things like attachments and phishing is another case of "Default Permit" - our favorite dumb idea. After all, if you're letting all of your users get attachments in their E-mail you're "Default Permit"ing anything that gets sent to them. A better idea might be to simply quarantine all attachments as they come into the enterprise, delete all the executables outright, and store the few file types you decide are acceptable on a staging server where users can log in with an SSL-enabled browser (requiring a password will quash a lot of worm propagation mechanisms right away) and pull them down. There are freeware tools like MIMEDefang that can be easily harnessed to strip attachments from incoming E-mails, write them to a per-user directory, and replace the attachment in the E-mail message with a URL to the stripped attachment. Why educate your users how to cope with a problem if you can just drive a stake through the problem's heart?</p>
+<p>When I was CEO of a small computer security start-up we didn't have a Windows system administrator. All of the employees who wanted to run Windows had to know how to install it and manage it themselves, or they didn't get hired in the first place. My prediction is that in 10 years users that need education will be out of the high-tech workforce entirely, or will be self-training at home in order to stay competitive in the job market. My guess is that this will extend to knowing not to open weird attachments from strangers.</p>
+<h2 id="action-is-better-than-inaction">Action is Better Than Inaction</h2>
+<p>IT executives seem to break down into two categories: the "early adopters" and the "pause and thinkers." Over the course of my career, I've noticed that <em>dramatically</em> fewer of the "early adopters" build successful, secure, mission-critical systems. This is because they somehow believe that "Action is Better Than Inaction" - i.e.: if there's a new whizzbang, it's better to install it right now than to wait, think about it, watch what happens to the other early adopters, and then deploy the technology once it's fully sorted-out and has had its first generation of experienced users. I know one senior IT executive - one of the "pause and thinkers" whose plan for doing a wireless roll-out for their corporate network was "wait 2 years and hire a guy who did a successful wireless deployment for a company larger than us." Not only will the technology be more sorted-out by then, it'll be much, much cheaper. What an utterly brilliant strategy!</p>
+<p>There's an important corollary to the "Action is Better Than Inaction" dumb idea, and it's that:</p>
+<blockquote>
+<p>"<strong><em>It is often easier to not do something dumb than it is to do something smart</em></strong>."  </p>
+</blockquote>
+<p>Sun Tzu didn't really write that in "The Art of War" but if you tell IT executives that he did, they'll take you much more seriously when you counsel a judicious, thoughtful approach to fielding some new whizzbang. To many of my clients, I have been counselling, "hold off on outsourcing your security for a year or two and then get recommendations and opinions from the bloody, battered survivors - if there are any."</p>
+<p>You can see the "Action is Better Than Inaction" dumb idea all over corporate networks and it tends to correlate with senior IT managers that make their product-purchasing decisions by reading Gartner research reports and product glossies from vendors. If you find yourself in the chain of command of such a manager, I sincerely hope you've enjoyed this article because you're probably far better acquainted with dumbness than I am.</p>
+<p>One extremely useful piece of management kung-fu to remember, if you find yourself up against an "early adopter" is to rely on your peers. Several years ago I had a client who was preparing to spend a ton of money on a technology without testing it operationally. I suggested offhandedly to the senior IT manager in charge that he should send one of his team to a relevant conference (in this case, <a href="http://www.usenix.org/events/lisa05"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> LISA</a>) where it was likely that someone with hands-on experience with the technology would be in attendance. I proposed that the manager have his employee put a message on the "meet and greet" bulletin board that read:</p>
+<blockquote>
+<p>"Do you have hands-on experience with <strong>xyz</strong> from <strong><em>pdq.com</em></strong>? If so, I'm authorized to take you to dinner at Ruth's Chris if you promise to give me the low-down on the product off the record. Contact, etc..." </p>
+</blockquote>
+<p>The IT manager later told me that a $200 dinner expense saved them over $400,000 worth of hellish technological trauma.</p>
+<p>It really is easier to not do something dumb than it is to do something smart. The trick is, when you avoid doing something dumb, to make sure your superiors know you navigated around a particularly nasty sand-bar and that you get appropriate credit for being smart. Isn't that the ultimate expression of professional kung-fu? To get <strong><em>credit</em></strong> for <strong><em>not</em></strong> doing <strong><em>anything</em></strong>?!</p>
+<h2 id="the-minor-dumbs">The Minor Dumbs</h2>
+<p>These dumb ideas didn't quite merit status as "The Dumb<em>est</em>" ideas in computer security, but they're pretty dumb and deserve mention in passing:</p>
+<ul>
+<li>"We're Not a Target" - <em>yes, you are</em>. Worms aren't smart enough to realize that your web site/home network isn't interesting.</li>
+<li>"Everyone would be secure if they all just ran &lt;security-flavor-of-the-month&gt;" - <em>no, they wouldn't</em>. Operating systems have security problems because they are complex and system administration is not a solved problem in computing. Until someone manages to solve system administration, switching to the flavor-of-the-month is going to be <em>more</em> damaging because you're making it harder for your system administrators to gain a level of expertise that only comes with time.</li>
+<li>"We don't need a firewall, we have good host security" - <em>no, you don't</em>. If your network fabric is untrustworthy every single application that goes across the network is potentially a target. 3 words: Domain Naming System.</li>
+<li>"We don't need host security, we have a good firewall" - <em>no, you don't</em>. If your firewall lets traffic through to hosts behind it, then you need to worry about the host security of those systems.</li>
+<li>"Let's go production with it now and we can secure it later" - <em>no, you won't</em>. A better question to ask yourself is "If we don't have time to do it correctly now, will we have time to do it over once it's broken?" Sometimes, building a system that is in constant need of repair means you will spend years investing in turd polish because you were unwilling to spend days getting the job done right in the first place.</li>
+<li>"We can't stop the occasional problem" - <em>yes, you can</em>. Would you travel on commercial airliners if you thought that the aviation industry took this approach with your life? I didn't think so.</li>
+</ul>
+<h3 id="goodbye-and-good-luck">Goodbye and Good Luck</h3>
+<p>I've tried to keep this light-hearted, but my message is serious. Computer security is a field that has fallen far too deeply in love with the whizzbang-of-the-week and has forsaken common sense. Your job, as a security practitioner, is to question - if not outright challenge - the conventional wisdom and the status quo. After all, if the conventional wisdom was working, the rate of systems being compromised would be going <strong><em>down</em></strong>, wouldn't it?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://randyrowland.me" target="_blank" rel="noopener" title="randyrowland.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/rowland007" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/randall-rowland-jr" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rowland007" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M373 138.6c-25.2 0-46.3-17.5-51.9-41-30.6 4.3-54.2 30.7-54.2 62.4v.2c47.4 1.8 90.6 15.1 124.9 36.3 12.6-9.7 28.4-15.5 45.5-15.5 41.3 0 74.7 33.4 74.7 74.7 0 29.8-17.4 55.5-42.7 67.5-2.4 86.8-97 156.6-213.2 156.6S45.5 410.1 43 323.4c-25.4-11.9-43-37.7-43-67.7C0 214.4 33.4 181 74.7 181c17.2 0 33 5.8 45.7 15.6 34-21.1 76.8-34.4 123.7-36.4v-.3c0-44.3 33.7-80.9 76.8-85.5C325.8 50.2 347.2 32 373 32c29.4 0 53.3 23.9 53.3 53.3s-23.9 53.3-53.3 53.3zM157.5 255.3c-20.9 0-38.9 20.8-40.2 47.9s17.1 38.1 38 38.1 36.6-9.8 37.8-36.9-14.7-49.1-35.7-49.1zM395 303.1c-1.2-27.1-19.2-47.9-40.2-47.9s-36.9 22-35.7 49.1c1.2 27.1 16.9 36.9 37.8 36.9s39.3-11 38-38.1zm-60.1 70.8c1.5-3.6-1-7.7-4.9-8.1-23-2.3-47.9-3.6-73.8-3.6s-50.8 1.3-73.8 3.6c-3.9.4-6.4 4.5-4.9 8.1 12.9 30.8 43.3 52.4 78.7 52.4s65.8-21.6 78.7-52.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

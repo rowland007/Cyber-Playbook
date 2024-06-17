@@ -1,0 +1,2405 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics.">
+      
+      
+        <meta name="author" content="Randy Rowland">
+      
+      
+        <link rel="canonical" href="https://rowland007.github.io/Cyber-Playbook/organizational/yubico/windows-config-guide/">
+      
+      
+        <link rel="prev" href="../smart-card-deployment/">
+      
+      
+        <link rel="next" href="../../../societal/">
+      
+      
+      <link rel="icon" href="../../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Yubico Login for Windows Configuration Guide - Cyber Playbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--cite:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#yubico-login-for-windows-configuration-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cyber Playbook" class="md-header__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../../static/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cyber Playbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Yubico Login for Windows Configuration Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cyber Playbook" class="md-nav__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../../static/images/logo.png" alt="logo">
+
+    </a>
+    Cyber Playbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/approaches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Component Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Component Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../component/yubikey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubikey for GPG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Connection Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/ip4-subnets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv4 Subnets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/ip6-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/nzyme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nzyme | WiFi Defense System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connection/crowdsec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CrowdSec Collaborative IPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data  Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data  Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/data-manage-life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management Life Cycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/data-classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/ttp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Techniques, Tactics and Procedures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Factors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Human Factors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../human/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../human/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../human/mindful/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mindful Emotion Awareness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Organizational Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Organizational Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policy-implementation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common-language-for-computer-security-incidents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Common Language for Computer Security Incidents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cybersecurity-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Cybersecurity Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyber Threat Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../incident-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incident Response Tracker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Logins Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart-card-deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YubiKey Smart Card Deployment Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Yubico Login for Windows Configuration Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Login for Windows Configuration Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-and-backup-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary and Backup Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovery Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specify-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provision-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provision Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-recovery-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Recovery Codes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Experience
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Experience">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yubico-as-credential-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Yubico As Credential Provider
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempts-to-log-in-without-yubikey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attempts to Log In Without YubiKey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-with-recovery-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login With Recovery Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Password
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-system-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional System Hardening
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yubikey-not-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      YubiKey not detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#able-to-log-in-using-sign-in-options-other-than-yubico-login-after-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Able to log in using sign-in options other than Yubico Login after provisioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Societal Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Societal Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../societal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../societal/six-dumb-ideas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Six Dumbest Ideas in Computer Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Software Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software/owasp-top-ten-pro-cntrls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Top 10 Proactive Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software/slsa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply Chain Levels for Software Artifacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            System Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/cis-controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIS Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/ps-sample-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PowerShell Example Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/nist-800-18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protecting CUI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/owasp-waf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Best Practices: Use of WAF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system/10-things-auditors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Things Auditors Should Know
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cybersecurity Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Cryptography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Scripting and Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1 - Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick-reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2 - Quick Reference Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-and-backup-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary and Backup Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovery Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specify-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provision-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provision Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-recovery-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Recovery Codes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Experience
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Experience">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yubico-as-credential-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Yubico As Credential Provider
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempts-to-log-in-without-yubikey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attempts to Log In Without YubiKey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-with-recovery-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login With Recovery Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Password
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-system-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional System Hardening
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yubikey-not-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      YubiKey not detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#able-to-log-in-using-sign-in-options-other-than-yubico-login-after-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Able to log in using sign-in options other than Yubico Login after provisioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="yubico-login-for-windows-configuration-guide">Yubico Login for Windows Configuration Guide</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Yubico Login for Windows adds the Challenge-Response capability of the YubiKey as a second factor for authenticating to local Windows accounts. See <strong>Compatible devices</strong> section for determining which key models can be used. Yubico Login for Windows is a full implementation of a Windows <a href="https://docs.microsoft.com/en-us/windows/desktop/secauthn/authentication-packages"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Authentication Package</a> and a <a href="https://docs.microsoft.com/en-us/windows/desktop/secauthn/winlogon-and-credential-providers"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Credential Provider</a>.</p>
+<p>Yubico Login for Windows supports <strong>local</strong> authentication scenarios; it secures the local login process for local accounts on Windows computers. Use it to configure login with a YubiKey to a local account on an up-to-date system running Windows 8.1, Windows 10, or Windows 11. Yubico Login for Windows is only compatible with machines built on the x86 architecture. It is <strong>not compatible</strong> with Windows on Arm (ARM32, ARM64) based machines.</p>
+<p><strong>Note</strong>: Local accounts will not be accessible by Windows Remote Desktop (RDP), but may still be accessible through other remote access software such as VNC or SSH. This other software can bypass the second factor because it does not integrate with the Windows authentication system.</p>
+<p>Yubico Login for Windows <strong>does not support</strong> any of the following: </p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-accounts"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Active Directory (AD) managed accounts</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Azure Active Directory (AAD) managed accounts</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/microsoft-accounts"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Microsoft Accounts (MSA)</a></li>
+</ul>
+<p>It is possible, however, to install and configure Yubico Login for Windows for a local account on a single instance of Windows that <strong>also</strong> has these other types of accounts. Yubico Login for Windows just has no effect on them. Yubico Login for Windows adds another method of user verification, which exists in parallel with all the other login options enabled for the account. The only user login flow it modifies is the straight username+password flow.</p>
+<p>Similarly, Yubico Login for Windows does not interfere with network login via NT LAN Manager (NTLM). Therefore, if you implement file sharing on your local network, authentication to those resources continues to function normally without second factor authentication.</p>
+<p>This guide provides instructions for:</p>
+<ul>
+<li>Configuring YubiKeys to work with Yubico Login for Windows</li>
+<li>Best practices for implementing Yubico Login for Windows, such as configuring a primary and a backup YubiKey for each account</li>
+<li>Managing recovery codes</li>
+<li>Guidance on avoiding common problems</li>
+<li>A comprehensive description of how the end-user interacts with the system after YubiKeys have been implemented</li>
+</ul>
+<p><strong>Note</strong>: Enabling full disk encryption (FDE) using something like <a href="https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> BitLocker</a> is highly recommended when using Yubico Login for Windows. If you do not enable FDE, it will be possible to disable the YubiKey requirement by <a href="https://support.microsoft.com/en-us/windows/start-your-pc-in-safe-mode-in-windows-10-92c27cff-db89-8644-1ce4-b3e5e56fe234"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> starting Windows in safe mode</a>.</p>
+<h3 id="audience">Audience</h3>
+<p>It is assumed that those who install and configure Yubico Login for Windows are comfortable with managing Windows computers. This user guide is written for both:</p>
+<ul>
+<li>An individual user installing Yubico Login for Windows to configure their own account for login with YubiKeys</li>
+<li>An administrator such as an IT professional installing Yubico Login for Windows to configure login with YubiKeys for a group of end-users. </li>
+</ul>
+<p>Refer to the <strong>User Experience</strong> section at the end of this document for a description of what end-users can expect after their accounts have been configured to require YubiKeys.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>For each user (both admins and end-users) at least one (preferably two) of the YubiKeys listed in the <strong>Compatible devices</strong> section.</li>
+<li>Systems that are running any of the following operating systems, <strong>fully updated and for as long as they are supported by Microsoft</strong>:<ul>
+<li>Windows 8.1</li>
+<li>Windows 10</li>
+<li>Windows 11</li>
+</ul>
+</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>For every account that is to be configured, to ensure that there is no lower-security ‘back door’ access, <a href="https://support.microsoft.com/en-us/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#WindowsVersion=Windows_10"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> remove all sign-in options other than username+password</a>. Yubico Login for Windows adds another method of user verification, which exists in parallel with all sign-in options offered natively. The only user login flow it modifies is the username+password method. A single system can be configured such that it has MSA, AD and AAD accounts in addition to local accounts. Yubico Login for Windows only adds the second factor to local accounts.</li>
+<li>Before configuration, consider the end-user experience: if you use an existing Challenge-Response with "require touch" enabled, the end-user must tap the contact twice during registration and at every login. The YubiKey's LED will flash on-and-off steadily at the time the user needs to touch it.</li>
+<li>Have a plan in case end-users lose their YubiKeys, to enable them to regain access to their accounts:<ul>
+<li>Configure at minimum a primary and a backup YubiKey for each end-user. </li>
+<li>If a user loses both YubiKeys, a new YubiKey can be added by a local administrator account. </li>
+<li>Without a local administrator account, if both YubiKeys are lost, the only way of recovering is to use a recovery code. </li>
+<li>Configure a recovery code for each account.</li>
+<li>Ensure that the username and password for each account are available and have been tested for validity before using Yubico Login for Windows to configure those accounts.</li>
+</ul>
+</li>
+<li>In your provisioning plan, be aware that the only way to remove the YubiKey with Yubico Login for Windows is to remove it from the registry manually.</li>
+</ul>
+<h2 id="before-installation">Before Installation</h2>
+<ul>
+<li><strong>Before installing the Yubico Login for Windows software, make a note of your Windows username and password for the local account.</strong> The person who installs the software must have the Windows username and password for their account. Without these, nothing can be configured and the account is inaccessible. The default behavior of the Windows credential provider is to remember your last login so you do not have to actually type in the username. For this reason, many people may not remember the username. However, once you install the tool and reboot, the new Yubico credential provider is loaded, so that both admins and end-users have to actually type in the username. For these reasons, not only the admin, but also everybody whose account is to be configured via Yubico Login for Windows should check to ensure that they can log in using the Windows username and password for their local account BEFORE the admin installs the tool and configures end-users’ accounts.</li>
+<li>Windows' automatic login is not compatible with Yubico Login for Windows. If a user whose account was set up for automatic login no longer remembers their original password when the Yubico Login for Windows configuration takes effect, the account can no longer be accessed. Address this issue preemptively by:<ul>
+<li>Having users set new passwords before disabling automatic login. </li>
+<li>Have all users verify they can access their accounts with username and their new password before you use Yubico Login for Windows to configure their accounts.</li>
+</ul>
+</li>
+<li>Once Yubico Login for Windows has been configured, there is:<ul>
+<li>No Windows Password Hint</li>
+<li>No way to reset passwords</li>
+<li>No Remember Previous User/Login function.</li>
+</ul>
+</li>
+<li>You can use credentials that were programmed for other purposes (see step 4 in Specify Configuration below).</li>
+<li>You can use the same key on multiple accounts on the same system.</li>
+<li>You can use the same key on accounts on multiple different systems, for example, if you are the admin for a small company, you might want to register your YubiKey on all user accounts to be the backup option for every end-user. </li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Note: Administrator permissions are required to install the software.</p>
+<ol>
+<li>Verify your username. Once you have installed Yubico Login for Windows and rebooted, you will need to enter this in addition to your password in order to log in. To do this, open Command Prompt or PowerShell from the Start menu and run <code>whoami</code>. Take note of the full output, which should be in the form <code>DESKTOP-1JJQRDF\jdoe</code>, where jdoe is the username.</li>
+<li>Download the Yubico Login for Windows software from here. </li>
+<li>Run the installer by double-clicking on the download.</li>
+<li>Accept the end-user license agreement.</li>
+<li>In the installation wizard, specify the destination folder location or accept the default location.</li>
+<li>Restart the machine on which the software has been installed. After the restart, the Yubico credential provider presents the login screen that prompts for the YubiKey.</li>
+<li><strong>The Yubico credential provider (Yubico Login) requires that you enter not only the password for your local Windows account, but also the username, which should have been noted in step 1</strong>. If necessary, consult <a href="https://support.microsoft.com/en-us/help/4027068/windows-10-switch-your-device-to-a-local-account"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Microsoft's instructions for switching to the local account</a>.</li>
+<li>After you have logged in, search for “Login Configuration” with the green icon as shown below in the following screenshot. (The item actually labelled Yubico Login for Windows is just the installer, not the application.)<br />
+<img alt="Login-Configuration" src="https://support.yubico.com/hc/article_attachments/360018948940/1.png" /></li>
+</ol>
+<h2 id="configuration-process">Configuration Process</h2>
+<p><strong>Note</strong>: Administrator permissions are required to configure the software.</p>
+<p>Only accounts that are supported can be configured for Yubico Login for Windows. If you launch the configuration wizard, and the account you are looking for is not displayed, it is not supported and therefore not available for configuration.</p>
+<p>If you use Yubico Login for Windows to configure a YubiKey that has already been used, information may already have been programmed to one or both of the key’s slots. You can use an existing CR credential that was programmed for other purposes such as another Windows account or a password manager. Please note that if the Challenge-Response credential has touch required, you or the end-user will need to tap the touch sensor twice during registration and every login.</p>
+<p>Yubico Login for Windows writes the challenge-response secret to slot 2 by default, but you can have it written to slot 1. The application will warn you before you overwrite anything; however, it will not block you from doing so.</p>
+<h3 id="primary-and-backup-keys">Primary and Backup Keys</h3>
+<p>Use a different YubiKey for each registration. If you are configuring backup keys, each user should have one YubiKey for the primary and a second one for the backup key.</p>
+<h3 id="recovery-code">Recovery Code</h3>
+<p>A recovery code is a last-resort mechanism to authenticate a user if all YubiKeys have been lost. Recovery codes can be assigned to the users you specify; however, the recovery code is only usable if the username and password for the account are also available. The option to generate a recovery code is presented during the configuration process.</p>
+<h2 id="specify-configuration">Specify Configuration</h2>
+<p>The provisioning process has defaults and you only need to specify which accounts you want to enable for use with YubiKeys. 
+1. In the Windows Start menu, select Yubico &gt; Login Configuration.
+2. The User Account Control dialog appears. If you are running this from a non-Administrator account you will be prompted for local administrator credentials. The Welcome page introduces the Yubico Login Configuration provisioning wizard as shown in the screenshot below:<br />
+<img alt="welcome-window" src="https://support.yubico.com/hc/article_attachments/360018990859/2.png" />
+3. Click Next. The Defaults page of Yubico Windows Login Configuration appears, as shown in the screenshot below.<br />
+<img alt="login-defaults" src="https://support.yubico.com/hc/article_attachments/360018990879/3.png" />
+4. The configurable items are:
+    - <strong>Slots</strong>: Select the slot where the challenge-response secret will be stored. All YubiKeys that have not been customized come pre-loaded with a credential in slot 1, so if you are using Yubico Login for Windows to configure YubiKeys that are already being used for logging into other accounts, do not overwrite slot 1.
+    - <strong>Challenge/Response Secret</strong>: This item enables you to specify how the secret will be configured and where it will be stored. The options are:
+        - <strong>Use existing secret if configured - generate if not configured</strong>: The key’s existing secret will be used in the specified slot. If the device has no existing secret, the provisioning process will generate a new secret.
+        - <strong>Generate new, random secret, even if a secret is currently configured</strong>: A new secret will be generated and programmed to the slot, overwriting any previously configured secret.
+        - <strong>Manually input secret: For advanced users</strong>: During the provisioning process, the application will prompt you to input manually an HMAC-SHA1 secret (20 bytes - 40 characters hex-encoded).</p>
+<ul>
+<li><strong>Generate Recovery Code</strong>: For each user provisioned, a new recovery code will be generated. This recovery code enables the end-user to log in to the system if they have lost their YubiKey. For more information, refer to the description of the Recovery Code above.
+Note: If you select to save a recovery code while provisioning a user for a second key, any previous recovery code becomes invalid, and only the new recovery code will work.</li>
+<li><strong>Create Backup Device for Each User</strong>: Use this option to have the provisioning process register two keys for each user, a primary YubiKey and a backup YubiKey. If you do not want to provide recovery codes to your users, it is good practice to give each user a backup YubiKey. For more information, refer to the Primary and Backup Keys section above.</li>
+</ul>
+<h2 id="provision-users">Provision Users</h2>
+<p>The provisioning flow first lists the local accounts available for selection, then displays a page for each user selected in turn, allowing you to register a key or keys for each account.</p>
+<p>The provisioning operation can be run as often as necessary. You can also add additional YubiKeys for users already configured for Yubico Login for Windows.</p>
+<p>When you insert a YubiKey, Yubico Login for Windows will automatically detect it and proceed to the Device Confirmation page for each user. </p>
+<ol>
+<li>To select the users to provision, from the Defaults page referenced in the Specify Configuration section above, click Next. The Select User Accounts page appears, as shown in the screenshot below. If there are no local user accounts supported by Yubico Login for Windows, the list will be empty.<br />
+<strong>Note</strong>: User accounts that currently have YubiKeys registered and are enabled for Yubico Login for Windows have an asterisk (*) next to the respective usernames. You can add additional YubiKeys for users already configured by selecting the users here.<br />
+<img alt="user-accounts" src="https://support.yubico.com/hc/article_attachments/360018948960/4.png" /></li>
+<li>On the page shown above, select the user accounts to be provisioned during the current run of the Yubico Login for Windows by selecting the checkbox next to the username, and then click <strong>Next</strong>. The Configuring User page appears as shown below.<br />
+<img alt="config-user" src="https://support.yubico.com/hc/article_attachments/360018990899/5.png" /></li>
+<li>The username shown in the Configuring User field shown above is the user for whom a YubiKey is currently being configured. As each username is displayed, the process prompts you to insert a YubiKey to register for that user, as shown in the screenshot above.</li>
+<li>The Wait for Device page is shown while an inserted YubiKey is being detected and before it is registered for the user whose username is in the Configuring User field at the top of the page. If you have selected Create Backup Device for Each User in the Defaults page, the Configuring User field will also display which of the YubiKeys is being registered, Primary or Backup.</li>
+<li>If you have configured the provisioning process to use a manually specified secret, the field for the 40 hex-digit secret is displayed. Enter the secret and click Next.</li>
+<li>The Programming Device page displays the progress of programming each YubiKey. The Device Confirmation page shown below displays the details of the YubiKey detected by the provisioning process, including the device serial number (if available) and the configuration status of each One-Time Password (OTP) slot. If there are conflicts between what you have set as defaults and what is possible with the detected YubiKey, a warning symbol is displayed. If everything is good to go, a check mark will be shown. If the status line shows an error icon, the error is described and instructions for fixing it are displayed on the screen.<br />
+<img alt="device-confirmation" src="https://support.yubico.com/hc/article_attachments/360018949000/6.png" /></li>
+<li>Once programming is complete for a user account, that account can no longer be accessed without the corresponding YubiKey. You are prompted to remove the YubiKey just configured, and the provisioning process automatically proceeds to the next user account/YubiKey combination, as shown in the screenshot below.<br />
+<img alt="remove-device" src="https://support.yubico.com/hc/article_attachments/360018990939/7.png" /></li>
+<li>After all the YubiKeys for the specified user account have been provisioned:<ul>
+<li>If Generate Recovery Code was selected on the Defaults page, the Recovery Code page is displayed.</li>
+<li>For instructions on setting the recovery code, see the next section, Generate Recovery Codes.</li>
+<li>If Generate Recovery Code was not selected, the provisioning process will automatically continue to the next user account. </li>
+<li>The provisioning process moves to Finished after the last user account is done.</li>
+</ul>
+</li>
+</ol>
+<h2 id="generate-recovery-codes">Generate Recovery Codes</h2>
+<p>When setting the parameters for the provisioning flow as described in Specify Configuration above, you can determine whether recovery codes can be created for the YubiKey users. The recovery code is a long string. (To eliminate problems caused by the end-user mistaking the numeral 1 for lowercase letter L and 0 for the letter O, the recovery code is encoded in Base32, which treats alphanumeric characters that look similar as if they actually were the same.)</p>
+<p>If this parameter is set, the Recovery Code page is displayed after all the YubiKeys for the specified user account have been configured. </p>
+<ol>
+<li>On the Recovery Code page, generate and set a recovery code for the selected user. Once this has been done, the <strong>Copy</strong> and <strong>Save</strong> buttons to the right of the recovery code field become available, as shown in the screenshot below:<br />
+<img alt="recovery-code" src="https://support.yubico.com/hc/article_attachments/360018990959/8.png" /></li>
+<li>Copy the recovery code and save it to be shared with the user and/or keep it in case the user loses it.<ul>
+<li><strong>Note</strong>: Be sure to save the recovery code at this point in the process. Once you proceed to the next screen it is not possible to retrieve the code.</li>
+</ul>
+</li>
+<li>To move to the next user account from the Select Users page, click <strong>Next</strong>. When you have configured the last user, the provisioning process displays the Finished page as shown in the screenshot below.<br />
+<img alt="finish-to-exit" src="https://support.yubico.com/hc/article_attachments/360018990979/9.png" /></li>
+<li>Give each user their recovery code. End-users should save their recovery code to a safe location accessible when they cannot log in.</li>
+</ol>
+<h2 id="user-experience">User Experience</h2>
+<h3 id="yubico-as-credential-provider">Yubico As Credential Provider</h3>
+<p>When the local user account has been configured to require a YubiKey, the user is authenticated by the Yubico Credential Provider instead of the default Windows Credential Provider. The user is prompted to insert their YubiKey. Then the Yubico Login screen is presented. The user enters their username and password.
+<img alt="login-screen" src="https://support.yubico.com/hc/article_attachments/360018990999/10.png" />
+<strong>Note</strong>: It is not necessary to press the button on the YubiKey to log in. In some instances, pressing the button actually causes the login to fail.</p>
+<h3 id="attempts-to-log-in-without-yubikey">Attempts to Log In Without YubiKey</h3>
+<p>When the end-user logs in, they must insert the correct YubiKey into a USB port on their system. If the end-user enters their username and password without inserting the correct YubiKey, authentication will fail and the user will be presented with an error message such as the one shown in the following screenshot:<br />
+<img alt="without-yubikey" src="https://support.yubico.com/hc/article_attachments/360018991059/11.png" /></p>
+<h3 id="login-with-recovery-code">Login With Recovery Code</h3>
+<p>If an end-user’s account is configured for Yubico Login for Windows, and if a recovery code was generated, and a user loses their YubiKey(s), they can use their recovery code to authenticate. The end-user unlocks their computer with their username, recovery code, and password, as shown in the screenshot below: 
+<img alt="recovery-code" src="https://support.yubico.com/hc/article_attachments/360018949080/12.png" />
+Until a new YubiKey is configured, the end-user must enter the recovery code each time they log in.</p>
+<h3 id="changing-the-password">Changing the Password</h3>
+<p>Changing the password works the same as with the default Windows Credential Provider.</p>
+<h2 id="additional-system-hardening">Additional System Hardening</h2>
+<p>Yubico Login for Windows secures the local login process for local accounts on Windows computers. It enhances the standard Username+Password method of logging in by adding to the protected account an additional level of security, i.e., requiring the YubiKey registered to the account holder as well as the username and password. Alternative sign-in methods supported by Windows will not be affected. You must therefore restrict additional local and remote login methods for the user accounts you are protecting with Yubico Login for Windows to ensure you have not left open any ‘back doors.’</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="yubikey-not-detected">YubiKey not detected</h3>
+<p>If Yubico Login for Windows does not detect that a YubiKey has been inserted, it is likely due to the key not having OTP mode enabled, or you are not inserting a YubiKey, but instead a Security Key, which is not compatible with this application. Use the <a href="https://www.yubico.com/products/services-software/download/yubikey-manager/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> YubiKey Manager</a> application to ensure that all the YubiKeys to be provisioned have the OTP interface enabled.</p>
+<h3 id="able-to-log-in-using-sign-in-options-other-than-yubico-login-after-provisioning">Able to log in using sign-in options other than Yubico Login after provisioning</h3>
+<p>Windows sign-in options beginning with Windows Hello (e.g. Windows Hello PIN), as well as the Picture Password sign-in option will allow a user to log in to Windows without their YubiKey, even if a requirement has been established with Yubico Login for Windows. It is recommended to disable Windows Hello/Picture Password sign-in options on accounts that are protected by Yubico Login for Windows.</p>
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>When Yubico Login for Windows attempts to use an existing secret, it might encounter an error registering the device. To ensure that the OTP slot is configured for HMAC-SHA-1 with a 20-byte secret, use either Yubico Login for Windows or the YubiKey Manager to configure the key. Then retry the operation.</li>
+<li>If you use an existing Challenge-Response secret with "require touch" enabled, the end user will need to tap the contact twice during registration and with every login.</li>
+<li>After installing Yubico Login for Windows and restarting your machine, you have to know your username/password but no YubiKey is required until it has been configured.<ul>
+<li>While YubiKeys are being configured, they sometimes show up as serial number 0. This erroneous reading can safely be ignored, as the serial number is correctly read and recorded in the registry.</li>
+<li>If <a href="https://www.yubico.com/products/services-software/download/yubikey-manager/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> YubiKey Manager</a> or another Yubico configuration software is used to switch the contents of slot 1 and slot 2 <strong>after</strong> a YubiKey has been configured for Yubico Login for Windows, the YubiKey will not work with Yubico Login for Windows. The remedy is to switch the slots back again using YubiKey Manager or reconfigure the YubiKey for use as second factor authentication for the same user account.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong>: Yubico Login for Windows perceives a reconfigured YubiKey as a new key.</p>
+<details class="cite">
+<summary>Source</summary>
+<p><a href="https://support.yubico.com/hc/en-us/articles/360013708460-Yubico-Login-for-Windows-Configuration-Guide"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Yubico Support Article</a></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://randyrowland.me" target="_blank" rel="noopener" title="randyrowland.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/rowland007" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/randall-rowland-jr" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rowland007" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M373 138.6c-25.2 0-46.3-17.5-51.9-41-30.6 4.3-54.2 30.7-54.2 62.4v.2c47.4 1.8 90.6 15.1 124.9 36.3 12.6-9.7 28.4-15.5 45.5-15.5 41.3 0 74.7 33.4 74.7 74.7 0 29.8-17.4 55.5-42.7 67.5-2.4 86.8-97 156.6-213.2 156.6S45.5 410.1 43 323.4c-25.4-11.9-43-37.7-43-67.7C0 214.4 33.4 181 74.7 181c17.2 0 33 5.8 45.7 15.6 34-21.1 76.8-34.4 123.7-36.4v-.3c0-44.3 33.7-80.9 76.8-85.5C325.8 50.2 347.2 32 373 32c29.4 0 53.3 23.9 53.3 53.3s-23.9 53.3-53.3 53.3zM157.5 255.3c-20.9 0-38.9 20.8-40.2 47.9s17.1 38.1 38 38.1 36.6-9.8 37.8-36.9-14.7-49.1-35.7-49.1zM395 303.1c-1.2-27.1-19.2-47.9-40.2-47.9s-36.9 22-35.7 49.1c1.2 27.1 16.9 36.9 37.8 36.9s39.3-11 38-38.1zm-60.1 70.8c1.5-3.6-1-7.7-4.9-8.1-23-2.3-47.9-3.6-73.8-3.6s-50.8 1.3-73.8 3.6c-3.9.4-6.4 4.5-4.9 8.1 12.9 30.8 43.3 52.4 78.7 52.4s65.8-21.6 78.7-52.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

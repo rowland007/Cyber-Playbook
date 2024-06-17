@@ -1,0 +1,2186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics.">
+      
+      
+        <meta name="author" content="Randy Rowland">
+      
+      
+        <link rel="canonical" href="https://rowland007.github.io/Cyber-Playbook/organizational/cybersecurity-strategy/">
+      
+      
+        <link rel="prev" href="../common-language-for-computer-security-incidents/">
+      
+      
+        <link rel="next" href="../cti/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Creating a Cybersecurity Strategy - Cyber Playbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--cite:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creating-a-cybersecurity-strategy-for-higher-education" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cyber Playbook" class="md-header__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cyber Playbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Creating a Cybersecurity Strategy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cyber Playbook" class="md-nav__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    Cyber Playbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/approaches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Component Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Component Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/yubikey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubikey for GPG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Connection Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip4-subnets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv4 Subnets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip6-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/nzyme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nzyme | WiFi Defense System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/crowdsec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CrowdSec Collaborative IPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data  Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data  Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data-manage-life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management Life Cycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data-classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/ttp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Techniques, Tactics and Procedures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Factors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Human Factors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/mindful/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mindful Emotion Awareness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Organizational Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Organizational Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../policy-implementation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-language-for-computer-security-incidents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Common Language for Computer Security Incidents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Creating a Cybersecurity Strategy
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Cybersecurity Strategy
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strategy-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategy Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#business-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#it-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      IT Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategic-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategic Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategic-patterns-and-the-cybersecurity-strategic-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Patterns and the Cybersecurity Strategic Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communicating-the-cybersecurity-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating the Cybersecurity Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conclusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyber Threat Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../incident-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incident Response Tracker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yubico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Logins Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yubico/smart-card-deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YubiKey Smart Card Deployment Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yubico/windows-config-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Login for Windows Configuration Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Societal Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Societal Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../societal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../societal/six-dumb-ideas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Six Dumbest Ideas in Computer Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Software Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/owasp-top-ten-pro-cntrls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Top 10 Proactive Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/slsa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply Chain Levels for Software Artifacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            System Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/cis-controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIS Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/ps-sample-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PowerShell Example Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/nist-800-18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protecting CUI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/owasp-waf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Best Practices: Use of WAF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/10-things-auditors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Things Auditors Should Know
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cybersecurity Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Cryptography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Scripting and Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1 - Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2 - Quick Reference Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strategy-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategy Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#business-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#it-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      IT Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategic-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategic Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategic-patterns-and-the-cybersecurity-strategic-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategic Patterns and the Cybersecurity Strategic Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communicating-the-cybersecurity-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating the Cybersecurity Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conclusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="creating-a-cybersecurity-strategy-for-higher-education">Creating a Cybersecurity Strategy for Higher Education</h1>
+<p>Authors: <a href="https://members.educause.edu/donald-j-welch" title="Don Welch">Don Welch</a></p>
+<p>Published: Monday, May 20, 2019</p>
+<p><a href="https://er.educause.edu/-/media/files/articles/2019/5/er192105.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span> PDF</a></p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>Cyberattacks on higher education are increasingly frequent and damaging. Meeting the challenge, especially in higher education, requires strategic thinking, and that strategy must come from cybersecurity-specific strategic thinking.</p>
+</div>
+<figure>
+    <img width="707" height="398" src="https://er.educause.edu/-/media/images/articles/2019/5/er19_2105_article_art/16x9-large.jpg?la=en&hash=3FA124BDD29DD755B02CAB545B71BAB196ED2E12"/>
+    <figcaption>Credit: Walter Vasconcelos © 2019</figcaption>
+</figure>
+
+<p>Cybersecurity leaders in higher education spend only a small percentage of their time developing strategy, but this activity is likely to have the largest impact on their institutions. Having a strategy that evolves to adapt to a changing environment can make a good security team into a great one. A well-thought-out strategy empowers the institution to act in alignment with itself, efficiently moving toward common goals.</p>
+<p>Most of us don't know how to create an effective cybersecurity strategy. I certainly didn't. After many years of trying to fit cybersecurity strategy (square peg) into either an IT strategy or a business strategy approach (round holes), I realized that cybersecurity differs enough from both IT strategy and business strategy that the traditional approach won't work.</p>
+<p>When I talk with people from private industry, they are always astonished at the cybersecurity challenges that we face in higher education. Generally, they don't realize that we face nation-state actors and that colleges and universities are essentially small cities with almost every kind of critical and sensitive data there is. Mixing in higher education's core values of autonomy, privacy, and experimentation presents significant challenges in cybersecurity.</p>
+<p>The first step in facing these challenges is developing and executing a workable strategy. Many approaches that people call strategies really are not. These include "risk-based security programs" or even "risk-based strategies." Risk is just one component of a strategy. Focusing only on risk leads to tactical decisions. Other components include increased regulation and compliance standards. Meeting regulatory and compliance requirements should be a strategic goal, but again, this should not be the strategy itself.</p>
+<h2 id="strategy-definitions">Strategy Definitions</h2>
+<p>To get the most value from a strategy, we need to have the correct definition. <em>Strategy</em> started as a military term in the eighteenth century but has been in use as a concept since organized warfare began. Generally, strategy involves allocating a nation-state's resources toward winning a war as opposed to winning a battle. In the late twentieth century, business began to adopt the term. Even though the environments are vastly different (of course), the concept does translate well to the business environment.</p>
+<p>Below are three common definitions of <em>strategy</em> from a business perspective. Though all three are valid, they all are also incomplete. Therefore, I'll combine them into a single definition that best fits cybersecurity. First, the most-recent <em>Wikipedia</em> definition of <em>strategy</em> is: "A high-level plan to achieve one or more goals under conditions of uncertainty."<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This is a good start. Cybersecurity is the poster child for conditions of uncertainty. However, we need more from a strategy. Second, Henry Mintzberg calls <em>strategy</em> "a pattern in a stream of decisions."<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> This definition captures the concept that a strategy should drive alignment throughout an organization—a concept that is foundational to success, in my experience. Third, <em>Business Dictionary</em> defines <em>strategy</em> as "planning and marshalling resources for their most efficient and effective use."<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> This idea of allocation or prioritization of resources is a critical component. Thus, I combine all three of these and define <em>strategy</em> as follows: "A long-term plan that allocates resources and sets a framework for decision-making to achieve long-term goals under conditions of uncertainty."</p>
+<h3 id="business-strategy">Business Strategy</h3>
+<p>Business strategies are slightly more straightforward than higher education strategies because almost every activity that a business performs can be traced back to dollars. An activity is either a cost or a revenue, and businesses aim to maximize profits. Colleges and universities are different. They must have more revenue than expenses, but in higher education, surplus dollars do not necessarily mean that an institution is performing better. The definition of success is stakeholder value, making the success of a college or university much more difficult to track.</p>
+<p>Michael Treacy and Fred Wiersema talk about three types of business strategy: customer intimacy; product leadership; and operational excellence.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> Each offers a framework that is consistent with the definition of <em>strategy</em> stated above. Businesses executing a <em>customer intimacy</em> strategy focus their resources on the customer experience. Nordstrom was famous for this approach; a resurgence of this line of thought is evident in retail today. To compete with online shopping, many retail companies are focusing on a customer experience that online sellers can't provide. Second, businesses that execute a <em>product leadership</em> strategy are providing a product or service that is better for some segment of the market than that of any competitor. Apple under Steve Jobs is an example. Apple invested a great deal into R&amp;D, and accounts of Jobs's attention to detail and the focus of the Apple design teams illustrate the company's slavish devotion to this strategy. As a result, those who believe the iPhone is the best smartphone will pay a premium. Finally, companies that focus on an <em>operational excellence</em> strategy deliver products or services at prices lower than those of their competitors. Walmart is a classic example.</p>
+<p>If you squint your eyes, you might be able to see how a cybersecurity strategy could be devised to fit one of these patterns. But doing so would not be intuitive.</p>
+<h3 id="it-strategy">IT Strategy</h3>
+<p>The Wikipedia definition of <em>technology (IT) strategy</em> is: "the overall plan which consists of objectives, principles and tactics relating to the use of technologies within a particular organization." <em>TechTarget</em> states that <em>IT strategy</em> is a "comprehensive plan that outlines how technology should be used to meet IT and business goals."<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> The main concept to note is that IT strategy is not adversarial or competitive per se. In business strategy, by contrast, companies are striving to succeed over competitors. IT strategy must support the company strategies and deliver what the company needs.</p>
+<p>Many IT strategies are simply tactical checklists of best practices. This represents an operational efficiency approach. IT strategies generally involve the prioritization of resources both within the organization and within the IT department. The long-term goals usually fall into two categories: those that enable a business goal, and those that free resources for business efforts. For example, a retail business may have a customer intimacy strategy. To execute this strategy, it may choose to collect and analyze data. The company may decide to increase the investment in information technology in order to increase the delivery and quality of information as a business goal. An example of a strategy to free resources would be IT consolidation that might trade a decrease in responsiveness for resources that can be spent elsewhere.</p>
+<p>Risk must be part of the IT strategy. Risks include obvious ones such as disaster recovery and business continuity. Risk management involves determining how much risk the business can tolerate versus the costs required to address those risks. Availability is also a central tenant of cybersecurity. Confidentiality, integrity, and availability risks are the core of cybersecurity, so this is the obvious place where the IT strategy and the cybersecurity strategy overlap and must be aligned. However, making the cybersecurity strategy part of the IT strategy is a mistake. The two functions are too different to be fully integrated.</p>
+<h2 id="strategic-analysis">Strategic Analysis</h2>
+<p>Strategic analysis in business is usually organized into strengths, weaknesses, opportunity, and threats—aka SWOT analysis. SWOT analysis will work for cybersecurity, but it feels forced to me. There are three characteristics of cybersecurity that suggest a different approach. First, cybersecurity will always be a function of the organization's strategy. Second, cybersecurity is reactive and not proactive. Finally, cybersecurity is asymmetrical.</p>
+<p><em>Cybersecurity will always be a function of the organization's strategy.</em> The purpose of cybersecurity is to protect the information assets of the organization. An organization owns information assets so that it can accomplish its mission and give it an advantage over its competitors. According to Bill Stewart and his co-authors, two questions are the key to developing a strategy: (1) "How does cybersecurity enable the business?" and (2) "How does cyber risk affect the business?"<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> Like IT strategy, a standalone cybersecurity strategy would not make sense. The accusation "security for security's sake" would ring true. A cybersecurity strategy must complement the overall strategy as well as the IT strategy.</p>
+<p><em>Cybersecurity is reactive and not proactive.</em> Many experts have encouraged us to think proactively about cybersecurity and have called their strategic approaches proactive. Maybe it's semantics, but for me there is a difference between acting proactively in a tactical sense and having a proactive strategy. We can't seek out bad guys and arrest them or destroy their capability before they attack us. To me, a proactive strategy means acting before our adversaries do—either to beat them to a goal or to degrade their ability to obtain their goals. We can prepare for attacks before they happen, but we can't act until they occur. Our adversaries still pick the time, the place, and the method of attack.</p>
+<p><em>Cybersecurity is asymmetrical.</em> This is because our adversaries have options that we do not. We must operate within a legal framework that limits what we can do. Our goal is to defend our information. Our adversaries' goals are to steal or change our information or to stop us from having access to it. An analogy is a guerrilla war where the conventional forces are trying to defend territory and population while the guerrilla force is trying to gain political advantage by attacking the conventional force and civilian infrastructure.</p>
+<p>Rather than considering SWOT, cybersecurity strategic analysis should look at threats and constraints. Essentially, the purpose of a cybersecurity program is to mitigate the threats it faces while operating within its constraints.</p>
+<h3 id="threats">Threats</h3>
+<p>Whereas others might use the term <em>risks,</em> I'll use the term <em>threats.</em> This implies that there is a thinking and reactive adversary on the other side. We are looking at adversaries and what they might try to do to our college or university. We must know what it is that adversaries want to attack. What is valuable to them? How valuable is that information to them, and how much effort is required? The answers to those questions determine the likelihood that an attacker will go after that information. We must also look at the impact of a successful attack on our institution. If our adversaries succeed, what will be the impact?</p>
+<p><em>Threat = Impact X (Value / Effort).</em> This formula is actually a qualitative analysis. Of course, we all would love to have data that could be used to quantify risk. However, when we rely too much on metrics to calculate risk in cybersecurity, we get precision but not accuracy. We get numbers that we can measure, calculate, and compare, but these numbers might lead us to the wrong conclusions. Take the number of compromises, for example. If the number of compromises per month is dropping by 5 percent, does this mean that our security is getting better? Or does it instead mean that our adversaries have adapted, and we aren't detecting compromises? Or does it mean that our adversaries have moved to different activities but will be back in the future? Also, the data that we gather is usually based on assumptions. Too many events in cybersecurity are "black swans"—unpredicted by previous events. Metrics can be useful and helpful, but they must be incorporated into reasoned qualitative judgment. Table 1 shows another way to view this formula/analysis.</p>
+<p>Table 1. Threat Analysis</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Threat Category</th>
+<th style="text-align: center;">Threat Description</th>
+<th style="text-align: center;">Impact</th>
+<th style="text-align: center;">Value to Attacker</th>
+<th style="text-align: center;">Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">High</td>
+<td style="text-align: center;">Student Health Services database breach</td>
+<td style="text-align: center;">Office of Civil Rights fines and increased oversight; identity theft; health insurance fraud; lawsuits (High)</td>
+<td style="text-align: center;">$80 per record on black market x 40,000 students = $3.2 million</td>
+<td style="text-align: center;">High</td>
+</tr>
+<tr>
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: center;">Distributed denial-of-service (DDoS) attack on single sign-on system</td>
+<td style="text-align: center;">Unable to conduct business (High)</td>
+<td style="text-align: center;">Ransom payment; publicity</td>
+<td style="text-align: center;">Low</td>
+</tr>
+<tr>
+<td style="text-align: left;">Low</td>
+<td style="text-align: center;">Stolen credentials used to access paid research database</td>
+<td style="text-align: center;">Possible lawsuit from research database provider (Low)</td>
+<td style="text-align: center;">$10,000 and up</td>
+<td style="text-align: center;">Low</td>
+</tr>
+</tbody>
+</table>
+<p>To better illuminate the difference between the value to the attacker and the impact on the institution, look at credit cards. Attackers can make good money from stolen credit cards whether they sell the cards or use the cards themselves. Stealing credit cards is worth a lot of effort. But individuals are liable for only up to $50 if their credit card number is stolen. Likewise, a college or university storing credit card data that is stolen has no impact from the theft. The credit card providers are the ones who lose. The Payment Card Industry Data Security Standard (PCI-DSS) uses fines, the threat of increased process, or the revoking of card-processing privileges to create an impact on the institution, pushing colleges and universities to expend the effort necessary to protect the cards.</p>
+<p>A good cybersecurity strategy focuses on identifying the largest (high-impact) threats in order to garner the resources to protect the institution and defend against those threats.</p>
+<h3 id="constraints">Constraints</h3>
+<p>We all know what we'd do in a perfect world, with unlimited funding, complete cooperation, and as many talented staff as we need. Since we don't live in a perfect world, the cybersecurity strategy must focus on those threats that have been identified to be the most serious (as noted above) while considering the numerous constraints limiting cybersecurity programs in higher education.</p>
+<ul>
+<li><em>Funding.</em> This constraint is fairly straightforward. It concerns capital, operating expenses, and the amount and timing of money that can be spent.</li>
+<li><em>Regulations and Laws.</em> The cybersecurity program must be compliant with regulations and laws. Resources expended for compliance are not available for other purposes.</li>
+<li><em>Staff Time and Talent.</em> The capacity/capability of current staff and the ability to hire and retain talent are both limited. High turnover due to IT markets, the pay that can be offered, and the capacity of staff to learn new skills are all examples of restrictions around staff time and talent.</li>
+<li><em>Business Overhead.</em> The individual culture of various groups in a college or university will determine how much can be accomplished through security controls. For example, understanding that the finance team will tolerate a lot of overhead whereas clinical physicians will tolerate very little is important. The process of assigning high-, medium-, or low-tolerance ratings for the various groups can provide better insight into an organization's overall tolerance for security overhead.</li>
+<li><em>Political Capital.</em> This constraint overlaps a bit with business overhead, but the emphasis here is on leadership and peer support. For example, if a college or university recently suffered a major security breach, the security team may have a good deal of political capital with senior leadership. In addition, knowing how much those in the rest of the institution trust the security team—that is, the level of peer support—is critical. I recommend making a list of the key leaders across the institution and categorizing them as "will support with a solid case," "can win support," or "tough sell." Understanding political capital allows it to be spent in the most valuable ways and prevents the development of a cybersecurity strategy that won't be supported.</li>
+<li><em>Accountability.</em> This could be a subcategory of political capital, but I feel it deserves its own discussion in higher education. Being aware of the culture of accountability in an institution is critical to developing a successful cybersecurity strategy. If a strategy depends on shadow IT, but shadow IT is never disciplined for ignoring a central edict, the strategy is in trouble. Are there any real consequences to ignoring cybersecurity? The answer to that question will affect the cybersecurity strategy.</li>
+<li><em>Calendar Time</em>. This constraint includes the dates that capabilities must be in place and the resources that are available. Not everything in the cybersecurity strategy will be time-critical. This constraint is best analyzed in two parts: (1) identifying any and all limitations on time; (2) sequencing decisions to include calendar time considerations.</li>
+<li><em>Governance.</em> If governance is imposed on cybersecurity, then it is a constraint. If governance can be created by the chief information security officer, then it is a component of the cybersecurity strategy. With a trusted security team, governance could be as lightweight as a reporting line. Most security teams in higher education don't have that luxury, however. In this case, advisory committees, with their transparency and participation, are great ways to build trust and support. Heavier governance can involve an oversight committee, with many subcommittees and an executive committee. In a lower-trust environment, the oversight committee will make decisions and approve major projects. Heavy governance will be slower, more time-consuming, and more restrictive. On the other hand, the security team will have more support and will be able to impose more overhead, and the rest of the institution will be more accountable.</li>
+</ul>
+<h2 id="strategic-patterns-and-the-cybersecurity-strategic-matrix">Strategic Patterns and the Cybersecurity Strategic Matrix</h2>
+<p>I'm using the term <em>strategic patterns</em> in the same way that software engineering uses the term <em>design patterns.</em> Software design patterns themselves can't be used to create an application; instead they serve as a component of the application design. Likewise, strategic patterns function as one part of the overall cybersecurity strategy.</p>
+<p>Probably the most common cybersecurity strategic pattern used today is the "kill chain."<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> Another is "Defense in Depth," which first came into favor in the 1990s.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> People-centric patterns were more popular a decade ago but are still important. Process-centric patterns are common and may be appropriate depending on the maturity of a cybersecurity program. Technology alone is unlikely to solve all our problems, but understanding what we need technology to do and its relationship with resources is a critical part of any cybersecurity strategy.</p>
+<p>Much like fitting together the appropriate software design patterns to create an application design, fitting together the right strategic patterns can help create a cybersecurity strategy. A collection of cybersecurity strategic patterns forms the high-level strategy. Moving down a layer will involve people, process, and technology. A matrix is the natural way to capture this level of the strategic plan. Should people be emphasized over process? Which technology will be chosen? A cybersecurity strategic matrix can capture as well as analyze these decisions.</p>
+<p>Table 2 shows a matrix with the five high-level cybersecurity strategic functions from the <a href="https://www.nist.gov/cyberframework">National Institute of Standards and Technology (NIST) Cybersecurity Framework</a>—<em>identify, protect, detect, respond,</em> and <em>recover</em>—on the left side and with <em>people, process,</em> and <em>technology</em> across the top. This visual representation shows how the five functions are being addressed and the trade-offs that are being made. The five top-level functions could also be subdivided into more areas. For example, <em>protect</em> could be detailed as <em>access control, awareness and training, data security, information protection processes, maintenance,</em> and <em>protective technology.</em></p>
+<p>Table 2. Cybersecurity Strategy Coverage and Trade-Off Matrix</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">People</th>
+<th style="text-align: center;">Process</th>
+<th style="text-align: center;">Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Identify</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Protect</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Detect</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Respond</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Recover</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Based on the cybersecurity strategic patterns chosen, projects or initiatives can be inserted into the cells. These projects or initiatives represent the resources that are required. Doing this will necessarily prioritize the functions and how they will be addressed. For example, if the Kill Chain pattern is used, then the detect function(s) will probably be a top priority. A Defense-in-Depth pattern will require more effort in the <em>protect</em> function(s).</p>
+<p>Next, efforts should be prioritized among People, Process, and Technology. For example, a startup that has a small, dedicated staff, that doesn't have much money, and that must be highly productive will look first at solving issues with people. By contrast, organizations that are very mature can look to process first for success. Here is another example. The Identify function includes asset management, which requires inventorying hardware, software, external systems, and data flows. These needs can be addressed by people, process, or technology but most likely by a combination of all three. People can provide inventory information. Process can issue an "authority to operate" and require documentation. Technology tools can perform automatic discovery of hardware and software. There are trade-offs in each of these approaches.</p>
+<p>Each of the cells in the cybersecurity strategic matrix can also include submatrices. For example, the Detect/Technology cell could hold a matrix detailing Network, Payload, and Endpoint detection functions across Real-Time/Near-Real-Time and Post-Compromise technologies. Or the Protect/People cell could include a matrix dividing People into Users, IT Staff, and Security, with Mandatory and Optional functions. The idea is to make clear the tradeoffs involved in the allocation of resources.</p>
+<p>Another way the cybersecurity strategic matrix can be helpful is in understanding emergent priorities and patterns. As tradeoffs are made in order to allocate resources within constraints, it may become obvious that the initial thoughts and plans simply aren't practical. A better way to abstract resource allocation, or a different strategic pattern, may become clear. These insights will be important in communicating the cybersecurity strategy.</p>
+<h2 id="communicating-the-cybersecurity-strategy">Communicating the Cybersecurity Strategy</h2>
+<p>The implementation of a successful cybersecurity strategy depends on a wide variety of stakeholders. For the strategy to be useful to others across the college or university, they must act in alignment with it. Yet communicating the cybersecurity strategy throughout an institution can be challenging. People in different roles need different levels of understanding. End-users will be the least sophisticated security-wise, whereas the security team must of course understand the details. In between are the system administrators, developers, academic leaders, and more. The cybersecurity strategy must be communicated in multiple ways tailored for everyone in the institutional audience.</p>
+<p>Creating a cybersecurity strategy that serves as a framework for decision-making requires a concept simple enough that people can hold it in their head. What does this mean in practice? The strategy description must fit easily on one PowerPoint slide. There are two effective ways to do this. Both methods can be incorporated into a two- to five-minute presentation that will create a memory aide for the audience.</p>
+<p>One way is to use the old standby of bullet lists, phrasing the text so that it captures the essence of the strategy. The range should be three to seven bullets, with five being optimal. A word or two followed by a phrase or sentence gives the viewer something to hold on to. For example: "<em>Information Centric:</em> Categorize and prioritize defending high-risk information." It should be possible to explain the strategy in five minutes—not quite an elevator pitch, but not much more.</p>
+<p>The other, perhaps better method is to use a diagram. The combination of a graphic and words is easier for someone to remember than just text. This might be hard if you're not an artistic person, but communication teams may be able to help. The risk is greater if the diagram doesn't hit the mark, but the possibility of a winning home run is greater as well.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> Figure 1 is the illustration I use to communicate Penn State's cybersecurity strategy.</p>
+<figure>
+    <img width="707" height="339" src="https://er.educause.edu/-/media/images/articles/2019/5/er192105figure1.png?la=en&hash=290D04E4F4ED7E7D1DE45A4800E7A32C41CDE549"/>
+    <figcaption>Figure 1. A Sample Illustration of Cybersecurity Strategy</figcaption>
+</figure>
+
+<p>These basic explanations might be the most important part of a cybersecurity strategy. Unfortunately, they are, like a poem, the hardest to get right. As the saying goes, a poor plan well-executed beats a great plan poorly executed. This simple, high-level explanation of the cybersecurity strategy will play a large part in determining how others across the institution do (or don't) align.</p>
+<p>Still, for those who want additional details and who have the tolerance to read or listen to more, further explanations are required. A "one-pager" is an option. This is a document that explains the strategy on one side (or both sides) of a piece of paper. Another option is a fifteen- to thirty-minute strategy briefing. This could consist of seven to fifteen slides that put more flesh on the bones of the strategy. The higher the picture-to-bullet ratio, the more effective this communication will be. I also suggest including a discussion of the threats and constraints. The more comfortable people are with the reasoning behind the strategy, the more enthusiastic they will be in implementing it.</p>
+<p>Depending on the institution, a well-polished explanation of the cybersecurity strategy may not be required. The main benefit comes from the writing. Chances are that the detailed justifications will be helpful, at some point, for various initiatives.</p>
+<p>I believe that effective communication is perhaps the most critical aspect in the entire process of creating a cybersecurity strategy. Feedback is thus essential. Words and concepts that make perfect sense to the security team, for instance, may be lost on some stakeholders or, worse, may evoke a bad reaction. Communication will need to be modified over time.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Thinking about cybersecurity from solely a risk-based perspective or as the risk part of an IT strategy will not result in the most efficient allocation of resources, nor will doing so align the institutional cybersecurity efforts. Cybersecurity demands a strategic approach because it is difficult, rapidly changing, and potentially devastating to a college or university. Cybersecurity differs from either IT or business operations because it is adversarial, reactive, and asymmetrical. Cybersecurity efforts must be closely aligned to the institution's overall strategy and must complement its IT strategy. Failure to think and act strategically results in the inefficient use of resources and increases institutional risk.</p>
+<p>The inputs to cybersecurity strategy are threats and constraints. The strategy must identify the institution's information assets and the impact of a successful attack on them. Understanding the value to attackers provides insight into the likelihood of attacks and how much effort adversaries will expend to gain those assets. This analysis provides a risk-based prioritization for defending information. Institutions have limited resources to expend on cybersecurity. These resources include not only funding and staff but also intangibles like political capital and accountability. An effective strategy must address the most serious threats while staying within the constraints of the institution.</p>
+<p>Cybersecurity strategy must be long-term, be effective under uncertainty, prioritize resources, and provide a framework for alignment throughout the institution. An effective plan can be developed by assembling cybersecurity strategic patterns. In addition, a matrix that matches the functions of the NIST Cybersecurity Framework to people, process, and technology can provide a visual representation of the implementation of the cybersecurity strategy. Finally, sequencing the contents of this matrix can create a roadmap of projects, initiatives, and efforts to execute the strategy. Beyond offering a risk-based approach, the strategy will effectively allocate resources and align efforts.</p>
+<p>Cybersecurity is not just an IT function; it is an institutional function. Thus, almost all members of the college/university community have a part to play and should act in alignment with the cybersecurity strategy. And since they can't align with the strategy unless they understand and remember it, communicating the strategy is as important as devising the strategy itself.</p>
+<p>Cyberattacks on colleges and universities are increasingly frequent and damaging. The cyberthreat to higher education overall is both significant and likely to grow for the foreseeable future. Meeting the challenge, especially in higher education, requires strategic thinking, and that strategy must come from cybersecurity-specific strategic thinking.</p>
+<details class="cite">
+<summary>Cite</summary>
+<p><a href="https://er.educause.edu/articles/2019/5/creating-a-cybersecurity-strategy-for-higher-education"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Creating a Cybersecurity Strategy for Higher Education</a> by <a href="https://members.educause.edu/donald-j-welch"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Don Welch</a> is licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Creative Commons Attribution-NonCommercial 4.0 International License</a></p>
+</details>
+<h3 id="footnotes">Footnotes</h3>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://en.wikipedia.org/wiki/Strategy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Strategy,"</a> Wikipedia: The Free Encyclopedia, accessed March 29, 2019.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Henry Mintzberg, "Strategies in Pattern Formation," Management Science 24, no. 9 (May 1978).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>"Strategy" [http://www.businessdictionary.com/definition/strategy.html], Business Dictionary, accessed March 29, 2019.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Michael Treacy and Fred Wiersema, <a href="https://hbr.org/1993/01/customer-intimacy-and-other-value-disciplines"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Customer Intimacy and Other Value Disciplines,"</a> Harvard Business Review (January-February 1993).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://en.wikipedia.org/wiki/Technology_strategy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Technology Strategy,"</a> Wikipedia: The Free Encyclopedia, accessed March 29, 2019; <a href="https://searchcio.techtarget.com/definition/IT-strategy-information-technology-strategy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "IT Strategy (Information Technology Strategy),"</a> TechTarget, last updated November 2017.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Bill Stewart, Sedar LaBarre, Matt Doan, and Denis Cosgrove, "Developing a Cybersecurity Strategy: Thrive in an Evolving Threat Environment," in Matt Rosenquist, ed., <a href="https://www.securityroundtable.org/wp-content/uploads/2015/09/Cybersecurity-9780996498203-no_marks.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> Navigating the Digital Age: The Definitive Cybersecurity Guide for Directors and Officers</a> (Chicago: Caxton Business &amp; Legal, 2015), p. 172.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>See Eric M. Hutchins, Michael J. Cloppert, and Rohan M. Amin, <a href="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains,"</a> in Julie Ryan, ed., Leading Issues in Information Warfare and Security Research, vol. 1 (Reading, UK: Academic Publishing International, 2011).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>See Matt Beglinger, <a href="https://www.pratum.com/blog/374-cybersecurity-defense-in-depth"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Cybersecurity Defense in Depth Strategy,"</a> Pratum blog, July 25, 2017; <a href="https://en.wikipedia.org/wiki/Defense_in_depth_(computing)"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Defense in Depth (Computing),"</a> Wikipedia: The Free Encyclopedia, accessed March 30, 2019.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>For examples, see: John M. Gilligan, slide 3 in <a href="https://www.slideshare.net/JohnGilligan7/top-level-cyber-security-strategy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Top Level Cybersecurity Strategy,"</a> presented to AFFIRM, February 17, 2010; Office of the State Information Officer, Oregon, Figure 3, "Public Cybersecurity: Classes of Interventions" (p. 11), in "Implementation of E.O. 16-13: Unifying Cyber Security in Oregon" [https://olis.leg.state.or.us/liz/2017R1/Downloads/CommitteeMeetingDocument/96166] (2016); National Institute of Standards and Technology, Figure 2, "Notional Information and Decision Flows within an Organization" (p. 13), in <a href="https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span> "Framework for Improving Critical Infrastructure Cybersecurity,"</a> Draft Version 1.1, January 10, 2017.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://randyrowland.me" target="_blank" rel="noopener" title="randyrowland.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/rowland007" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/randall-rowland-jr" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rowland007" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M373 138.6c-25.2 0-46.3-17.5-51.9-41-30.6 4.3-54.2 30.7-54.2 62.4v.2c47.4 1.8 90.6 15.1 124.9 36.3 12.6-9.7 28.4-15.5 45.5-15.5 41.3 0 74.7 33.4 74.7 74.7 0 29.8-17.4 55.5-42.7 67.5-2.4 86.8-97 156.6-213.2 156.6S45.5 410.1 43 323.4c-25.4-11.9-43-37.7-43-67.7C0 214.4 33.4 181 74.7 181c17.2 0 33 5.8 45.7 15.6 34-21.1 76.8-34.4 123.7-36.4v-.3c0-44.3 33.7-80.9 76.8-85.5C325.8 50.2 347.2 32 373 32c29.4 0 53.3 23.9 53.3 53.3s-23.9 53.3-53.3 53.3zM157.5 255.3c-20.9 0-38.9 20.8-40.2 47.9s17.1 38.1 38 38.1 36.6-9.8 37.8-36.9-14.7-49.1-35.7-49.1zM395 303.1c-1.2-27.1-19.2-47.9-40.2-47.9s-36.9 22-35.7 49.1c1.2 27.1 16.9 36.9 37.8 36.9s39.3-11 38-38.1zm-60.1 70.8c1.5-3.6-1-7.7-4.9-8.1-23-2.3-47.9-3.6-73.8-3.6s-50.8 1.3-73.8 3.6c-3.9.4-6.4 4.5-4.9 8.1 12.9 30.8 43.3 52.4 78.7 52.4s65.8-21.6 78.7-52.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

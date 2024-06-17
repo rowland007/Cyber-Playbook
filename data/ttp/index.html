@@ -1,0 +1,2104 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics.">
+      
+      
+        <meta name="author" content="Randy Rowland">
+      
+      
+        <link rel="canonical" href="https://rowland007.github.io/Cyber-Playbook/data/ttp/">
+      
+      
+        <link rel="prev" href="../data-classification/">
+      
+      
+        <link rel="next" href="../../human/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Techniques, Tactics and Procedures - Cyber Playbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--cite:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#techniques-tactics-and-procedures-ttp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cyber Playbook" class="md-header__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cyber Playbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Techniques, Tactics and Procedures
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cyber Playbook" class="md-nav__button md-logo" aria-label="Cyber Playbook" data-md-component="logo">
+      
+  <img src="../../static/images/logo.png" alt="logo">
+
+    </a>
+    Cyber Playbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/approaches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Component Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Component Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/yubikey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubikey for GPG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Connection Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip4-subnets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv4 Subnets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/ip6-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/nzyme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nzyme | WiFi Defense System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/crowdsec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CrowdSec Collaborative IPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data  Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data  Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-manage-life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management Life Cycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Techniques, Tactics and Procedures
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Techniques, Tactics and Procedures
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaboration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#document-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizational-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#records-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Records Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Site
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Factors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Human Factors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../human/mindful/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mindful Emotion Awareness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Organizational Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Organizational Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/policy-implementation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/common-language-for-computer-security-incidents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Common Language for Computer Security Incidents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/cybersecurity-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Cybersecurity Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/cti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyber Threat Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/incident-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incident Response Tracker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Logins Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/smart-card-deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YubiKey Smart Card Deployment Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organizational/yubico/windows-config-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yubico Login for Windows Configuration Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Societal Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Societal Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../societal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../societal/six-dumb-ideas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Six Dumbest Ideas in Computer Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Software Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/owasp-top-ten-pro-cntrls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Top 10 Proactive Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/slsa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply Chain Levels for Software Artifacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            System Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/cis-controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIS Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/ps-sample-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PowerShell Example Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/nist-800-18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protecting CUI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/owasp-waf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OWASP Best Practices: Use of WAF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system/10-things-auditors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Things Auditors Should Know
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cybersecurity Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Cryptography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Scripting and Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Policy and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1 - Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2 - Quick Reference Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaboration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#document-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizational-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#records-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Records Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Site
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="techniques-tactics-and-procedures-ttp">Techniques, Tactics and Procedures (TTP)</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These TTPs are based on the Department of the Air Force's (DAF) SharePoint guidance. Some of the tips based may be applicable only to DAF or SharePoint. However, the principles may cross into other collaboration and storage solutions such as Nextcloud and Google Workspace.</p>
+</div>
+<h2 id="collaboration">Collaboration</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Collaborate with DISCUSSION feature</strong> <span style="color: white; background: green; border-radius: 5px;">&nbsp;CL-01&nbsp;</span></p>
+<hr />
+<p>AF personnel will use the DISCUSSION in SharePoint Online instead of email capability for AF internal threaded discussions.  If an email starts to turn into a threaded discussion (after two forwards or replies), the lead team member should put it into a discussion board as soon as possible in order to preserve the intent of the discussion points.</p>
+</li>
+<li>
+<p><strong>Collaborate with ISSUES/TASKS List feature</strong> <span style="color: white; background: green; border-radius: 5px;">&nbsp;CL-02&nbsp;</span></p>
+<hr />
+<p>Personnel will use the ISSUES/TASKS list capability in the SharePoint Online instead of email to do taskers or resolve internal issues in order to reap the benefits of tracking the progress properly. There is also Nextcloud Tasks, Jira, Github issues, and Microsoft Planner that also provide the same capability.</p>
+</li>
+<li>
+<p><strong>Collaboration - Real-Time Co-Authoring / Check-In Check Out</strong> <span style="color: white; background: green; border-radius: 5px;">&nbsp;CL-03&nbsp;</span></p>
+<hr />
+<p>SharePoint Online &amp; Microsoft365 include the Real-Time Co-Authoring feature, in which multiple users can collaborate and make edits to a document simultaneously with updates/edits shown in real-time. This is the recommended method for document collaboration. The Check-Out / Check-In feature is also still available which, if used, the user must reserve it prior to editing (this will keep the integrity of the edits intact), edit it in the native application, use the Revision capability inherent in most MS Office applications to show others how the document has changed, check it in once editing is complete, and fill in the comment box after Check-in, which in effect is the automated CHANGE PAGE feature of SharePoint Online. The AF is used to emailing or downloading a document and uploading/sending it back for someone to consolidate comments. True collaboration means we all touch the exact same copy of a document, which means you can overwrite someone else’s work if you aren’t following basic rules. Sometimes a document will appear checked out even after you checked it in.  Refresh your web site and it should clear the cache and present the correct status.</p>
+</li>
+<li>
+<p><strong>Announcements/News Best Practice</strong> <span style="color: white; background: green; border-radius: 5px;">&nbsp;CL-04&nbsp;</span></p>
+<hr />
+<p>Initially Organizations should focus on posting News and/or Announcements (relevant to the organization) on the organizational site in place of sending out emails.  This puts everything in one place -  allows the expiration date for a clean display, and an Information Management policy could be established to delete “old” announcements.</p>
+</li>
+</ul>
+</div>
+<h2 id="document-management">Document Management</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Creating Libraries vs. Folders</strong> <span style="color: black; background: silver; border-radius: 5px;">&nbsp;DM-01&nbsp;</span></p>
+<hr />
+<p>It is best practice to create more libraries instead of making more folders with deeper structures. Horizontal is better than vertical due to navigation, search, and URL limitations.</p>
+</li>
+<li>
+<p><strong>Only Handle Information Once (OHIO) Principle</strong> <span style="color: black; background: silver; border-radius: 5px;">&nbsp;DM-02&nbsp;</span></p>
+<hr />
+<p>A document or information should be born, live, change, and die (be made a record for dispositioning) from a single location. The document will generally be created, edited, finalized and deleted from the Team site where it was produced.  Once it is initially moved to SharePoint for collaboration, all other copies on <code>C:\</code> drive, shared drives, etc. <strong>MUST BE DELETED!</strong> It is understood that there are cases where you will need to put the document on some media other than SharePoint.  However, SharePoint is the holder of the official working copy of the document.  Any document not directly retrieved from SharePoint should be treated as other than official and not configuration controlled. The exception to this TTP is when a document becomes an official record. At that time, the official copy is located in the organization's official Records Management location and a working copy (or link to the record) may still reside in SharePoint Online.  This allows for reuse of the document without retrieval from the SharePoint Online site. Currently, SharePoint Online does not have an official Records Management capability.</p>
+</li>
+</ul>
+</div>
+<h2 id="general">General</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Everyone has access and shares (Broad Visibility)</strong> <span style="color: black; background: orange; border-radius: 5px;">&nbsp;GL-01&nbsp;</span></p>
+<hr />
+<p>A key concept in the usage of SharePoint Online is that information needs to be shared with all people who need access to it. The information we generate doesn’t belong to us, it belongs to the AF, the DoD, the US Government, and ultimately the US Populace. <del>For Official Use Only (FOUO)</del> Controlled Unclassified Information (CUI) is NOT enough to lock down information. It means DoD ONLY. However, this open-access philosophy also recognizes that there are laws, regulations, and policies that restrict the dissemination of certain types of information. Moreover, all SharePoint users need to understand and adhere to the dissemination restrictions. There are many types of information to which access restrictions apply and some of the classifications are Privacy Act Information, Source Selection Sensitive, Scientific and Technical Information (STINFO) (e.g., weapon system Technical Orders), Intellectual Property (Company Proprietary, Trade Secrets, etc.), and Information subject to the Foreign Disclosure and/or Export Control Laws. Every organizational site or team site front page needs to be open to all. The Site Visitors group should contain the "Everyone but external users" group, which is all personnel in the AFNet Active Directory. This will maximize collaboration and let people know you exist as a team or an organization.  It will also let users see who the leadership or POCs are to find out more about that organization or team. It is HIGHLY encouraged to leave the organizational branding in place on organizational site collections.</p>
+</li>
+<li>
+<p><strong>Sending URLs via Email Vice Attachments</strong> <span style="color: black; background: orange; border-radius: 5px;">&nbsp;GL-02&nbsp;</span></p>
+<hr />
+<p>Documents within an enclave accessible by all should no longer be sent via email.  URL links to the document should be sent via email instead.  If you need to send a document to an individual outside the organizational permission levels, you may use the <code>Share</code> feature. The user should ensure visitor access to the document only and not grant access to the entire list, library, site or site collection unless it is appropriate to do so.</p>
+</li>
+<li>
+<p><strong>Keeping Original Format</strong> <span style="color: black; background: orange; border-radius: 5px;">&nbsp;GL-03&nbsp;</span></p>
+<hr />
+<p>Maintain official records originated electronically (e.g., e-mail, correspondence, and presentations), in original electronic format. The metadata associated with the document is legally as important as the content.  Printing out emails loses metadata, as does saving as a text file.  Save all emails in Outlook Message Format (.msg)</p>
+</li>
+<li>
+<p><strong>Versioning</strong> <span style="color: black; background: orange; border-radius: 5px;">&nbsp;GL-04&nbsp;</span></p>
+<hr />
+<p>Versioning can be set for each document library and lists. By default, document libraries created on SharePoint Online have versioning enabled for 500 major versions. By default, lists created on SharePoint Online do not have versioning enabled.   Having versioning enabled and set to at least five (5) major versions is strongly recommended, since restores of sites in SharePoint Online from backups may not be possible. There are three choices for versioning 1) no versioning, 2) major versions only, and 3) major and minor versions.  The "major version only" setting means that each version is saved to the server and viewable to anyone with "read" or greater privileges.  The "major and minor versions" setting can be used in a collaborative model where you want to have some people working on a "draft" version, while other people can only see the "published" versions.  People with "read" privileges only see the major (a.k.a. published) versions.  People with "contribute" or greater privileges see (and can edit) the minor versions. Making a document a "major" version effectively publishes it for all persons with "read" or greater privileges to see. Both major and minor versions can be limited in number.  Not every document library will need both major and minor versions.</p>
+</li>
+<li>
+<p><strong>Provisioning and Deletions</strong> <span style="color: black; background: orange; border-radius: 5px;">&nbsp;GL-05&nbsp;</span></p>
+<hr />
+<p>All new site collections for SharePoint Online must be requested through the New Site Request process and utilize the naming conventions referenced in <code>TTP NC-03</code>. Any user may enter a request for a new SharePoint Online site collection but all requests are approved by the point of contact (POC) for the respective organization.  Likewise, all site collection deletes (regardless of reason) must be coordinated through the Service Request process. Only Site Collection Administrators (SCAs) for the site in question may submit a deletion request.</p>
+</li>
+</ul>
+</div>
+<h2 id="naming-conventions">Naming Conventions</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>FILE Naming Conventions</strong> <span style="color: black; background: cyan; border-radius: 5px;">&nbsp;NC-01&nbsp;</span></p>
+<hr />
+<p>File names should be permanent upon creation, so make it meaningful from the start.  Never end a file or folder name with "_file" or "_files."  This is reserved by Microsoft and if used by you, will be made hidden by the system.</p>
+</li>
+<li>
+<p><strong>Naming Libraries</strong> <span style="color: black; background: cyan; border-radius: 5px;">&nbsp;NC-02&nbsp;</span></p>
+<hr />
+<p>Be clear and concise when naming document libraries. Ensure that you can differentiate them from other libraries. This allows for easy recognition from anywhere - remember SharePoint Online can be accessed from many MS products and your desktop.  Keep in mind there are limits to the length of a URL so you don't want to make these library names too long.</p>
+</li>
+<li>
+<p><strong>Site Provisioning Naming Conventions</strong> <span style="color: black; background: cyan; border-radius: 5px;">&nbsp;NC-03&nbsp;</span></p>
+<hr />
+<p>All team site collections in AF SharePoint Online will use the following naming convention <code>https//usaf.dps.mil/teams/&lt;Project-or-Program-Name&gt;</code>. Do not put office symbols in team site URL's. Use your program or project name or request a numbered URL.  All organizational site collections in AF SharePoint Online will use the following naming convention <code>https//usaf.dps.mil/sites/&lt;Organization-Name&gt;</code>. When choosing a name for the last portion of your URL, keep these items in mind  If migrating from the AF SharePoint On-Premise environment at the Wright-Patterson APC, we recommend keeping your numbered site (1xxxx or 2xxxx) for the name portion of the URL (e.g. <code>https//usaf.dps.mil/teams/16497</code> or <code>https//usaf.dps.mil/teams/28532</code>).- Provides a consistent name for your users.- Guarantees there will not be a name clash (someone else already using it).You may change the URL name of your new or migrating site collection if you wish. Keep it simple, but descriptive. The following rules must be observed- Can use all lowercase, an abbreviation or CamelCase in the spelling of the URL name.- Do not use spaces in the name; instead use the dash character (“-”) if you wish to separate words.- Do not use any other special characters in the URL name.- Do not use very common Org names in your teams site collections (FM, PK, LS, etc.) or names that could change during the scope of your project or program.- Minimum of three (3) alphanumeric characters  (e.g. <code>https//usaf.dps.mil/teams/SOS</code>)- Maximum of 20 alphanumeric characters (e.g. <code>https//usaf.dps.mil/teams/ProjABCD</code> or <code>https//usaf.dps.mil/teams/Prog-ABCDE</code>)- All named URLs are first come, first served.  Requests for names already in use will not be honored.Once the site collection has been created, the top level URL (site collection) is permanent and will not be changed.</p>
+</li>
+</ul>
+</div>
+<h2 id="organizational-site">Organizational Site</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Using the Org Branding Template</strong> <span style="color: white; background: red; border-radius: 5px;">&nbsp;OS-01&nbsp;</span></p>
+<hr />
+<p>The organizational branding template should not be changed.  A site owner should change the logo or picture on the right side, but the rest should stay the same.  The banner on the bottom is mandated, and the Support Center link above the logo is the user connection to help and support. Site owners may add lots of content BELOW the standard webparts or on PAGES attached to the community site, but should not change the org site standard webparts  This will ease training and the finding of information.</p>
+</li>
+</ul>
+</div>
+<h2 id="permissions">Permissions</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Default permissions setting</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-01&nbsp;</span></p>
+<hr />
+<p>Sites are created with 3 default permission groups.  The 3 main groups are Owners, Members and Visitors. <strong>SharePoint Online (SPO) does not protect data. Information owners protect data.</strong> SPO only facilitates the protection of the data. Used properly, SharePoint Online Permissioning structures can easily be used to safeguard information. <code>TTP GL-01</code> (Everyone has access and shares [Broad Visibility]) takes precedence. There are many types of information to which access restrictions apply and some of the classifications are- <code>Privacy Act Information</code>- <code>Scientific and Technical Information (STINFO)</code> (e.g., weapon system Technical Orders)- <code>Intellectual Property</code> (Company Proprietary, Trade Secrets, etc.)- Information subject to the Foreign Disclosure and/or Export Control Laws- Source Selection Sensitive PII/<del>FOUO</del> CUI data IS allowed on SharePoint as long as it is permissioned properly and visible only to those with a need-to-know. SPO provides encryption at rest.</p>
+</li>
+<li>
+<p><strong>Membership for Whole Organization</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-02&nbsp;</span></p>
+<hr />
+<p>The best permissions to give the organization and all its subsites is full membership to the ORG ALL active directory group.  This enhances collaboration across the organization from day one.  For instance, in <code>AFMC A6/7</code>, there are eight divisions, <code>A6X</code>, <code>A6O</code>, <code>A7A</code>, <code>A7M</code>, <code>A7R</code>, <code>A7P</code>, <code>A7O</code>, <code>A7S</code>.  We could only let AFMC <code>A7P</code> All have membership to the <code>A7P</code> org site but what if they need to have <code>A6X</code> comment on something they are working on for a spreadsheet or for a document?  It is far easier to let <code>AFMC A6/7</code> All have membership to <code>A7P</code> than to have employees scream that they can't share and that they don't want to put stuff on the <code>A6/7</code> site just to share.  This permissions structure repeats the ills of the shared drive - something we need to avoid in a collaborative environment.</p>
+</li>
+<li>
+<p><strong>Documenting Need to Know</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-03&nbsp;</span></p>
+<hr />
+<p>To safeguard controlled unclassified information (CUI), restrict it at site or list/library level.  Avoid restricting at the folder level. Never restrict at a document/item level. Sites should only be restricted if entire site content is sensitive (source selection team, personnel management). Best application for unique permissions is at list/library level. When restricting a list/library, use TTP NC-02 (Naming Libraries), but also ensure that the rationale, the need to know, is well documented, whether in the description or a document in the list/library. For example, in the description of a library locked down due to STINFO information This library contains STINFO information concerning the FA-99 Engine design and drawings.  It is not open to the general AF populace nor is it open to contractors. The need to know consists of personnel in the role of FA-99 engineer or FA-99 program management.  The site group "FA-99 Engineers" has contribute, the site group "FA-99 PMO" has read, the site group "FA-99 Owners" has full control.</p>
+</li>
+<li>
+<p><strong>Site Owner Privileges</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-04&nbsp;</span></p>
+<hr />
+<p>Every site owner should be knowledgeable in the management of a site and the permissioning of sites, libraries, lists, and folders.  Every site owner shall follow the TTPs and other SharePoint Online guidance as found on the user support center or the SharePoint Online Training (SPOT) site. Site owners will have full control of a site.  They have the privileges to create Lists and Libraries, modify and control permissions, create and edit pages and the overall structure/functionality of the site. Owners will be responsible for building the site groups/permissions as well as granting group accesses.</p>
+</li>
+<li>
+<p><strong>Member Privileges</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-05&nbsp;</span></p>
+<hr />
+<p>Members have privileges to view, insert, edit, and delete items and documents. Members groups should be given “<em>Contribute</em>” access to the site. In SPO, the default access level for members is “<em>Edit</em>” and should be changed to “<em>Contribute</em>”.  Contribute access have sufficient permissions to support collaboration. See <code>PS-02</code> (Membership for Whole Organization).</p>
+</li>
+<li>
+<p><strong>Visitors Privileges</strong> <span style="color: white; background: blue; border-radius: 5px;">&nbsp;PS-06&nbsp;</span></p>
+<hr />
+<p>Visitors have privileges to view items and documents. Visitors groups should be given “<em>Read</em>” access to the site. The Visitors group should contain the <code>Everyone but external users</code> group, which is all personnel in the AFNet Active Directory. See <code>GL-01</code> (Everyone has access and shares [Broad Visibility]).</p>
+</li>
+</ul>
+</div>
+<h2 id="records-management">Records Management</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Folder Structure</strong> <span style="color: black; background: yellow; border-radius: 5px;">&nbsp;RM-01&nbsp;</span></p>
+<hr />
+<p>The keeper of a document library shall go <strong>no further than four</strong> (4) folders down.  Naming conventions and metadata can help handle separations.  This is to avoid building a folder for a single document or hitting the URL character limitations.  Proper naming conventions and good metadata act as natural separators.  Search is the primary discovery method, not navigation. It usually takes longer to build folders than it does to put in metadata. <strong>NEVER</strong> name folders with a person's name unless it is a personnel site and the data in the folder is all about them. People come and go, functions remain.</p>
+</li>
+</ul>
+</div>
+<h2 id="team-site">Team Site</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Collaborative Work Placement</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-01&nbsp;</span></p>
+<hr />
+<p>Collaborative work will go on the appropriate Wing, Group, Squadron, or IPT Team Site Collections.  These collaboration sites are meant for a particular IPT or activity such a Combined Federal Campaign.  All work associated with that IPT, project, program, activity should be found on the team site. Collaboration Site Collections  are focused on broadcasting or communicating a message to a wide audience and view topics of common interest. Members can browse and discover relevant content by exploring categories, sorting discussions, by popularity or by viewing only posts that have a best reply.Organizational Site Collections are for information about the organization – its mission, people, etc.  Leave and TDY schedules, organizational calendars, POCs, and announcements go here.</p>
+</li>
+<li>
+<p><strong>Site Owner Designation</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-02&nbsp;</span></p>
+<hr />
+<p>Owners have full control of the site and should be a designated person (an executive officer or admin assistant).  Owners are a key user, who is responsible for maintaining and managing the site and its contents. It is recommended that organizations use appointment letters to designate Site Owners as necessary.</p>
+</li>
+<li>
+<p><strong>Maintaining Permissions</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-03&nbsp;</span></p>
+<hr />
+<p>The site owner will establish and maintain the file access rights/privileges for the site.  Recommend that the site owner properly handle site level permissions with the groups provided - members, owners, and visitors.  These can be renamed for ease of understanding WHY these people have these permissions.  Members have contribution rights - read, write, edit, delete, to the lists and libraries, folders and documents.  They can't change the look and feel of the site.  Visitors (generally all AF users) can read only and the org or team sites main page should ALWAYS be open to visitors - they have the right to know you exist and who you are even if they don't have rights to the data you steward.  Owners have full control of the site's look and feel but should keep branding intact for organizational sites at a minimum.If you have data needing protection (see <code>GL-01</code> [Everyone has access and shares (Broad Visibility)], <code>PS-01</code> [Default permissions setting]), PROTECT IT!  Lock at the library or list level only - SharePoint Online allows locking to the folder and file level but this will get the site owner into permissions chaos quickly.  See <code>PS-03</code> (    Documenting Need to Know) for use of restricted libraries.</p>
+</li>
+<li>
+<p><strong>Creating Sites</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-04&nbsp;</span></p>
+<hr />
+<p>Top Level sites are created with the “Site Provisioning” process, where the initial Site Collection Administrators are identified.Site Admins/Owners can create subsites as needed.  If a function needs announcements, needs its own library structure, needs links and discussion threads, then a new subsite is appropriate.  If these things are not needed, a library is probably the best bet. Keep in mind, subsites should be created laterally/horizontally across the site collection in order to maintain the site structure, prevent excessive deepening of site hierarchy, and to keep URLs short. Subsites should reside directly under the site collection sites.  It is not recommended to make subsites within subsites. Team Site collections will have annual renewal requirements.</p>
+</li>
+<li>
+<p><strong>Number of Site Owners</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-05&nbsp;</span></p>
+<hr />
+<p>Each site should have at least two (2) people assigned as site Owners to ensure continuity of operations.  There should never be more than four (4) site owners. MAJCOMs should include an in/out processing procedure for all designated site collection administrators.</p>
+</li>
+<li>
+<p><strong>Banners on Team Site</strong> <span style="color: white; background: purple; border-radius: 5px;">&nbsp;TS-06&nbsp;</span></p>
+<hr />
+<p>Banners across the tops of teams or communication sites are highly discouraged. Banners take up valuable real estate on the community home page and take up valuable bandwidth.  The Logo space on the right hand side is the proper location for the activity to show its shield, picture of its system, or other logo.</p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://randyrowland.me" target="_blank" rel="noopener" title="randyrowland.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/rowland007" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/randall-rowland-jr" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rowland007" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M373 138.6c-25.2 0-46.3-17.5-51.9-41-30.6 4.3-54.2 30.7-54.2 62.4v.2c47.4 1.8 90.6 15.1 124.9 36.3 12.6-9.7 28.4-15.5 45.5-15.5 41.3 0 74.7 33.4 74.7 74.7 0 29.8-17.4 55.5-42.7 67.5-2.4 86.8-97 156.6-213.2 156.6S45.5 410.1 43 323.4c-25.4-11.9-43-37.7-43-67.7C0 214.4 33.4 181 74.7 181c17.2 0 33 5.8 45.7 15.6 34-21.1 76.8-34.4 123.7-36.4v-.3c0-44.3 33.7-80.9 76.8-85.5C325.8 50.2 347.2 32 373 32c29.4 0 53.3 23.9 53.3 53.3s-23.9 53.3-53.3 53.3zM157.5 255.3c-20.9 0-38.9 20.8-40.2 47.9s17.1 38.1 38 38.1 36.6-9.8 37.8-36.9-14.7-49.1-35.7-49.1zM395 303.1c-1.2-27.1-19.2-47.9-40.2-47.9s-36.9 22-35.7 49.1c1.2 27.1 16.9 36.9 37.8 36.9s39.3-11 38-38.1zm-60.1 70.8c1.5-3.6-1-7.7-4.9-8.1-23-2.3-47.9-3.6-73.8-3.6s-50.8 1.3-73.8 3.6c-3.9.4-6.4 4.5-4.9 8.1 12.9 30.8 43.3 52.4 78.7 52.4s65.8-21.6 78.7-52.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
